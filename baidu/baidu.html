@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度一下，你就知道</title>
+	<style type="text/css">
+		.warp{
+			min-width: 650px;
+			min-height: 600px;
+			/*position: relative;
+			overflow: hidden;*/
+		}
+		.header a{
+			margin-left: 20px;
+			font-size: 13px;
+			color: black;
+		}
+		.header{
+			text-align: right;
+			z-index: 2;
+			margin: 19px 0 5px 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		.header .other{
+			text-decoration: none;
+			background: #38f;
+			color: white;
+			margin: 0 5px 0 12px;
+			padding: 5px;
+		}
+		.content{
+			text-align: center;
+			margin-top: 11%
+		}
+		.content img{
+			width: 270px;
+		}
+		.content .txt{
+			width: 540px;
+			height: 32px;
+		}
+		.content .btn{
+			width: 100px;
+			height: 36px;
+			background: #38f;
+			border: 0;
+			color: white;
+			font-size: 15px;
+		}
+		.content form{
+			margin-top: 22px;
+			margin-bottom: 250px;
+		}
+		.footer{
+			min-width: 650px;
+			margin: 0 auto;
+			text-align: center;
+			color: #ccc;
+			font-size: 12px;
+
+			/*position: absolute;
+			bottom: 50px;
+			left: 30%;*/
+		}
+		.footer div{
+			display: inline-block;
+			margin-left: 10px;
+			text-align: left;
+		}
+		.footer .bd2{
+			width: 60px;
+			height: 60px;
+			background: url(img/bd2.png);
+		}
+		.footer .nm2{
+			width: 60px;
+			height: 60px;
+			background: url(img/nm2.png);
+		}
+		.footer .icon1{
+			width: 14px;
+			height: 17px;
+			background: url(img/icon.png) no-repeat -600px -96px;
+			display: inline-block;
+		}
+		.footer .icon2{
+			width: 14px;
+			height: 17px;
+			background: url(img/icon.png) no-repeat -622px -96px;
+			margin-left: 5px;
+		}
+		.footer p{
+			margin: 5px 0;
+		}
+		.footer .t{
+			height: 60px;
+			line-height: 20px;
+			vertical-align: top;
+			margin-top: 15px;
+		}
+		.footer a{
+			color: #ccc;
+		}
+		.footer .a1{
+			margin-right: 50px;
+		}
+		.footer span{
+			color: #000;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="warp">
+		<div class="header">
+			<a href="http://www.nuomi.com/?cid=tanchuang01">糯米</a>
+			<a href="http://news.baidu.com/">新闻</a>
+			<a href="https://www.hao123.com/">hao123</a>
+			<a href="http://map.baidu.com/">地图</a>
+			<a href="http://v.baidu.com/">视频</a>
+			<a href="http://tieba.baidu.com/">贴吧</a>
+			<a href="###">登录</a>
+			<a href="###">设置</a>
+			<a href="###" class="other">更多产品</a>
+		</div>
+		<div class="content">
+			<div><img src="img/logo.png" alt=""></div>
+			<form action="http://baidu.com/s">
+				<input class="txt" type="text" name="wd"><input class="btn" type="submit" value="百度一下">
+			</form>
+		</div>
+		<div class="footer">
+			<div class="bd2"></div>
+			<div class="t">
+				<span>手机百度</span>
+				<p>快人一步</p>
+			</div>
+			<div class="nm2"></div>
+			<div class="t">
+				<span>百度糯米</span>
+				<p>一元大餐</p>
+			</div>
+			<div>
+				<p>
+					<a class="a1" href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+					<a class="a1" href="http://home.baidu.com/">关于百度</a>
+					<a class="a1" href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-homeprofile">About Baidu</a>
+				</p>
+				<p>
+					©2016 Baidu
+					<a href="http://www.baidu.com/duty/">使用百度前必读</a>
+					<a href="http://jianyi.baidu.com/">意见反馈</a>
+					京ICP证030173号<span class="icon1"></span>
+				</p>
+				<p style="color: #ccc;">
+					<div class="icon2"></div>
+					京公网安备11000002000001号
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
