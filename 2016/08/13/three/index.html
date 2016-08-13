@@ -1,0 +1,628 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="js学习外部引入:1&amp;lt;script src=&quot;a.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&amp;gt;&amp;lt;/script&amp;gt;
+内部引入:12345678//消息框alert(&quot;a&quot;);//确认框var a = confirm(&quot;是否？&quot;);alert(a);//提示框var n = prompt(&quot;请输入姓名？&quot;);alert(n);
+Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Yes   I   can">
+<meta property="og:url" content="http://yoursite.com/2016/08/13/three/index.html">
+<meta property="og:site_name" content="Yes   I   can">
+<meta property="og:description" content="js学习外部引入:1&amp;lt;script src=&quot;a.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&amp;gt;&amp;lt;/script&amp;gt;
+内部引入:12345678//消息框alert(&quot;a&quot;);//确认框var a = confirm(&quot;是否？&quot;);alert(a);//提示框var n = prompt(&quot;请输入姓名？&quot;);alert(n);
+Java">
+<meta property="og:updated_time" content="2016-08-13T08:00:05.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Yes   I   can">
+<meta name="twitter:description" content="js学习外部引入:1&amp;lt;script src=&quot;a.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&amp;gt;&amp;lt;/script&amp;gt;
+内部引入:12345678//消息框alert(&quot;a&quot;);//确认框var a = confirm(&quot;是否？&quot;);alert(a);//提示框var n = prompt(&quot;请输入姓名？&quot;);alert(n);
+Java">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/08/13/three/"/>
+
+  <title>  | Yes   I   can </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta custom-logo">
+  
+    <div class="site-meta-headline">
+      <a>
+        <img class="custom-logo-image" src="img/img1.jpg"
+             alt="Yes   I   can"/>
+      </a>
+    </div>
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Yes   I   can</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-08-13T15:38:22+08:00" content="2016-08-13">
+              2016-08-13
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="js学习"><a href="#js学习" class="headerlink" title="js学习"></a>js学习</h1><h4 id="外部引入"><a href="#外部引入" class="headerlink" title="外部引入:"></a>外部引入:</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"a.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="内部引入"><a href="#内部引入" class="headerlink" title="内部引入:"></a>内部引入:</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//消息框</span></span><br><span class="line">alert(<span class="string">"a"</span>);</span><br><span class="line"><span class="comment">//确认框</span></span><br><span class="line"><span class="keyword">var</span> a = confirm(<span class="string">"是否？"</span>);</span><br><span class="line">alert(a);</span><br><span class="line"><span class="comment">//提示框</span></span><br><span class="line"><span class="keyword">var</span> n = prompt(<span class="string">"请输入姓名？"</span>);</span><br><span class="line">alert(n);</span><br></pre></td></tr></table></figure>
+<h3 id="JavaScript的组成"><a href="#JavaScript的组成" class="headerlink" title="JavaScript的组成:"></a>JavaScript的组成:</h3><p>1.核心（ECMAScript）是一个标准 ES6</p>
+<p>2.文档对象模型（DOM）Document Obj Model</p>
+<p>3.浏览器对象模型（BOM）Browser Obj Model</p>
+<p>特点</p>
+<p>1.一种解释性执行的脚本语言（无需编译）</p>
+<p>2.一种基于对象的脚本语言</p>
+<p>3.一种简单弱类型的脚本语言（数字、字符、函数、对象、数组、undefined）</p>
+<p>4.一种相对安全的脚本语言（只能在浏览器运行）</p>
+<p>5.一种事件驱动的脚本语言</p>
+<p>6.一种跨平台性的脚本语言</p>
+<h3 id="引入方式和弹出框"><a href="#引入方式和弹出框" class="headerlink" title="引入方式和弹出框:"></a>引入方式和弹出框:</h3><h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><p>单行注释 //</p>
+<p>多行注释 /<em> </em>/</p>
+<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><p>number 值为数值</p>
+<p>string 值为字符串</p>
+<p>boolean 值为布尔值（true、false）</p>
+<p>undifined 值未定义</p>
+<p>null 值为空</p>
+<h4 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h4><p>区分大小写</p>
+<p>1.首字符只能使用字母、下划线和$</p>
+<p>2.其他字符可以使用字母下划线、$和数字</p>
+<p>3.命名字符中间不能含有空格</p>
+<p>4.不能以关键字或保留字命名</p>
+<p>注：不能使用name命名</p>
+<h4 id="javascript操作符"><a href="#javascript操作符" class="headerlink" title="javascript操作符"></a>javascript操作符</h4><p>赋值操作符</p>
+<p>= 赋值运算符并不是等于 , var a = 5: 把5赋给a</p>
+<p>算术操作符</p>
+<p>+、- 、/ 、* 、%（模/取余）(输出数字）</p>
+<p>模的算法栗子：</p>
+<p>2%7 = 2              7%4  = 3     </p>
+<p>(-2)%7 = -2         (-7)%4  = -3 </p>
+<p>2%(-7) =  2          7%(-4) = 3 </p>
+<p>(-2)%(-7) =  -2     (-7)%(-4)  = -3</p>
+<p>+= -= *= /=（算法简写）</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line">a = <span class="number">5</span>+<span class="number">7</span>;</span><br><span class="line">a = a+<span class="number">1</span>;<span class="comment">//a= 12+1</span></span><br><span class="line">简写</span><br><span class="line">a += <span class="number">1</span>;<span class="comment">//a= 12+1</span></span><br><span class="line">a *= <span class="number">2</span>;<span class="comment">//a= 13*2</span></span><br><span class="line">alert(a);</span><br></pre></td></tr></table></figure>
+<p>++ — （a=a+1 a=a-1 的简写）</p>
+<p>关系操作符(返回布尔值)</p>
+<p> ‘&gt;’ 大于</p>
+<p> ‘&lt;’ 小于</p>
+<p> ==  等于</p>
+<p> === 全等于（判断类型和值）</p>
+<p>‘&lt;=’ 小于等于</p>
+<p>‘&gt;=’ 大于等于</p>
+<p>!=   不等于</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="number">6</span>;</span><br><span class="line"><span class="keyword">var</span> c = <span class="string">"5"</span>;</span><br><span class="line"><span class="keyword">var</span> bol = <span class="literal">null</span>;</span><br><span class="line">	bol = a&lt;b;<span class="comment">//true</span></span><br><span class="line">	bol = a&gt;b;<span class="comment">//false</span></span><br><span class="line">	bol = a==b;<span class="comment">//false</span></span><br><span class="line">	bol = a!=b;<span class="comment">//true</span></span><br><span class="line">	bol = a&gt;c;<span class="comment">//false</span></span><br><span class="line">	bol = a&gt;=c;<span class="comment">//true</span></span><br><span class="line">	bol = a==c;<span class="comment">//true</span></span><br><span class="line">	bol = a===c;<span class="comment">//false</span></span><br><span class="line">	bol = a!=c;<span class="comment">//false</span></span><br><span class="line">	bol = !<span class="literal">true</span>;<span class="comment">//false</span></span><br><span class="line">	bol = <span class="string">"abc"</span> &gt; <span class="string">"addd"</span>;<span class="comment">//ASCII 码</span></span><br><span class="line">	alert(bol);</span><br></pre></td></tr></table></figure>
+<h3 id="逻辑操作符"><a href="#逻辑操作符" class="headerlink" title="逻辑操作符"></a>逻辑操作符</h3><p>与 &amp;&amp; 真真为真 真假为假 假假为假</p>
+<p>或 || 真真为真 真假为真 假假为假</p>
+<p>非 ！ 相反</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> c =<span class="number">15</span>;</span><br><span class="line"><span class="keyword">var</span> bol = <span class="literal">null</span>;</span><br><span class="line">bol = a&gt;b &amp;&amp; c&gt;b;<span class="comment">//false</span></span><br><span class="line">bol = a&lt;b &amp;&amp; c&gt;b;<span class="comment">//true</span></span><br><span class="line">bol = a&gt;b || c&gt;b;<span class="comment">//true</span></span><br><span class="line">bol = (a&gt;b &amp;&amp; c&gt;b) || !<span class="literal">false</span>;<span class="comment">//true</span></span><br><span class="line">alert(bol);</span><br></pre></td></tr></table></figure>
+<h3 id="条件操作符"><a href="#条件操作符" class="headerlink" title="条件操作符"></a>条件操作符</h3><p>if 语句语法</p>
+<p>if (判断语句) {<br>    语句1<br>} else{<br>    语句2<br>}<br>语句3</p>
+<p>if (判断语句1) {<br>    语句1<br>} else if(判断语句2){<br>    语句2<br>}else{<br>    语句3<br>}<br>语句4</p>
+<p>简写: 判断表达式 ？ 表达式1 ：表达式2 例：a&gt;b? c=1:c=2; true c=1, false c=2</p>
+<p>获取元素</p>
+<p>getElementById() 根据id获取元素<br>getElementByITagName() 根据标签名获取元素<br>getElementByName() 根据name获取元素<br>getElementByClassName() 根据类获取元素 ie6不兼容</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="comment">//等页面内容加载完成后执行</span></span><br><span class="line"><span class="comment">//根据ID获取</span></span><br><span class="line">	<span class="keyword">var</span> d = <span class="built_in">document</span>.getElementById(<span class="string">'d1'</span>);<span class="comment">//document整个HTML文档</span></span><br><span class="line">	alert(d);<span class="comment">//[object HTMLDivElement]  object--对象</span></span><br><span class="line"><span class="comment">//根据name属性获取</span></span><br><span class="line">	<span class="keyword">var</span> p = <span class="built_in">document</span>.getElementsByName(<span class="string">'pp'</span>);</span><br><span class="line">	alert(p);<span class="comment">//[object NodeList] 数组集合</span></span><br><span class="line">	alert(p[<span class="number">0</span>]);<span class="comment">//[object HTMLParagraphElement]</span></span><br><span class="line"><span class="comment">//根据类名获取</span></span><br><span class="line">	<span class="keyword">var</span> a = <span class="built_in">document</span>.getElementsByClassName(<span class="string">'aa'</span>);</span><br><span class="line">	alert(a[<span class="number">0</span>]);<span class="comment">//http://127.0.0.1:8020/20160524-js/js_link.html###</span></span><br><span class="line"><span class="comment">//根据标签名获取</span></span><br><span class="line">	<span class="keyword">var</span> li = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'li'</span>);</span><br><span class="line">	alert(li[<span class="number">0</span>]);<span class="comment">//[object HTMLLIElement]</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="onclick-事件"><a href="#onclick-事件" class="headerlink" title="onclick 事件"></a>onclick 事件</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">background</span>: cornflowerblue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">name</span>=<span class="string">"btn"</span> <span class="attr">id</span>=<span class="string">"btn"</span> <span class="attr">value</span>=<span class="string">"显示隐藏"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"d1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//根据id名获取</span></span><br><span class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">'btn'</span>);</span><br><span class="line"><span class="keyword">var</span> div = <span class="built_in">document</span>.getElementById(<span class="string">'d1'</span>);</span><br><span class="line">btn.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="comment">//显示隐藏</span></span><br><span class="line">	<span class="keyword">if</span>(div.style.display !=<span class="string">"none"</span>) &#123;</span><br><span class="line">		div.style.display = <span class="string">'none'</span>;</span><br><span class="line">	&#125; <span class="keyword">else</span>&#123;</span><br><span class="line">		div.style.display = <span class="string">'block'</span>;</span><br><span class="line">	&#125;</span><br><span class="line"><span class="comment">//简写</span></span><br><span class="line"><span class="comment">//div.style.display=="block"?div.style.display = 'none':div.style.display = 'block';</span></span><br><span class="line">	<span class="keyword">if</span> (bol) &#123;</span><br><span class="line">		div.style.display = <span class="string">'none'</span>;<span class="comment">//语句1</span></span><br><span class="line">	&#125; <span class="keyword">else</span>&#123;</span><br><span class="line">		div.style.display = <span class="string">'block'</span>;<span class="comment">//语句2</span></span><br><span class="line">	&#125;</span><br><span class="line">	bol = !bol;</span><br><span class="line"><span class="comment">//	第一次点击</span></span><br><span class="line"><span class="comment">//	bol = true</span></span><br><span class="line"><span class="comment">//	判断,执行语句1</span></span><br><span class="line"><span class="comment">//	给bol赋值bol = !bol 得 bol = false</span></span><br><span class="line"><span class="comment">//	第二次点击</span></span><br><span class="line"><span class="comment">//	bol = false</span></span><br><span class="line"><span class="comment">//	判断,执行语句2</span></span><br><span class="line"><span class="comment">//	给bol赋值bol = !bol 得 bol = true</span></span><br><span class="line"><span class="comment">//	第三次点击</span></span><br><span class="line"><span class="comment">//	bol = true</span></span><br><span class="line"><span class="comment">//	判断,执行语句1</span></span><br><span class="line"><span class="comment">//	给bol赋值bol = !bol 得 bol = false</span></span><br><span class="line"><span class="comment">//	...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="onmouseover-onmouseout-事件"><a href="#onmouseover-onmouseout-事件" class="headerlink" title="onmouseover onmouseout 事件"></a>onmouseover onmouseout 事件</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> div = <span class="built_in">document</span>.getElementById(<span class="string">'d1'</span>);</span><br><span class="line"><span class="comment">//	div.onmouseover = function()&#123;//当鼠标移到div里面的时候触发的事件 有bug</span></span><br><span class="line"><span class="comment">//		div.style.background = "darkorange";</span></span><br><span class="line"><span class="comment">//	&#125;</span></span><br><span class="line"><span class="comment">//	div.onmouseout = function()&#123;//当鼠标离开div里面的时候触发的事件  有bug</span></span><br><span class="line"><span class="comment">//		div.style.background ="cornflowerblue";</span></span><br><span class="line"><span class="comment">//	&#125;</span></span><br><span class="line">div.onmouseenter = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="comment">//当鼠标移到div里面的时候触发的事件  无bug  兼容ie8</span></span><br><span class="line">	div.style.background = <span class="string">"darkorange"</span>;</span><br><span class="line">&#125;</span><br><span class="line">div.onmouseleave = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="comment">//当鼠标离开div里面的时候触发的事件  无bug  兼容ie8</span></span><br><span class="line">div.style.background =<span class="string">""</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="a与a"><a href="#a与a" class="headerlink" title="++a与a++"></a>++a与a++</h4><p>++a 先加再执行、a++ 先执行再加</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> a = i++ + <span class="number">1</span>;<span class="comment">//计算之前 i=0 计算完后i=1</span></span><br><span class="line"><span class="keyword">var</span> b = ++i +<span class="number">1</span>;<span class="comment">//i= 1 计算之前 i+=1 计算完后i=2</span></span><br><span class="line">alert(<span class="string">"a= "</span>+a+<span class="string">", b= "</span>+b);<span class="comment">//a= 1, b= 3</span></span><br></pre></td></tr></table></figure>
+<p>() 提升优先级</p>
+<p>[] 数组</p>
+<p>{} 对象</p>
+<p>Number() 转换为数字类型</p>
+<p>paresInt() 整数</p>
+<p>NaN 非数字，不知道类型，所以 NaN 不等于 NaN，这是个神奇的东西</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="built_in">document</span>.getElementById(<span class="string">'a'</span>);</span><br><span class="line">	alert(a);</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">“a</span>"&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>如果用上面的写法弹出的会是undefined，是因为代码是由上往下执行，a还没执行，js已经执行完了，所以没有找到a，解决方法有两种：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">“a</span>"&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="built_in">document</span>.getElementById(<span class="string">'a'</span>);</span><br><span class="line">	alert(a);</span><br></pre></td></tr></table></figure>
+<p>如果你想要在head里面写，可以给他加一个onload事件，然它先加载标签在运行js：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> a = <span class="built_in">document</span>.getElementById(<span class="string">'a'</span>);</span><br><span class="line">	alert(a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/12/css/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Dai  Li" />
+          <p class="site-author-name" itemprop="name">Dai  Li</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">15</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#js学习"><span class="nav-number">1.</span> <span class="nav-text">js学习</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#外部引入"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">外部引入:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#内部引入"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">内部引入:</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript的组成"><span class="nav-number">1.0.1.</span> <span class="nav-text">JavaScript的组成:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引入方式和弹出框"><span class="nav-number">1.0.2.</span> <span class="nav-text">引入方式和弹出框:</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#注释"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#变量"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命名规范"><span class="nav-number">1.0.2.3.</span> <span class="nav-text">命名规范</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#javascript操作符"><span class="nav-number">1.0.2.4.</span> <span class="nav-text">javascript操作符</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑操作符"><span class="nav-number">1.0.3.</span> <span class="nav-text">逻辑操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#条件操作符"><span class="nav-number">1.0.4.</span> <span class="nav-text">条件操作符</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#onclick-事件"><span class="nav-number">1.1.</span> <span class="nav-text">onclick 事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#onmouseover-onmouseout-事件"><span class="nav-number">1.2.</span> <span class="nav-text">onmouseover onmouseout 事件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a与a"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">++a与a++</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dai  Li</span>
+</div>
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
