@@ -1,0 +1,550 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="函数函数对任何语言来说都是一个核心的概念。通过函数可以封装任意多条语句，而且可以在任何地方、任何时候调用执行。
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Yes   I   can">
+<meta property="og:url" content="http://yoursite.com/2016/08/14/Eval/index.html">
+<meta property="og:site_name" content="Yes   I   can">
+<meta property="og:description" content="函数函数对任何语言来说都是一个核心的概念。通过函数可以封装任意多条语句，而且可以在任何地方、任何时候调用执行。
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767">
+<meta property="og:updated_time" content="2016-08-14T04:15:35.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Yes   I   can">
+<meta name="twitter:description" content="函数函数对任何语言来说都是一个核心的概念。通过函数可以封装任意多条语句，而且可以在任何地方、任何时候调用执行。
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/08/14/Eval/"/>
+
+  <title>  | Yes   I   can </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta custom-logo">
+  
+    <div class="site-meta-headline">
+      <a>
+        <img class="custom-logo-image" src="img/img1.jpg"
+             alt="Yes   I   can"/>
+      </a>
+    </div>
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Yes   I   can</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-08-14T12:10:26+08:00" content="2016-08-14">
+              2016-08-14
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p>函数对任何语言来说都是一个核心的概念。通过函数可以封装任意多条语句，而且可以在任何地方、任何时候调用执行。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br></pre></td><td class="code"><pre><span class="line">// function show() &#123;</span><br><span class="line">// 	alert("函数");</span><br><span class="line">// &#125;</span><br><span class="line">// show()//只有函数被调用，才会被之执行</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">var show = function () &#123;</span><br><span class="line">	alert("函数");</span><br><span class="line">	return 1;//函数结束后的返回值，如果没有就是undefined</span><br><span class="line">	alert("内容");//return 后面的内容不会再执行</span><br><span class="line">&#125;</span><br><span class="line">alert(show())</span><br><span class="line">//return 语句还有一个功能就是退出当前函数，注意和break 的区别。PS：break 用在循环和switch 分支语句里。</span><br><span class="line">//传参</span><br><span class="line">var show = function (a,b) &#123;</span><br><span class="line">	//模拟 var a = 7;</span><br><span class="line">	//模拟 var b = 9;</span><br><span class="line">	var sum = a + b;</span><br><span class="line">	return sum;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// alert(show(7,9))</span><br><span class="line">alert(show(15,38))</span><br><span class="line">//利用arguments写一个找最大值的变量</span><br><span class="line">function max() &#123;</span><br><span class="line">	var max = arguments[0];</span><br><span class="line">	// alert(arguments.length);</span><br><span class="line">	for (var i = 1; i &lt; arguments.length; i++) &#123;</span><br><span class="line">		if (max&lt;arguments[i]) &#123;</span><br><span class="line">			max = arguments[i];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return max;		</span><br><span class="line">&#125;	</span><br><span class="line">alert(max(1,2,3,35,4,5,6,7,8))</span><br><span class="line">//匿名函数</span><br><span class="line">var num = (</span><br><span class="line">	function(a,b)&#123;</span><br><span class="line">//					alert(a+b);</span><br><span class="line">		return a+b;</span><br><span class="line">	&#125;</span><br><span class="line">)(3,4);</span><br><span class="line">alert(num);</span><br><span class="line">/*</span><br><span class="line">变量的作用域</span><br><span class="line">变量的作用域无非就是两种：全局变量和局部变量。</span><br><span class="line">Javascript语言的特殊之处，就在于函数内部可以直接读取全局变量。*/</span><br><span class="line">var a = 5;//全局变量</span><br><span class="line">/*</span><br><span class="line">	函数里面的变量定义了就是局部变量，</span><br><span class="line">	只能在当前函数里面使用</span><br><span class="line">*/</span><br><span class="line">function show() &#123;</span><br><span class="line">	var a = 10;</span><br><span class="line">	alert(a);</span><br><span class="line">&#125;</span><br><span class="line">show();//弹10</span><br><span class="line">alert(a);//弹5</span><br><span class="line">var a = 15;</span><br><span class="line">function show1() &#123;</span><br><span class="line">	a = 10;</span><br><span class="line">	function show2() &#123;</span><br><span class="line">		alert(a)//第一次弹undefined</span><br><span class="line">		var a = 5;</span><br><span class="line">		alert(a);//第二次弹5</span><br><span class="line">	&#125;</span><br><span class="line">	show2();</span><br><span class="line">	alert(a);//第三次弹10</span><br><span class="line">&#125;</span><br><span class="line">show1()</span><br><span class="line">alert(a)//第四次弹15</span><br><span class="line">//作用域练习</span><br><span class="line">var a = 6;</span><br><span class="line">setTimeout(function () &#123;</span><br><span class="line">    alert(a);//66</span><br><span class="line">    a = 666;</span><br><span class="line"> &#125;, 1000);</span><br><span class="line"></span><br><span class="line"> a = 66;</span><br><span class="line">var a = 6;        //a=6</span><br><span class="line">	(function()&#123;</span><br><span class="line">		(function () &#123;</span><br><span class="line">		    alert(a);</span><br><span class="line">		    a = 666;//a = 666</span><br><span class="line">		&#125;)();</span><br><span class="line">	&#125;)();</span><br><span class="line">	a = 66; </span><br><span class="line">	alert(a)//a =66</span><br><span class="line">//匿名函数</span><br><span class="line">	var num = (function (a,b) &#123;</span><br><span class="line">		// alert(a+b);</span><br><span class="line">		return a+b;</span><br><span class="line">	&#125;)(3,4)</span><br><span class="line">	</span><br><span class="line">	alert(num)//弹7</span><br><span class="line"></span><br><span class="line">	function show(a,b) &#123;</span><br><span class="line">		alert(a+b)//弹7</span><br><span class="line">	&#125;</span><br><span class="line">	show(3,4);</span><br><span class="line">/*</span><br><span class="line">闭包</span><br><span class="line">JavaScript中所有的function都是一个闭包。不过一般来说，嵌套的function所产生的闭包更为强大，也是大部分时候我们所谓的“闭包”。*/</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line">什么闭包：function函数就是一个闭包，闭包里面的变量是封闭的，函数外面不可以获取。</span><br><span class="line">主要功能：function里面再嵌套一个函数，把这个函数返回出去</span><br><span class="line">赋给外面的变量，函数外面就可以获取到函数里面的内容</span><br><span class="line"></span><br><span class="line">注意的问题：闭包要注意内存溢出的问题，不可以乱用，需要用得才用</span><br><span class="line">*/</span><br><span class="line">	function a() &#123;</span><br><span class="line">		var i = 5; // a_i;</span><br><span class="line">		function b(n) &#123;</span><br><span class="line">			i += n;//a_i</span><br><span class="line">			return i;</span><br><span class="line">		&#125;</span><br><span class="line">		return b;</span><br><span class="line">	&#125;	</span><br><span class="line">	var c = a();</span><br><span class="line">	c(5)</span><br><span class="line">	alert(c(5))//15</span><br><span class="line"></span><br><span class="line">	// alert(c(1));//6</span><br><span class="line">	// alert(c(5));//11</span><br><span class="line">/*</span><br><span class="line">闭包有什么作用？</span><br><span class="line">简而言之，闭包的作用就是在a执行完并返回后，闭包使得javascript的垃圾回收机制GC不会收回a所占用的资源，因为a的内部函数b的执行需要依赖a中的变量。这是对闭包作用的非常直白的描述，不专业也不严谨，但大概意思就是这样，理解闭包需要循序渐进的过程。</span><br><span class="line"></span><br><span class="line">使用闭包的注意点</span><br><span class="line">由于闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成网页的性能问题，在IE中可能导致内存泄露。</span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line">//案例练习</span><br><span class="line">//去重复</span><br><span class="line">var arr = [5,2,1,1,1,1,3,5,6,6,6,6,2,8,3,5,9,9,9,9,9,9,9];</span><br><span class="line">	// 0  arr[0]==arr[5] 如果是重复 删掉arr[5]</span><br><span class="line">	//splice(5,1)</span><br><span class="line">	</span><br><span class="line">	function noRepeat() &#123;</span><br><span class="line">		for (var i = 0; i &lt; arr.length; i++) &#123;//每个遍历一次</span><br><span class="line">			for (var j = i+1; j &lt; arr.length; j++) &#123;//与后面每个比较</span><br><span class="line">				if (arr[i]==arr[j]) &#123;</span><br><span class="line">					arr.splice(j,1)//相同清除</span><br><span class="line">					j--;//清除后，位置变化，j就要返回上一个</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;					</span><br><span class="line">		&#125;</span><br><span class="line">		return arr;//结束返回数组</span><br><span class="line">	&#125;</span><br><span class="line">	var arr = noRepeat();</span><br><span class="line">	alert(arr);</span><br><span class="line">var arr = [5,2,1,1,1,1,3,5,6,6,6,6,2,8,3,5,9,9,9,9,9,9,9];</span><br><span class="line">	// 0  arr[0]==arr[5] 如果是重复 删掉arr[5]</span><br><span class="line">	//splice(5,1)	</span><br><span class="line">	function noRepeat() &#123;</span><br><span class="line">		var newArr = [];//定义存放数组中不相同的值</span><br><span class="line">		newArr.push(arr[0])//初始化</span><br><span class="line">		for (var i = 1; i &lt; arr.length; i++) &#123;//每个遍历一次</span><br><span class="line">			for (var j = 0; j &lt; newArr.length; j++) &#123;//与后面每个比较</span><br><span class="line">				if (newArr[j]==arr[i]) &#123;//判断新数组的值是否与数组当前值相等，是就退出当前循环</span><br><span class="line">					break;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;	</span><br><span class="line">			//判断新数组是否完全遍历，如果不是说明新数组的值与数组当前值相等，则不添加入新数组，否则反之</span><br><span class="line">			if (j==newArr.length) &#123;</span><br><span class="line">				newArr.push(arr[i]);</span><br><span class="line">				// newArr[newArr.length] = arr[i]</span><br><span class="line">			&#125;			</span><br><span class="line">		&#125;</span><br><span class="line">		return newArr;//结束返回数组</span><br><span class="line">	&#125;</span><br><span class="line">	var arr = noRepeat();</span><br><span class="line">	alert(arr);</span><br><span class="line">	</span><br><span class="line">//排序</span><br><span class="line">var arr = [5,3,2,4,8,1,7,6];</span><br><span class="line"></span><br><span class="line">	function px() &#123;</span><br><span class="line">		document.write("i="+0+";j="+0+"-"+arr+"&lt;br&gt;");</span><br><span class="line">		for (var i = 0; i &lt; arr.length; i++) &#123;</span><br><span class="line">			for (var j = i+1; j &lt; arr.length; j++) &#123;</span><br><span class="line">				if (arr[i]&gt;arr[j]) &#123;</span><br><span class="line">					var num = arr[i];</span><br><span class="line">					arr[i]=arr[j];</span><br><span class="line">					arr[j]=num;					</span><br><span class="line">				&#125;</span><br><span class="line">				document.write("i="+i+";j="+j+"-"+arr+"&lt;br&gt;");</span><br><span class="line">			&#125;</span><br><span class="line">			document.write("&lt;br&gt;");</span><br><span class="line">		&#125;</span><br><span class="line">		return arr;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	var arr = px();</span><br><span class="line">	alert(arr);</span><br><span class="line">eval</span><br><span class="line">eval() //函数可将字符串转换为代码执行，并返回一个或多个值</span><br><span class="line"></span><br><span class="line">//eval调用时，实例为eval( “ javascript代码 “ )</span><br><span class="line"></span><br><span class="line">var str = "function()&#123;alert('a');&#125;“;</span><br><span class="line">str = eval(str);</span><br><span class="line">str();</span><br><span class="line">//eval()的返回值</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line">eval()的返回值遵循以下规则：</span><br><span class="line">1.如果eval()的参数不是字符串，那么eval()将直接返回参数。</span><br><span class="line">2.如果eval()的参数是字符串，那么eval()将这个字符串解析成代码后进行执行，并返回最后一行代码执行的结果。</span><br><span class="line">3.如果字符串无法解析成合法的代码，eval()将抛出错误。</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/14/Navigator/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Dai  Li" />
+          <p class="site-author-name" itemprop="name">Dai  Li</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">1.</span> <span class="nav-text">函数</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dai  Li</span>
+</div>
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>

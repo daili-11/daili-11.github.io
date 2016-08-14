@@ -87,7 +87,7 @@
 <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Yes   I   can">
-<meta property="og:url" content="http://yoursite.com/archives/2016/06/index.html">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
 <meta property="og:site_name" content="Yes   I   can">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -113,9 +113,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2016/06/"/>
+  <link rel="canonical" href="http://yoursite.com/page/3/"/>
 
-  <title> Archiv | Yes   I   can </title>
+  <title> Yes   I   can </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -136,7 +136,9 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -220,66 +222,108 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
+  <section id="posts" class="posts-expand">
+    
+      
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  
+  
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      Öhm..! Insgesamt 21 Artikel. Bleib dran.
-    </span>
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
 
-      
-      
-      
-
-      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/05/28/arr/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-05-28T12:12:17+08:00" content="2016-05-28">
+              2016-05-28
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
         </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
         
-            <a class="post-title-link" href="/2016/06/02/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
+          
+            <hr>
+<h2 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h2><h3 id="我们常常看到大街上有围观抽奖的，而且大奖总是在他人手上，这是为什呢？原来…小的这就给你道出内幕！"><a href="#我们常常看到大街上有围观抽奖的，而且大奖总是在他人手上，这是为什呢？原来…小的这就给你道出内幕！" class="headerlink" title="我们常常看到大街上有围观抽奖的，而且大奖总是在他人手上，这是为什呢？原来…小的这就给你道出内幕！"></a>我们常常看到大街上有围观抽奖的，而且大奖总是在他人手上，这是为什呢？原来…小的这就给你道出内幕！</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">	<span class="keyword">var</span> arr = [<span class="string">"唐威"</span>,<span class="string">"李伟彬"</span>,<span class="string">"韦适"</span>,<span class="string">"张小红"</span>,<span class="string">"赖泳龙"</span>,<span class="string">"肖灵"</span>,<span class="string">"肖奇"</span>,<span class="string">"庞艳清"</span>,<span class="string">"戚健"</span>,<span class="string">"李小枫"</span>,<span class="string">"李虎"</span>,<span class="string">"徐元桓"</span>,<span class="string">"杨圣坤"</span>,<span class="string">"代丽"</span>,<span class="string">"张庆霞"</span>,<span class="string">"胡林章"</span>,<span class="string">"孔扬波"</span>];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++)&#123;</span><br><span class="line">	arr.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">Math</span>.random()<span class="number">-0.5</span>;</span><br><span class="line">	</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">17</span> ;i++)&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">document</span>.write(i+<span class="number">1</span>+<span class="string">'、'</span>+arr[i]+<span class="string">'&lt;br&gt;'</span>);</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
         
-      </h1>
+      
+    </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-06-02T12:42:08+08:00"
-              content="2016-06-02" >
-          06-02
-        </time>
-      </div>
+    <div>
+      
+    </div>
 
-    </header>
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
 
 
-
     
-
   </section>
 
   
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
 
 
 
@@ -440,12 +484,6 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
-
 
   
 
