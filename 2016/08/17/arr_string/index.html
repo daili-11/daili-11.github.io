@@ -1,0 +1,692 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="string MathString 对象
+String 对象用于处理文本（字符串）。
+String 对象属性
+constructor    对创建该对象的函数的引用
+length    字符串的长度
+prototype    允许您向对象添加属性和方法
+String 对象方法
+anchor()    创建 HTML 锚。
+big()    用大号字体显示字符串。
+blink()    显示闪动字符">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Yes   I   can">
+<meta property="og:url" content="http://yoursite.com/2016/08/17/arr_string/index.html">
+<meta property="og:site_name" content="Yes   I   can">
+<meta property="og:description" content="string MathString 对象
+String 对象用于处理文本（字符串）。
+String 对象属性
+constructor    对创建该对象的函数的引用
+length    字符串的长度
+prototype    允许您向对象添加属性和方法
+String 对象方法
+anchor()    创建 HTML 锚。
+big()    用大号字体显示字符串。
+blink()    显示闪动字符">
+<meta property="og:updated_time" content="2016-08-17T02:40:35.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Yes   I   can">
+<meta name="twitter:description" content="string MathString 对象
+String 对象用于处理文本（字符串）。
+String 对象属性
+constructor    对创建该对象的函数的引用
+length    字符串的长度
+prototype    允许您向对象添加属性和方法
+String 对象方法
+anchor()    创建 HTML 锚。
+big()    用大号字体显示字符串。
+blink()    显示闪动字符">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/08/17/arr_string/"/>
+
+  <title>  | Yes   I   can </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta custom-logo">
+  
+    <div class="site-meta-headline">
+      <a>
+        <img class="custom-logo-image" src="img/img1.jpg"
+             alt="Yes   I   can"/>
+      </a>
+    </div>
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Yes   I   can</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-08-17T09:56:25+08:00" content="2016-08-17">
+              2016-08-17
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="string-Math"><a href="#string-Math" class="headerlink" title="string Math"></a>string Math</h2><p>String 对象</p>
+<p>String 对象用于处理文本（字符串）。</p>
+<p>String 对象属性</p>
+<p>constructor    对创建该对象的函数的引用</p>
+<p>length    字符串的长度</p>
+<p>prototype    允许您向对象添加属性和方法</p>
+<p>String 对象方法</p>
+<p>anchor()    创建 HTML 锚。</p>
+<p>big()    用大号字体显示字符串。</p>
+<p>blink()    显示闪动字符串。</p>
+<p>bold()    使用粗体显示字符串。</p>
+<p>charAt()    返回在指定位置的字符。</p>
+<p>charCodeAt()    返回在指定的位置的字符的 Unicode 编码。</p>
+<p>concat()    连接字符串。</p>
+<p>fixed()    以打字机文本显示字符串。</p>
+<p>fontcolor()    使用指定的颜色来显示字符串。</p>
+<p>fontsize()    使用指定的尺寸来显示字符串。</p>
+<p>fromCharCode()    从字符编码创建一个字符串。</p>
+<p>indexOf()    检索字符串。</p>
+<p>italics()    使用斜体显示字符串。</p>
+<p>lastIndexOf()    从后向前搜索字符串。</p>
+<p>link()    将字符串显示为链接。</p>
+<p>localeCompare()    用本地特定的顺序来比较两个字符串。</p>
+<p>match()    找到一个或多个正则表达式的匹配。</p>
+<p>replace()    替换与正则表达式匹配的子串。</p>
+<p>search()    检索与正则表达式相匹配的值。</p>
+<p>slice()    提取字符串的片断，并在新的字符串中返回被提取的部分。<br>small()    使用小字号来显示字符串。</p>
+<p>split()    把字符串分割为字符串数组。</p>
+<p>strike()    使用删除线来显示字符串。</p>
+<p>sub()    把字符串显示为下标。</p>
+<p>substr()    从起始索引号提取字符串中指定数目的字符。</p>
+<p>substring()    提取字符串中两个指定的索引号之间的字符。</p>
+<p>sup()    把字符串显示为上标。</p>
+<p>toLocaleLowerCase()    把字符串转换为小写。</p>
+<p>toLocaleUpperCase()    把字符串转换为大写。</p>
+<p>toLowerCase()    把字符串转换为小写。</p>
+<p>toUpperCase()    把字符串转换为大写。</p>
+<p>toSource()    代表对象的源代码。</p>
+<p>toString()    返回字符串。</p>
+<p>valueOf()    返回某个字符串对象的原始值。</p>
+<h3 id="案例：字符串的截取"><a href="#案例：字符串的截取" class="headerlink" title="案例：字符串的截取"></a>案例：字符串的截取</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span>蓝鸥科技是美国苹果公司AATC官方授权培训机构，是国内专业的移动互联网研发实训基地，致力于iOS、安卓、Unity、HTML5等开发人才的培养。2012年由中国知名移动开发专家刘辉、李静波和崔亚允创立。蓝鸥科技拥有北京、上海、广州、大连、郑州和西安等众多实训中心，合作院校超过500所，战略合作企业800多家。截至目前，在苹果App Store和谷歌商店累计上线1000多款应用和游戏。<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"###"</span>&gt;</span>&gt;&gt;收缩<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">400px</span>;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">50px</span> auto;</span><br><span class="line">	<span class="attribute">background</span>: khaki;</span><br><span class="line">	<span class="attribute">padding</span>: <span class="number">20px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">10px</span> solid gainsboro;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取内容标签span</span></span><br><span class="line"><span class="comment">//获取点击按钮a</span></span><br><span class="line"><span class="comment">//获取标签内容str</span></span><br><span class="line"><span class="comment">//点击收缩时显示str截取后的内容</span></span><br><span class="line"><span class="comment">//点击展开时显示str全部内容</span></span><br><span class="line">			</span><br><span class="line"><span class="built_in">window</span>.onload =<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> span = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'span'</span>)[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">var</span> a = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'a'</span>)[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">var</span> str =span.innerText;<span class="comment">//span完整内容</span></span><br><span class="line">		a.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">			<span class="keyword">if</span>(span.innerHTML == str)&#123;<span class="comment">//判断内容是否被截取</span></span><br><span class="line">				span.innerText = str.substring(<span class="number">0</span>,<span class="number">30</span>) + <span class="string">"......"</span>;<span class="comment">//显示str截取后的内容</span></span><br><span class="line">				a.innerHTML = <span class="string">"&gt;&gt;展开"</span>;</span><br><span class="line">			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">				span.innerText = str;<span class="comment">//显示str的内容</span></span><br><span class="line">				a.innerHTML = <span class="string">"&gt;&gt;收缩"</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="案例-字符串方法以及查找字符"><a href="#案例-字符串方法以及查找字符" class="headerlink" title="案例 字符串方法以及查找字符"></a>案例 字符串方法以及查找字符</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">"我是字符串我是字符串我是字符串我是字符串我是字符串我是字符串我是字符串我是字符串我是字符串我是字符串"</span>;</span><br><span class="line">	<span class="comment">//字符串截取方法substring, substring里面最小参数是0（负数也是0）</span></span><br><span class="line">	<span class="comment">//里面的参数是从最小截取到最大的位置（读取时先找到最小，再往最大截取）</span></span><br><span class="line">	<span class="comment">//var str2 = str.substring(2,5);</span></span><br><span class="line">	<span class="comment">//alert(str2);</span></span><br><span class="line">	<span class="comment">//查找的方法 indexOf() 返回位置值 如果找不到返回-1 只会找一次</span></span><br><span class="line">	<span class="comment">//alert(str.indexOf('字',3));</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">var</span> i = <span class="number">0</span> ;</span><br><span class="line">	<span class="keyword">var</span> sum = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (str.indexOf(<span class="string">'字'</span>,i) &gt; <span class="number">-1</span>) &#123;<span class="comment">//在找到的时候循环</span></span><br><span class="line">		sum ++;<span class="comment">//找到后+1</span></span><br><span class="line">		i=str.indexOf(<span class="string">'字'</span>,i) + <span class="number">1</span>;<span class="comment">//在位置之后再开始查找</span></span><br><span class="line">	&#125;</span><br><span class="line">	alert(<span class="string">"str中字共有"</span>+sum+<span class="string">"个"</span>);</span><br><span class="line">	<span class="comment">// 1   i=0 	位置2&gt;-1 sum ++ ; i = 位置2 +1;</span></span><br><span class="line">	<span class="comment">// 2   i=3 	位置7&gt;-1 sum ++ ; i = 位置7 +1;</span></span><br><span class="line">	<span class="comment">// 3   i=8 	位置13&gt;-1 sum ++ ; i = 位置13 +1;</span></span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">	<span class="comment">// 2   i=？ 	位置-1不大于-1 退出循环   弹出对话框</span></span><br></pre></td></tr></table></figure>
+<h3 id="案例-字符串与数组"><a href="#案例-字符串与数组" class="headerlink" title="案例 字符串与数组"></a>案例 字符串与数组</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">"abcdefg"</span>;</span><br><span class="line"><span class="keyword">var</span> arr = [<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>,<span class="string">'d'</span>,<span class="string">'e'</span>,<span class="string">'f'</span>,<span class="string">'g'</span>];</span><br><span class="line"><span class="comment">//字符串不可以通过下标修改其中的值，只能整体修改</span></span><br><span class="line">str[<span class="number">3</span>] = <span class="string">"D"</span>;</span><br><span class="line"><span class="comment">//alert(str);</span></span><br><span class="line">arr[<span class="number">3</span>] = <span class="string">"D"</span>;</span><br><span class="line"><span class="comment">//alert(arr);</span></span><br><span class="line"><span class="comment">//字符串变成数组</span></span><br><span class="line"><span class="comment">//split 把字符串劈开变成数组 劈开是按照字符串里的参数</span></span><br><span class="line"><span class="keyword">var</span> arr =str.split(<span class="string">"d"</span>);</span><br><span class="line"><span class="comment">//alert(arr[1]);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//charAt 获取字符串里的第几个字符 从0开始</span></span><br><span class="line"><span class="comment">//charCodeAt 获取字符串里的第几个字符的字符Ascii</span></span><br><span class="line"><span class="comment">//alert(str.charAt(2));</span></span><br><span class="line"><span class="comment">//alert(str.charCodeAt(2));</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//alert(str.toLowerCase());//变成小写</span></span><br><span class="line"><span class="comment">//alert(str.toUpperCase());//变成大写</span></span><br></pre></td></tr></table></figure>
+<h3 id="dorpdownlist-下拉列表"><a href="#dorpdownlist-下拉列表" class="headerlink" title="dorpdownlist(下拉列表)"></a>dorpdownlist(下拉列表)</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"droplist"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"btn"</span> <span class="attr">value</span>=<span class="string">"请选择"</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ul</span> <span class="attr">id</span>=<span class="string">"list"</span> <span class="attr">style</span>=<span class="string">"display: none;	"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>栗子<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>李子<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>芒果<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">.droplist input&#123;</span><br><span class="line">				width: 150px;</span><br><span class="line">				height: 30px;</span><br><span class="line">				font-size: 14px;</span><br><span class="line">				font-weight: lighter;</span><br><span class="line">				text-align: center;</span><br><span class="line">				border: 1px solid cadetblue;</span><br><span class="line">				border-radius: 6px;</span><br><span class="line">				border-color: cornflowerblue;</span><br><span class="line">				box-shadow: 0.1px 0.1px 1px 0.5px cadetblue;</span><br><span class="line">				background: white;</span><br><span class="line">&#125;</span><br><span class="line">.droplist ul&#123;</span><br><span class="line">	width: 150px;</span><br><span class="line">	border: 1px solid cadetblue;</span><br><span class="line">	border-radius: 6px;</span><br><span class="line">	list-style: none;</span><br><span class="line">	color: #333;</span><br><span class="line">	text-align: center;</span><br><span class="line">	margin-top: 5px;</span><br><span class="line">	padding: 0;	</span><br><span class="line">&#125;</span><br><span class="line">.droplist ul li&#123;</span><br><span class="line">	width: 98%;</span><br><span class="line">	padding: 10px 0;</span><br><span class="line">	margin: 0 auto;</span><br><span class="line">	border-bottom: 1px solid #ccc;;</span><br><span class="line">&#125;</span><br><span class="line">.droplist ul li:hover&#123;</span><br><span class="line">	background: rgba(244,244,244,0.75);</span><br><span class="line">&#125;</span><br><span class="line">.droplist ul li:nth-child(3)&#123;</span><br><span class="line">	border: 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onclick=<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="comment">//做法思路</span></span><br><span class="line">	<span class="comment">//1.获取元素</span></span><br><span class="line">	<span class="comment">//2.点击请选择-列表显示</span></span><br><span class="line">	<span class="comment">//3.点击列表-选择框内容 = 你点击列表框的内容</span></span><br><span class="line">	<span class="comment">//4.列表消失</span></span><br><span class="line">	<span class="comment">//这里获取document.getElementsByClassName('btn')是一个数组：['按钮']，而我们要获取的是'按钮'，所以读取是['按钮'][0],也就是document.getElementsByClassName('btn')[0]</span></span><br><span class="line">	<span class="keyword">var</span> btn =<span class="built_in">document</span>.getElementsByClassName(<span class="string">'btn'</span>)[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">var</span> list =<span class="built_in">document</span>.getElementById(<span class="string">'list'</span>);</span><br><span class="line">	<span class="keyword">var</span> li = list.getElementsByTagName(<span class="string">'li'</span>);<span class="comment">//获取list里的&lt;li&gt;集合</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment">//选择按钮</span></span><br><span class="line">	btn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(list.style.display != <span class="string">"block"</span>)&#123;<span class="comment">//判断list是否已经隐藏</span></span><br><span class="line">			<span class="comment">//是，就显示</span></span><br><span class="line">			list.style.display = <span class="string">'block'</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			<span class="comment">//否，就隐藏</span></span><br><span class="line">			list.style.display = <span class="string">'none'</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;li.length; i++) &#123;<span class="comment">//循环，给每个&lt;li&gt;添加点击事件</span></span><br><span class="line">		li[i].onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">			<span class="comment">//注：input里的内容获取是-input.value，其他标签的内容获取是-标签.innerHTML</span></span><br><span class="line">			btn.value = <span class="keyword">this</span>.innerHTML;<span class="comment">//将当前&lt;li&gt;里的内容赋值给btn</span></span><br><span class="line">			list.style.display = <span class="string">'none'</span>;<span class="comment">//列表消失</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h3><p>Math对象允许您执行数学任务。</p>
+<p>Math对象包括几个数学方法。</p>
+<p>Math 对象属性</p>
+<p>E    返回算术常量 e，即自然对数的底数（约等于2.718）。</p>
+<p>LN2    返回 2 的自然对数（约等于0.693）。</p>
+<p>LN10    返回 10 的自然对数（约等于2.302）。</p>
+<p>LOG2E    返回以 2 为底的 e 的对数（约等于 1.414）。</p>
+<p>LOG10E    返回以 10 为底的 e 的对数（约等于0.434）。</p>
+<p>PI    返回圆周率（约等于3.14159）。</p>
+<p>SQRT1_2    返回返回 2 的平方根的倒数（约等于 0.707）。</p>
+<p>SQRT2    返回 2 的平方根（约等于 1.414）。</p>
+<p>Math 对象方法</p>
+<p>abs(x)   返回数的绝对值。</p>
+<p>acos(x)  返回数的反余弦值。</p>
+<p>asin(x)  返回数的反正弦值。</p>
+<p>atan(x)  以介于 -PI/2 与 PI/2 弧度之间的数值来返回 x 的反正切值。</p>
+<p>atan2(y,x) 返回从 x 轴到点 (x,y) 的角度（介于 -PI/2 与 PI/2 弧度之间）。</p>
+<p>ceil(x) 对数进行上舍入。</p>
+<p>cos(x) 返回数的余弦。</p>
+<p>exp(x) 返回 e 的指数。</p>
+<p>floor(x) 对数进行下舍入。</p>
+<p>log(x) 返回数的自然对数（底为e）。</p>
+<p>max(x,y) 返回 x 和 y 中的最高值。</p>
+<p>min(x,y) 返回 x 和 y 中的最低值。</p>
+<p>pow(x,y) 返回 x 的 y 次幂。</p>
+<p>random() 返回 0 ~ 1 之间的随机数。</p>
+<p>round(x) 把数四舍五入为最接近的整数。</p>
+<p>sin(x) 返回数的正弦。</p>
+<p>sqrt(x) 返回数的平方根。</p>
+<p>tan(x) 返回角的正切。</p>
+<p>toSource() 返回该对象的源代码。</p>
+<p>valueOf() 返回 Math 对象的原始值。</p>
+<p>解析：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>);</span><br><span class="line"><span class="comment">//ceil:ceil()		向上取整5.00001，取6</span></span><br><span class="line"><span class="comment">//var num = 5.00001;</span></span><br><span class="line"><span class="comment">//alert(Math.ceil(num));</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//floor:floor()向下取整，5.9999999，取5</span></span><br><span class="line"><span class="comment">//var num1 = 5.9999999;</span></span><br><span class="line"><span class="comment">//alert(Math.floor(num));</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Math.min（）和Math.max（）可以用来查找的参数列表中的最低或最高值</span></span><br><span class="line"><span class="comment">//max:max()</span></span><br><span class="line"><span class="comment">//alert(Math.max(1,9,5,2,3));//9</span></span><br><span class="line"><span class="comment">//min:min()</span></span><br><span class="line"><span class="comment">//alert(Math.min(1,9,5,2,3));//1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//pow:pow()求次方数</span></span><br><span class="line"><span class="comment">//	alert(Math.pow(2,3));//8----2的3次方</span></span><br><span class="line"><span class="comment">//random:random()随机数，取值在0-1之间，不包括0和1 最小0.0000000......1 最大0.99999...9</span></span><br><span class="line"><span class="comment">//alert(Math.random());</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//栗子 0-10最小值</span></span><br><span class="line"><span class="comment">//0.00001*10 = 0.0001 四舍五入得  0</span></span><br><span class="line"><span class="comment">//0.99999*10 =9.9999  四舍五入得  10</span></span><br><span class="line"><span class="comment">//0-10</span></span><br><span class="line"><span class="keyword">var</span> rnb = <span class="built_in">Math</span>.round(<span class="built_in">Math</span>.random()*<span class="number">10</span>);</span><br><span class="line"><span class="comment">//1-10</span></span><br><span class="line"><span class="keyword">var</span> rnb1 = <span class="built_in">Math</span>.ceil(<span class="built_in">Math</span>.random()*<span class="number">10</span>);</span><br><span class="line"><span class="comment">//0-9</span></span><br><span class="line"><span class="keyword">var</span> rnb2 = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random()*<span class="number">10</span>);</span><br><span class="line"><span class="comment">//30-60</span></span><br><span class="line"><span class="keyword">var</span> rnb3 = <span class="built_in">Math</span>.round(<span class="built_in">Math</span>.random()*<span class="number">30</span>+<span class="number">30</span>);</span><br><span class="line"><span class="keyword">var</span> rnb4 = <span class="built_in">Math</span>.round(<span class="built_in">Math</span>.random()*<span class="number">17</span>);</span><br><span class="line">alert(rnb4);</span><br><span class="line">	</span><br><span class="line"><span class="comment">//round:round()四舍五入取整</span></span><br><span class="line"><span class="comment">//var num2 = 5.9999999;</span></span><br><span class="line"><span class="comment">//alert(Math.round(num));//6</span></span><br><span class="line"><span class="comment">//var num3 = 5.499999;</span></span><br><span class="line"><span class="comment">//alert(Math.round(num));//5</span></span><br></pre></td></tr></table></figure>
+<h3 id="Array-数组"><a href="#Array-数组" class="headerlink" title="Array(数组)"></a>Array(数组)</h3><p>Array 对象</p>
+<p>Array 对象用于在单个的变量中存储多个值。</p>
+<p>Array 对象属性</p>
+<p>constructor    返回对创建此对象的数组函数的引用。</p>
+<p>length    设置或返回数组中元素的数目。</p>
+<p>prototype    使您有能力向对象添加属性和方法。</p>
+<p>Array 对象方法</p>
+<p>concat() 连接两个或更多的数组，并返回结果。</p>
+<p>join() 把数组的所有元素放入一个字符串。元素通过指定的分隔符进行分隔。</p>
+<p>pop() 删除并返回数组的最后一个元素</p>
+<p>push() 向数组的末尾添加一个或更多元素，并返回新的长度。</p>
+<p>reverse() 颠倒数组中元素的顺序。</p>
+<p>shift() 删除并返回数组的第一个元素</p>
+<p>slice() 从某个已有的数组返回选定的元素</p>
+<p>sort() 对数组的元素进行排序</p>
+<p>splice() 删除元素，并向数组添加新元素。</p>
+<p>toSource() 返回该对象的源代码。</p>
+<p>toString() 把数组转换为字符串，并返回结果。</p>
+<p>toLocaleString() 把数组转换为本地数组，并返回结果。</p>
+<p>unshift() 向数组的开头添加一个或更多元素，并返回新的长度。</p>
+<p>valueOf() 返回数组对象的原始值</p>
+<h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//数组方法</span></span><br><span class="line"><span class="comment">/*</span><br><span class="line">	join:把数组拼接为字符串</span><br><span class="line">	将数组里面的逗号替换为join里面的参数，然后拼接为字符串</span><br><span class="line">	栗子</span><br><span class="line">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//var str = "acbcdcecf";</span></span><br><span class="line"><span class="comment">//document.write(str + "&lt;br /&gt;");</span></span><br><span class="line"><span class="comment">//var arr = str.split("c");//每个字符之间劈开</span></span><br><span class="line"><span class="comment">//document.write(arr + "&lt;br /&gt;");</span></span><br><span class="line"><span class="comment">//str = arr.join("&lt;span&gt;p&lt;/span&gt;");</span></span><br><span class="line"><span class="comment">//document.write(str + "&lt;br /&gt;");</span></span><br><span class="line">			</span><br><span class="line"><span class="comment">//数组增加删除方法</span></span><br><span class="line"><span class="comment">//var arr = [1, 2 , 3, 4, 5];</span></span><br><span class="line"><span class="comment">//arr[arr.length] = arr.length + 1;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//push 在数组后面添加内容</span></span><br><span class="line"><span class="comment">//arr.push(7);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//unshift 在数组前面添加内容</span></span><br><span class="line"><span class="comment">//arr.unshift(0);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//pop 删除最后一个 返回删除的内容</span></span><br><span class="line"><span class="comment">//arr.pop()</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//把最后内容添加到前面</span></span><br><span class="line"><span class="comment">//arr.unshift(arr.pop());</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//shift删除第一个  返回删除的内容</span></span><br><span class="line"><span class="comment">//arr.shift();</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//把第一个内容添加到最后面</span></span><br><span class="line"><span class="comment">//arr.push(arr.shift());</span></span><br><span class="line"><span class="comment">//document.write(arr);</span></span><br><span class="line">			</span><br><span class="line"><span class="comment">//数组合并方法</span></span><br><span class="line"><span class="comment">//var arr = [1,2,3,4,5];</span></span><br><span class="line"><span class="comment">//var arr2 = [6,7,8,9];</span></span><br><span class="line"><span class="comment">//var arr3 = [10,11,12];</span></span><br><span class="line"><span class="comment">/*</span><br><span class="line"> 	concat 合并数组</span><br><span class="line"> 	在concat 里面加上要合并的数组</span><br><span class="line"> 	可以添加多个 用逗号隔开</span><br><span class="line"> 	原来数组不会有任何改变，合并的是返回值</span><br><span class="line"> */</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">//var newArr = arr.concat(arr2,arr3);</span></span><br><span class="line"><span class="comment">//document.write("newArr："+newArr+"&lt;br /&gt;");</span></span><br><span class="line"><span class="comment">//document.write("arr："+arr+"&lt;br /&gt;");</span></span><br><span class="line"><span class="comment">//document.write("arr2："+arr2+"&lt;br /&gt;");</span></span><br><span class="line"><span class="comment">//document.write("arr3："+arr3+"&lt;br /&gt;");</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//截取</span></span><br><span class="line"><span class="comment">//var arr = [1,2,3,4,5,6];</span></span><br><span class="line"><span class="comment">//document.write(arr.slice(2,4));</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//倒序 原来数组会改变为倒序</span></span><br><span class="line"><span class="comment">//var arr = [1,2,3,4,5,6,7,8,9];</span></span><br><span class="line"><span class="comment">//document.write(arr.reverse());</span></span><br><span class="line"><span class="comment">//document.write(arr);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//var arr = [6,8,5,2,9,1,7,4,3];</span></span><br><span class="line"><span class="comment">//arr.sort();//默认按顺序排列</span></span><br><span class="line"><span class="comment">//arr.sort(function (a ,b )&#123;</span></span><br><span class="line"><span class="comment">//		return b-a;</span></span><br><span class="line"><span class="comment">//&#125;);//a-b 正 b-a 负</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//打乱数组顺序</span></span><br><span class="line"><span class="comment">//	arr.sort(function()&#123;</span></span><br><span class="line"><span class="comment">//		return Math.random()-0.5;//随机</span></span><br><span class="line"><span class="comment">//&#125;)</span></span><br><span class="line"><span class="comment">//document.write(arr);</span></span><br><span class="line">			</span><br><span class="line"><span class="comment">/*</span><br><span class="line"> 	splice（a，b，c）</span><br><span class="line"> 	a:从哪里开始</span><br><span class="line"> 	b:往后删除多少个</span><br><span class="line"> 	c:添加内容后面可以添加多个，用逗号隔开</span><br><span class="line"> */</span></span><br><span class="line"><span class="comment">//var arr = ["a","b","c","d"];</span></span><br><span class="line"><span class="comment">//删除</span></span><br><span class="line"><span class="comment">//arr.splice(1,1);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//替换</span></span><br><span class="line"><span class="comment">//arr.splice(1,1,"新的");</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//添加</span></span><br><span class="line"><span class="comment">//arr.splice(1,0,"新的");</span></span><br><span class="line"><span class="comment">//document.write(arr);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//转换  </span></span><br><span class="line"><span class="comment">//Number():把数据类型转为数字  </span></span><br><span class="line"><span class="comment">//String():把数据类型转为字符串</span></span><br><span class="line"><span class="comment">/*parseInt(a,b):把数据类型转为数字 从开始找字符串里的数字，直到不是数字就会停下来（ 类似向上取整）</span><br><span class="line"> a:是要转换的数据</span><br><span class="line"> b: 是要按什么进制进行转换 2进制 8进制 10进制 16进制</span><br><span class="line">	</span><br><span class="line"> parseFloat：把数据类型转为浮点数（有小数点的数）</span><br><span class="line"> */</span></span><br><span class="line"><span class="comment">//alert(Number("123px123"));//NaN</span></span><br><span class="line"><span class="comment">//alert(parseInt("123px123",10));//123</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//栗子-输出随机的顺序</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> arr =[<span class="string">'韦*'</span>,<span class="string">'李*'</span>,<span class="string">'戚*'</span>,<span class="string">'杨**'</span>,<span class="string">'张**'</span>,<span class="string">'徐**'</span>,<span class="string">'赖**'</span>,<span class="string">'代*'</span>,<span class="string">'李**'</span>,<span class="string">'孔**'</span>,<span class="string">'李**'</span>,<span class="string">'庞**'</span>,<span class="string">'胡**'</span>,<span class="string">'肖*'</span>,<span class="string">'肖*'</span>,<span class="string">'张**'</span>,<span class="string">'唐*'</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">0</span>; i &lt; <span class="number">10000</span> ; i++) &#123;</span><br><span class="line">	arr.sort(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="comment">//对数组的元素进行排序</span></span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">Math</span>.random()<span class="number">-0.5</span>;<span class="comment">//获取一个随机数</span></span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">0</span>; i &lt; arr.length ; i++) &#123;</span><br><span class="line">	<span class="built_in">document</span>.write((i+<span class="number">1</span>)+<span class="string">". "</span> +arr[i] + <span class="string">"&lt;br /&gt;"</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//输出随机的顺序函数代码</span></span><br><span class="line"><span class="comment">//随机打乱数组内容</span></span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">sortFn</span>(<span class="params">arr</span>)</span>&#123;</span><br><span class="line">		arr.sort(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span> <span class="built_in">Math</span>.random()<span class="number">-0.5</span>&#125;);</span><br><span class="line">		<span class="keyword">return</span> arr;</span><br><span class="line">	&#125;</span><br><span class="line"><span class="comment">//获取范围内的随机数</span></span><br><span class="line"><span class="comment">/*</span><br><span class="line"> myrandom(min,max)</span><br><span class="line"> min到max范围的随机数</span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myrandom</span>(<span class="params">min,max</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> rnd = <span class="built_in">Math</span>.round(<span class="built_in">Math</span>.random()*(max-min)+min);</span><br><span class="line">	<span class="keyword">return</span> rnd;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//调用</span></span><br><span class="line">alert(myrandom(<span class="number">1</span>,<span class="number">2</span>));<span class="comment">//1-2的随机数,包括1，2</span></span><br></pre></td></tr></table></figure>
+<h3 id="我们一起来做个迷离计算器吧"><a href="#我们一起来做个迷离计算器吧" class="headerlink" title="我们一起来做个迷离计算器吧!"></a>我们一起来做个迷离计算器吧!</h3><p>思路：</p>
+<p>找到按钮</p>
+<p>实现数字添加功能</p>
+<p>实现运算符功能</p>
+<p>实现等于号功能</p>
+<p>小数点功能</p>
+<p>清除功能</p>
+<p>正负数功能</p>
+<p>求百分数功能</p>
+<p>查漏补缺</p>
+<p>HTML部分</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrap"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"header"</span>&gt;</span>0<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ul</span> <span class="attr">id</span>=<span class="string">"btns"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>AC<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>+/-<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>%<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"o"</span>&gt;</span>/<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>7<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>8<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>9<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"o"</span>&gt;</span>*<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>4<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>5<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>6<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"o"</span>&gt;</span>-<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"o"</span>&gt;</span>+<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"center long under"</span>&gt;</span>0<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"center under"</span>&gt;</span>.<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"under o"</span>&gt;</span>=<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>CSS部分</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">232px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">320px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#8e8e8e</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">5px</span>;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">50px</span> auto;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#header</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">80px</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="built_in">rgba</span>(90,90,90,0.6);</span><br><span class="line">	<span class="attribute">text-align</span>: right;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">color</span>: white;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">60px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#btns</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">list-style</span>: none;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">	<span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;	</span><br><span class="line"><span class="selector-id">#btns</span> <span class="selector-tag">li</span>&#123;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">float</span>: left;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">57px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">47px</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">47px</span>;</span><br><span class="line">	<span class="attribute">border-bottom</span>: <span class="number">1px</span> solid <span class="number">#8e8e8e</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#d6d6d6</span>;</span><br><span class="line">	<span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#btns</span> <span class="selector-class">.long</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">115px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#btns</span> <span class="selector-class">.center</span>&#123;</span><br><span class="line">	<span class="attribute">border-right</span>: <span class="number">1px</span> solid <span class="number">#8e8e8e</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#btns</span> <span class="selector-class">.o</span>&#123;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#f49437</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">58px</span>;</span><br><span class="line">	<span class="attribute">color</span>: white;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#btns</span> <span class="selector-class">.under</span>&#123;</span><br><span class="line">	<span class="attribute">border-bottom</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">48px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>js部分</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="comment">//获取计算框</span></span><br><span class="line">	<span class="keyword">var</span> header = <span class="built_in">document</span>.getElementById(<span class="string">'header'</span>);</span><br><span class="line">	<span class="comment">//获取所有按钮</span></span><br><span class="line">	<span class="keyword">var</span> li =<span class="built_in">document</span>.getElementsByTagName(<span class="string">'li'</span>);</span><br><span class="line">	<span class="comment">//定义上一个数 保存第一个数</span></span><br><span class="line">	<span class="keyword">var</span> per_number = <span class="literal">null</span>;</span><br><span class="line">	<span class="comment">//定义下一个数 保存第二个数</span></span><br><span class="line">	<span class="keyword">var</span> next_number = <span class="literal">null</span>;</span><br><span class="line">	<span class="comment">//定义一个字符串类型保存运算符</span></span><br><span class="line">	<span class="keyword">var</span> operation = <span class="string">''</span>;</span><br><span class="line">	<span class="comment">//记录符号的类型，1为无，0为运算符，2为等于号</span></span><br><span class="line">	<span class="keyword">var</span> flag = <span class="number">0</span>;</span><br><span class="line">	<span class="comment">//给所有按钮添加点击事件</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;li.length;i++) &#123;</span><br><span class="line">		li[i].onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">			<span class="keyword">switch</span> (<span class="keyword">this</span>.innerHTML)&#123;</span><br><span class="line">				<span class="comment">//清除按钮的点击事件</span></span><br><span class="line">				<span class="keyword">case</span> <span class="string">'C'</span>:</span><br><span class="line">				<span class="keyword">case</span> <span class="string">'AC'</span>:</span><br><span class="line">					<span class="comment">//把所有数据以及变量都初始化</span></span><br><span class="line">					per_number = <span class="literal">null</span>;</span><br><span class="line">					next_number = <span class="literal">null</span>;</span><br><span class="line">					operation = <span class="string">""</span>;</span><br><span class="line">					flag = <span class="number">0</span>;</span><br><span class="line">					header.innerHTML = <span class="string">"0"</span>;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				<span class="comment">//正负切换按钮的点击事件</span></span><br><span class="line">				<span class="keyword">case</span><span class="string">'+/-'</span>:</span><br><span class="line">					header.innerHTML= <span class="number">-1</span>*<span class="built_in">Number</span>(header.innerHTML);</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				<span class="comment">//百分比的点击事件</span></span><br><span class="line">				<span class="keyword">case</span><span class="string">'%'</span>:</span><br><span class="line">					header.innerHTML = <span class="built_in">Number</span>(header.innerHTML)/<span class="number">100</span>;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				<span class="comment">//数字按钮的点击事件</span></span><br><span class="line">				<span class="keyword">case</span><span class="string">'1'</span>:</span><br><span class="line">				<span class="keyword">case</span><span class="string">'2'</span>:</span><br><span class="line">				<span class="keyword">case</span><span class="string">'3'</span>:</span><br><span class="line">				<span class="keyword">case</span><span class="string">'4'</span>:</span><br><span class="line">				<span class="keyword">case</span><span class="string">'5'</span>:</span><br><span class="line">				<span class="keyword">case</span><span class="string">'6'</span>:</span><br><span class="line">				<span class="keyword">case</span><span class="string">'7'</span>:</span><br><span class="line">				<span class="keyword">case</span><span class="string">'8'</span>:</span><br><span class="line">				<span class="keyword">case</span><span class="string">'9'</span>:</span><br><span class="line">				<span class="keyword">case</span><span class="string">'0'</span>:</span><br><span class="line">					</span><br><span class="line">					<span class="keyword">if</span> (header.innerHTML == <span class="string">"0"</span> || flag==<span class="number">0</span> || flag==<span class="number">2</span>) &#123;</span><br><span class="line">					<span class="comment">//当计算框为零，或者刚点击完运算符，或者刚点击完等于号时</span></span><br><span class="line">						header.innerHTML = <span class="keyword">this</span>.innerHTML;<span class="comment">//赋值</span></span><br><span class="line">						<span class="keyword">if</span>(flag==<span class="number">2</span>)&#123;</span><br><span class="line">						<span class="comment">//刚点击完等于号时</span></span><br><span class="line">							per_number = <span class="literal">null</span>;<span class="comment">//清空第一个数</span></span><br><span class="line">						&#125;</span><br><span class="line">						<span class="comment">//修改点击符号为数字</span></span><br><span class="line">						flag = <span class="number">1</span>;</span><br><span class="line">					&#125; </span><br><span class="line">					<span class="keyword">else</span>&#123;</span><br><span class="line">					<span class="comment">//否则拼接字符串</span></span><br><span class="line">						header.innerHTML += <span class="keyword">this</span>.innerHTML;</span><br><span class="line">					&#125;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				<span class="comment">//四则运算的点击事件</span></span><br><span class="line">				<span class="keyword">case</span><span class="string">'+'</span>:</span><br><span class="line">				<span class="keyword">case</span><span class="string">'-'</span>:</span><br><span class="line">				<span class="keyword">case</span><span class="string">'*'</span>:</span><br><span class="line">				<span class="keyword">case</span><span class="string">'/'</span>:</span><br><span class="line">					<span class="keyword">if</span>(per_number == <span class="literal">null</span> || flag == <span class="number">2</span>)&#123;</span><br><span class="line">					<span class="comment">//第一个数为空，或者刚点击完等于号时，第一个数等于计算框里的数字</span></span><br><span class="line">						per_number = <span class="built_in">Number</span>(header.innerHTML);</span><br><span class="line">					&#125;<span class="keyword">else</span> <span class="keyword">if</span>(operation != <span class="string">''</span> &amp;&amp; flag!=<span class="number">0</span>)&#123;</span><br><span class="line">					<span class="comment">//运算符不等于空，或者不是刚点击完运算符时，第二个数等于计算框里的数字</span></span><br><span class="line">						next_number = <span class="built_in">Number</span>(header.innerHTML);</span><br><span class="line">						_equals(operation);<span class="comment">//进行四则运算</span></span><br><span class="line">					&#125;</span><br><span class="line">					flag = <span class="number">0</span>;<span class="comment">//修改点击符号为运算符</span></span><br><span class="line">					operation =<span class="keyword">this</span>.innerHTML;<span class="comment">//保存运算符</span></span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				<span class="comment">//等于的点击事件</span></span><br><span class="line">				<span class="keyword">case</span><span class="string">'='</span>:</span><br><span class="line">					<span class="keyword">if</span>(operation != <span class="string">''</span>)&#123;</span><br><span class="line">					<span class="comment">//运算符不为空时</span></span><br><span class="line">						<span class="keyword">if</span>(flag == <span class="number">1</span>)&#123;</span><br><span class="line">						<span class="comment">//刚点击完数字时，第二个数等于计算框里的数字</span></span><br><span class="line">							next_number = <span class="built_in">Number</span>(header.innerHTML);</span><br><span class="line">						&#125;</span><br><span class="line">						_equals(operation);<span class="comment">//进行四则运算</span></span><br><span class="line">					&#125;</span><br><span class="line">					flag = <span class="number">2</span>;<span class="comment">//修改点击符号为等于号</span></span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">					<span class="comment">//.的点击事件</span></span><br><span class="line">				<span class="keyword">default</span>:</span><br><span class="line">					<span class="keyword">if</span> (header.innerHTML == <span class="string">"0"</span> || flag==<span class="number">0</span> || flag==<span class="number">2</span>) &#123;</span><br><span class="line">					<span class="comment">//当计算框为零，或者刚点击完运算符，或者刚点击完等于号时，输出0.</span></span><br><span class="line">						header.innerHTML = <span class="string">'0'</span>+<span class="keyword">this</span>.innerHTML;</span><br><span class="line">						flag = <span class="number">1</span>;</span><br><span class="line">					&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">						<span class="keyword">if</span>(header.innerHTML.indexOf(<span class="string">'.'</span>,<span class="number">0</span>) == <span class="number">-1</span>)&#123;</span><br><span class="line">						<span class="comment">//计算框内没有.时，拼接0.</span></span><br><span class="line">							header.innerHTML += <span class="keyword">this</span>.innerHTML;</span><br><span class="line">						&#125;</span><br><span class="line">					&#125;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="comment">//AC与C的切换</span></span><br><span class="line">			<span class="keyword">if</span>((li[<span class="number">0</span>].innerHTML == <span class="string">'AC'</span> || <span class="keyword">this</span>.innerHTML != li[<span class="number">0</span>].innerHTML) &amp;&amp; <span class="keyword">this</span>.innerHTML!=<span class="string">"AC"</span>)&#123;</span><br><span class="line">			<span class="comment">//清除键内容为 AC或者当前点击不是清除键,和当前点击内容不是AC</span></span><br><span class="line">				li[<span class="number">0</span>].innerHTML =<span class="string">'C'</span>;<span class="comment">//修改清除键内容为C</span></span><br><span class="line">			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">				li[<span class="number">0</span>].innerHTML =<span class="string">'AC'</span>;<span class="comment">//修改清除键内容为AC</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//文档点击事件，设置计算框自适应字体大小</span></span><br><span class="line">	<span class="built_in">document</span>.onclick =<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(header.innerHTML.length&lt;<span class="number">8</span>)&#123;</span><br><span class="line">		<span class="comment">//计算框内容长度小于8时，字体大小为60px</span></span><br><span class="line">			header.style.fontSize = <span class="string">"60px"</span></span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(header.innerHTML.length&lt;<span class="number">16</span>)&#123;</span><br><span class="line">		<span class="comment">//计算框内容长度大于8小于16时，字体大小为30px</span></span><br><span class="line">			header.style.fontSize = <span class="string">"30px"</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(header.innerHTML.length&lt;<span class="number">24</span>)&#123;</span><br><span class="line">		<span class="comment">//计算框内容长度大于16小于24时，字体大小为20px</span></span><br><span class="line">			header.style.fontSize = <span class="string">"20px"</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(header.innerHTML.length&lt;<span class="number">30</span>)&#123;</span><br><span class="line">		<span class="comment">//计算框内容长度大于24小于30时，字体大小为16px</span></span><br><span class="line">			header.style.fontSize = <span class="string">"16px"</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="comment">//计算框内容长度大于30时，字体大小为12px</span></span><br><span class="line">			header.style.fontSize = <span class="string">"12px"</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//四则运算的函数</span></span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">_equals</span>(<span class="params">operation</span>)</span>&#123;</span><br><span class="line">		<span class="keyword">switch</span> (operation)&#123;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'+'</span>:<span class="comment">//加运算符</span></span><br><span class="line">				per_number += next_number;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'-'</span>:<span class="comment">//减运算符</span></span><br><span class="line">				per_number -= next_number;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'*'</span>:<span class="comment">//乘运算符</span></span><br><span class="line">				per_number *= next_number;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'/'</span>:<span class="comment">//除运算符</span></span><br><span class="line">				<span class="keyword">if</span>(next_number ==<span class="number">0</span> )&#123;</span><br><span class="line">					<span class="comment">//0为被除数时</span></span><br><span class="line">					per_number = <span class="literal">null</span>;<span class="comment">//设置计算结果为空</span></span><br><span class="line">				&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">					per_number /= next_number;</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(per_number == <span class="literal">null</span>)&#123;</span><br><span class="line">			<span class="comment">//计算结果为空时，输出非数字NaN</span></span><br><span class="line">			header.innerHTML = <span class="literal">NaN</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			header.innerHTML = per_number;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/14/function/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Dai  Li" />
+          <p class="site-author-name" itemprop="name">Dai  Li</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">23</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#string-Math"><span class="nav-number">1.</span> <span class="nav-text">string Math</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#案例：字符串的截取"><span class="nav-number">1.1.</span> <span class="nav-text">案例：字符串的截取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#案例-字符串方法以及查找字符"><span class="nav-number">1.2.</span> <span class="nav-text">案例 字符串方法以及查找字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#案例-字符串与数组"><span class="nav-number">1.3.</span> <span class="nav-text">案例 字符串与数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dorpdownlist-下拉列表"><span class="nav-number">1.4.</span> <span class="nav-text">dorpdownlist(下拉列表)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Math"><span class="nav-number">1.5.</span> <span class="nav-text">Math</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Array-数组"><span class="nav-number">1.6.</span> <span class="nav-text">Array(数组)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解析"><span class="nav-number">1.7.</span> <span class="nav-text">解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#我们一起来做个迷离计算器吧"><span class="nav-number">1.8.</span> <span class="nav-text">我们一起来做个迷离计算器吧!</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dai  Li</span>
+</div>
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
