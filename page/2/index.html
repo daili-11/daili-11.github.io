@@ -182,7 +182,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -192,7 +192,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -245,8 +245,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/08/21/gundongtiao/" itemprop="url">
-                  Untitled
+                <a class="post-title-link" href="/2016/08/21/jiazai/" itemprop="url">
+                  Unbenannt
                 </a>
               
             
@@ -258,7 +258,201 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posted on</span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-08-21T16:52:39+08:00" content="2016-08-21">
+              2016-08-21
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="图片加载"><a href="#图片加载" class="headerlink" title="图片加载"></a>图片加载</h2><h3 id="懒加载"><a href="#懒加载" class="headerlink" title="懒加载"></a>懒加载</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">data-src</span>=<span class="string">"img/1.jpg"</span> <span class="attr">alt</span>=<span class="string">""</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">3000px</span>;</span><br><span class="line">&#125;</span><br><span class="line">*&#123;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">img</span>&#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">1000px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">1000px</span>;</span><br><span class="line">	<span class="attribute">background</span>: skyblue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取 img 标签</span></span><br><span class="line"><span class="keyword">var</span> img = <span class="built_in">document</span>.querySelector(<span class="string">'img'</span>);</span><br><span class="line"><span class="comment">//获取 img 的top值</span></span><br><span class="line"><span class="keyword">var</span> imgTop = img.offsetTop;</span><br><span class="line"><span class="comment">//滚动条滚动时</span></span><br><span class="line"><span class="built_in">window</span>.onscroll = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="comment">//获取滚动条高度</span></span><br><span class="line">	<span class="keyword">var</span> sTop = <span class="built_in">document</span>.body.scrollTop || <span class="built_in">document</span>.documentElement.scrollTop;</span><br><span class="line">	<span class="comment">//获取窗口高度</span></span><br><span class="line">	<span class="keyword">var</span> wTop = <span class="built_in">document</span>.documentElement.clientHeight;</span><br><span class="line">	<span class="comment">//判断位置是否抵达图片位置</span></span><br><span class="line">	<span class="keyword">if</span> (sTop+wTop &gt; imgTop) &#123;</span><br><span class="line">		<span class="comment">//赋值给src</span></span><br><span class="line">		img.src = img.getAttribute(<span class="string">'data-src'</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="预加载"><a href="#预加载" class="headerlink" title="预加载"></a>预加载</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">background</span>: black;</span><br><span class="line">	<span class="attribute">color</span>: white;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">50px</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span>0%<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	loading ... ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> div = <span class="built_in">document</span>.querySelector(<span class="string">'div'</span>);</span><br><span class="line"><span class="keyword">var</span> span = <span class="built_in">document</span>.querySelector(<span class="string">'span'</span>);</span><br><span class="line"><span class="keyword">var</span> imgArr = [<span class="string">'1.jpg'</span>,<span class="string">'2.jpg'</span>,<span class="string">'3.jpg'</span>,<span class="string">'4.jpg'</span>,<span class="string">'5.jpg'</span>,<span class="string">'6.jpg'</span>,<span class="string">'7.jpg'</span>,<span class="string">'8.jpg'</span>];</span><br><span class="line">	</span><br><span class="line">loadImageFn(imgArr,<span class="function"><span class="keyword">function</span>(<span class="params">index</span>)</span>&#123;</span><br><span class="line">	span.innerHTML = <span class="built_in">parseInt</span>(index/imgArr.length*<span class="number">100</span>) + <span class="string">'%'</span>;</span><br><span class="line"><span class="comment">//			alert(index);</span></span><br><span class="line">&#125;,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	div.style.display = <span class="string">'none'</span>;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">/*</span><br><span class="line"> * loadImageFn 预加载图片函数</span><br><span class="line"> * arr参数是图片数组</span><br><span class="line"> * fn是过程回调函数</span><br><span class="line"> * over是结束回调函数</span><br><span class="line"> * IE6判断不了</span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">loadImageFn</span> (<span class="params">arr,fn,over</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> index = <span class="number">0</span>;<span class="comment">//加载第几张</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">		<span class="keyword">var</span> img = <span class="keyword">new</span> Image();<span class="comment">//定义一个图片的对象</span></span><br><span class="line">		img.src = <span class="string">'img/'</span>+ arr[i];<span class="comment">//设置路径</span></span><br><span class="line">		img.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">			index ++; <span class="comment">//加载</span></span><br><span class="line">			<span class="keyword">if</span> (index == arr.length) &#123;<span class="comment">//图片加载完成后</span></span><br><span class="line">				alert(<span class="string">'加载完成!'</span>)</span><br><span class="line">				over &amp;&amp; over();<span class="comment">//结束回调函数</span></span><br><span class="line">			&#125;</span><br><span class="line">			fn &amp;&amp; fn(index);<span class="comment">//过程回调函数</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/21/qiehuan/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-08-21T16:48:46+08:00" content="2016-08-21">
+              2016-08-21
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="切换"><a href="#切换" class="headerlink" title="切换"></a>切换</h2><p>利用滚动条原理可以做到切换效果，举一栗子：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">5px</span> solid darkcyan;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.inner</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">400%</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.inner</span> <span class="selector-tag">div</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">25%</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">300px</span>;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">50px</span>;</span><br><span class="line">	<span class="attribute">background</span>: darkkhaki;</span><br><span class="line">	<span class="attribute">float</span>: left;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">value</span>=<span class="string">"1"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">value</span>=<span class="string">"2"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">value</span>=<span class="string">"3"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">value</span>=<span class="string">"4"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrap"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span>4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.querySelectorAll(<span class="string">'input'</span>);</span><br><span class="line"><span class="keyword">var</span> wrap = <span class="built_in">document</span>.querySelector(<span class="string">'.wrap'</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i&lt; btn.length; i++) &#123;</span><br><span class="line">	btn[i].index = i;</span><br><span class="line">	btn[i].onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">		wrap.scrollLeft = <span class="keyword">this</span>.index*(wrap.offsetWidth<span class="number">-10</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/21/gundongtiao/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
             <time itemprop="dateCreated" datetime="2016-08-21T16:45:15+08:00" content="2016-08-21">
               2016-08-21
             </time>
@@ -343,7 +537,7 @@
               
                 
                 <a class="post-title-link" href="/2016/08/21/zhaobutong/" itemprop="url">
-                  Untitled
+                  Unbenannt
                 </a>
               
             
@@ -355,7 +549,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posted on</span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
             <time itemprop="dateCreated" datetime="2016-08-21T16:40:15+08:00" content="2016-08-21">
               2016-08-21
             </time>
@@ -441,7 +635,7 @@
               
                 
                 <a class="post-title-link" href="/2016/08/21/pubuliu/" itemprop="url">
-                  Untitled
+                  Unbenannt
                 </a>
               
             
@@ -453,7 +647,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posted on</span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
             <time itemprop="dateCreated" datetime="2016-08-21T16:38:30+08:00" content="2016-08-21">
               2016-08-21
             </time>
@@ -535,7 +729,7 @@
               
                 
                 <a class="post-title-link" href="/2016/08/21/location/" itemprop="url">
-                  Untitled
+                  Unbenannt
                 </a>
               
             
@@ -547,7 +741,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posted on</span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
             <time itemprop="dateCreated" datetime="2016-08-21T16:36:48+08:00" content="2016-08-21">
               2016-08-21
             </time>
@@ -629,7 +823,7 @@
               
                 
                 <a class="post-title-link" href="/2016/08/21/caidan/" itemprop="url">
-                  Untitled
+                  Unbenannt
                 </a>
               
             
@@ -641,7 +835,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posted on</span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
             <time itemprop="dateCreated" datetime="2016-08-21T14:37:22+08:00" content="2016-08-21">
               2016-08-21
             </time>
@@ -725,7 +919,7 @@
               
                 
                 <a class="post-title-link" href="/2016/08/21/tanchishe/" itemprop="url">
-                  Untitled
+                  Unbenannt
                 </a>
               
             
@@ -737,7 +931,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posted on</span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
             <time itemprop="dateCreated" datetime="2016-08-21T14:23:12+08:00" content="2016-08-21">
               2016-08-21
             </time>
@@ -820,7 +1014,7 @@
               
                 
                 <a class="post-title-link" href="/2016/08/21/fangdajing/" itemprop="url">
-                  Untitled
+                  Unbenannt
                 </a>
               
             
@@ -832,7 +1026,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posted on</span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
             <time itemprop="dateCreated" datetime="2016-08-21T14:18:36+08:00" content="2016-08-21">
               2016-08-21
             </time>
@@ -941,8 +1135,8 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">17</span>
-              <span class="site-state-item-name">posts</span>
+              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-name">Artikel</span>
             </a>
           </div>
 
@@ -989,7 +1183,7 @@
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
