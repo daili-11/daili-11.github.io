@@ -84,28 +84,19 @@
 
 
 
-<meta name="description" content="兼容IE6做网站的都要保存一些兼容的方法，以下内容是一些涉及的是IE6的兼容，请拿好不谢！
-1.a标签里嵌套img时，不同浏览器下会出现不同颜色边框：
-解决：重置样式把border取消(重置样式请参考CSS入门)2.各个浏览器下图片与图片之间有间隙：
-解决：用float，或取消img标签的换行3.清除浮动
-1234567.clear:after&amp;#123;	content: &quot;&quot;;	clear:b">
+<meta name="description" content="切换利用滚动条原理可以做到切换效果，举一栗子：
+123456789101112131415161718192021.wrap&amp;#123;	width: 300px;	height: 300px;	border: 5px solid darkcyan;	overflow: hidden;&amp;#125;.inner&amp;#123;	width: 400%;	height: 100%;	overflow: h">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Yes   I   can">
-<meta property="og:url" content="http://yoursite.com/2016/08/22/threeday/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/08/21/qiehuan/index.html">
 <meta property="og:site_name" content="Yes   I   can">
-<meta property="og:description" content="兼容IE6做网站的都要保存一些兼容的方法，以下内容是一些涉及的是IE6的兼容，请拿好不谢！
-1.a标签里嵌套img时，不同浏览器下会出现不同颜色边框：
-解决：重置样式把border取消(重置样式请参考CSS入门)2.各个浏览器下图片与图片之间有间隙：
-解决：用float，或取消img标签的换行3.清除浮动
-1234567.clear:after&amp;#123;	content: &quot;&quot;;	clear:b">
-<meta property="og:updated_time" content="2016-08-22T11:50:38.000Z">
+<meta property="og:description" content="切换利用滚动条原理可以做到切换效果，举一栗子：
+123456789101112131415161718192021.wrap&amp;#123;	width: 300px;	height: 300px;	border: 5px solid darkcyan;	overflow: hidden;&amp;#125;.inner&amp;#123;	width: 400%;	height: 100%;	overflow: h">
+<meta property="og:updated_time" content="2016-08-21T08:50:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Yes   I   can">
-<meta name="twitter:description" content="兼容IE6做网站的都要保存一些兼容的方法，以下内容是一些涉及的是IE6的兼容，请拿好不谢！
-1.a标签里嵌套img时，不同浏览器下会出现不同颜色边框：
-解决：重置样式把border取消(重置样式请参考CSS入门)2.各个浏览器下图片与图片之间有间隙：
-解决：用float，或取消img标签的换行3.清除浮动
-1234567.clear:after&amp;#123;	content: &quot;&quot;;	clear:b">
+<meta name="twitter:description" content="切换利用滚动条原理可以做到切换效果，举一栗子：
+123456789101112131415161718192021.wrap&amp;#123;	width: 300px;	height: 300px;	border: 5px solid darkcyan;	overflow: hidden;&amp;#125;.inner&amp;#123;	width: 400%;	height: 100%;	overflow: h">
 
 
 
@@ -126,7 +117,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/08/22/threeday/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/08/21/qiehuan/"/>
 
   <title>  | Yes   I   can </title>
 </head>
@@ -267,8 +258,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-08-22T19:47:31+08:00" content="2016-08-22">
-              2016-08-22
+            <time itemprop="dateCreated" datetime="2016-08-21T16:48:46+08:00" content="2016-08-21">
+              2016-08-21
             </time>
           </span>
 
@@ -295,32 +286,10 @@
       
 
       
-        <h2 id="兼容IE6"><a href="#兼容IE6" class="headerlink" title="兼容IE6"></a>兼容IE6</h2><p>做网站的都要保存一些兼容的方法，以下内容是一些涉及的是IE6的兼容，请拿好不谢！</p>
-<p>1.a标签里嵌套img时，不同浏览器下会出现不同颜色边框：</p>
-<p>解决：重置样式把border取消(重置样式请参考CSS入门)<br>2.各个浏览器下图片与图片之间有间隙：</p>
-<p>解决：用float，或取消img标签的换行<br>3.清除浮动</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clear</span><span class="selector-pseudo">:after</span>&#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">	<span class="attribute">clear</span>:both;</span><br><span class="line">	<span class="attribute">display</span>:block;</span><br><span class="line">	<span class="attribute">height</span>:<span class="number">0</span>;</span><br><span class="line">	<span class="attribute">overflow</span>:hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上清除浮动方法在IE6中无效果</p>
-<p>解决：触发haslayout:position、float、zoom,因为前两者会影响下面的布局 所以一般采用：.clear{zoom:1;}</p>
-<p>在IE6中清除样式有可能需要设置</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clear</span><span class="selector-pseudo">:after</span>&#123;</span><br><span class="line">	<span class="attribute">height</span>:<span class="number">0</span>;</span><br><span class="line">	<span class="attribute">overflow</span>:hidden;</span><br><span class="line">	<span class="attribute">font-size</span>:<span class="number">0</span>;</span><br><span class="line">	<span class="attribute">line-height</span>:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>4.opacity在IE6中无效</p>
-<p>解决：filter:alpha(opacity = 50)；滤镜设置透明度</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.a</span>&#123;</span><br><span class="line"><span class="attribute">opacity</span>:<span class="number">0.5</span>;</span><br><span class="line"><span class="attribute">filter</span>:<span class="built_in">alpha</span>(opacity=50);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*（IE9支持opacity，很多CSS方法在IE9以上才支持）*/</span></span><br></pre></td></tr></table></figure>
-<p>5.ie6有float，有横向margin时，ie双倍间距</p>
-<p>解决：设置display:inline;</p>
-<p>6.在ie6，内容宽高超出我们设置的宽高时，内容会撑开设置好的宽高</p>
-<p>要让谷歌浏览器有内容撑开设置好的宽高的特性并兼容IE6可设置min-height和_height</p>
-<p>注：_height（仅IE6标识）</p>
-<p>7.在ie6下最小高度19px,字体太大会溢出（默认行高）</p>
-<p>解决：overflow: hidde</p>
-<p>8.在ie6下png图片不透明</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--条件注释：--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--[if IE 6]&gt;</span><br><span class="line">&lt;script type="text/javascript" src="js/DD_belatedPNG_0.0.8a.js"&gt;&lt;/script&gt;</span><br><span class="line">&lt;script type="text/javascript"&gt;</span><br><span class="line">  DD_belatedPNG.fix('*');</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;![endif]--&gt;</span></span><br></pre></td></tr></table></figure>
-<p>9.左浮元素margin-bottom失效</p>
-<p>解决：用padding </p>
-<p>10.ul、ol的li中,如有元素浮动,在ie6中会出现多出几像素的问题</p>
-<p>解决：li浮动 或者浮动元素inline-block</p>
-
+        <h2 id="切换"><a href="#切换" class="headerlink" title="切换"></a>切换</h2><p>利用滚动条原理可以做到切换效果，举一栗子：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">5px</span> solid darkcyan;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.inner</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">400%</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.inner</span> <span class="selector-tag">div</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">25%</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">300px</span>;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">50px</span>;</span><br><span class="line">	<span class="attribute">background</span>: darkkhaki;</span><br><span class="line">	<span class="attribute">float</span>: left;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">value</span>=<span class="string">"1"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">value</span>=<span class="string">"2"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">value</span>=<span class="string">"3"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">value</span>=<span class="string">"4"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrap"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span>4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.querySelectorAll(<span class="string">'input'</span>);</span><br><span class="line"><span class="keyword">var</span> wrap = <span class="built_in">document</span>.querySelector(<span class="string">'.wrap'</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i&lt; btn.length; i++) &#123;</span><br><span class="line">	btn[i].index = i;</span><br><span class="line">	btn[i].onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">		wrap.scrollLeft = <span class="keyword">this</span>.index*(wrap.offsetWidth<span class="number">-10</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -344,7 +313,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/08/22/twoday/" rel="next" title="">
+              <a href="/2016/08/21/gundongtiao/" rel="next" title="">
                 <i class="fa fa-chevron-left"></i> 
               </a>
             
@@ -352,7 +321,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/08/22/fourday/" rel="prev" title="">
+              <a href="/2016/08/21/jiazai/" rel="prev" title="">
                  <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -454,7 +423,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#兼容IE6"><span class="nav-number">1.</span> <span class="nav-text">兼容IE6</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#切换"><span class="nav-number">1.</span> <span class="nav-text">切换</span></a></li></ol></div>
             
           </div>
         </section>
