@@ -1,0 +1,292 @@
+body{
+	height: 3000px;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.wrap{
+	width: 100%;
+	max-width: 960px;
+	border: 5px solid black;
+	margin: auto;
+}
+.header img{
+	width: 100%;
+}
+.header .l1{
+
+}
+.header .l2{
+	display: none;
+}
+.content{
+	padding-top: 50px;
+}
+.content p{
+	font-size: 25px;
+	line-height: 43px;
+	text-indent: 2em;
+	width: 80%;
+	margin: auto;
+}
+.content img{
+
+	vertical-align: middle;
+}
+
+.content .download{
+	width: 568px;
+	margin: auto;
+}
+.content .download{
+	font-size: 22px;
+	color: white;
+	margin-top: 100px;
+}
+.content .download .left{
+	width: 280px;
+	height: 54px;
+	padding-top: 13px;
+	background: #e79215;
+}
+.content .download .left img{
+	margin-left: 30px;
+	margin-right: 17px;
+	vertical-align: middle;
+	/*margin-top: 13px;*/
+}
+.content .download .left span{
+	vertical-align: middle;
+}
+.content .download .right{
+	width: 280px;
+	height: 54px;
+	padding-top: 13px;
+	background: #ed5410;
+}
+.content .download .right img{
+	margin-left: 30px;
+	margin-right: 17px;
+	vertical-align: middle;
+}
+
+.content .txt{
+	font-size: 20px;
+	color: #464646;
+	font-weight: bold;
+	text-align: center;
+	margin: 90px 0 20px;
+}
+.content .txt em{
+	font-size: 30px;
+	color: #efb665;
+	font-style: italic;
+}
+.content .gradient{
+	height: 2px;
+	width: 510px;
+	margin: auto;
+	background: radial-gradient(300px 300px,#feb33c,white);
+}
+
+.content form{
+	width: 353px;
+	margin: auto;
+}
+.content .login_1{
+	margin: 18px 0;
+}
+.content .login_1 input{
+	width:100%;
+	height: 39px;
+
+}
+.content .login_2{
+	margin-bottom: 18px;
+}
+.content .login_2 input{
+	width:100%;
+	height: 39px;
+}
+.content .login_3{
+	margin-bottom: 18px;
+}
+.content .login_3 .check{
+	width: 240px;
+	height: 39px;
+}
+.content .login_3 .btn{
+	width: 108px;
+	height: 41px;
+	display: block;
+	border: 1px solid #e8ebf2;
+}
+.content .login_4{
+	font-size: 16px;
+	padding-left: 90px;
+}
+.content .login_4 .l{
+	width: 128px;
+	line-height: 22px;
+}
+.content .login_4 .l em{
+	color: #ff2b27;
+}
+.banner{
+	text-align: center;
+	margin: 20px 0 30px;
+}
+.footer{
+	height: 75px;
+	background: #e89316;
+	padding-top: 25px;
+}
+.footer p{
+	color: white;
+	font-size: 22px;
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+@media screen and (max-width: 640px){
+	.header .l1{
+		display: none;
+	}
+	.header .l2{
+		display: block;
+	}
+	.content .download{
+		width: 509px;
+	}
+	.content .download .left{
+		width: 250px;
+	}
+	.content .download .right{
+		width: 250px;
+	}
+	.content .download .left img{
+		margin-left: 15px;
+		margin-right: 10px;
+	}
+	.content .download .right img{
+		margin-left: 15px;
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 540px){
+	.content .download{
+		width: 274px;
+		font-size: 12px;
+		margin-top: 50px;
+	}
+	.content .download .left{
+		width: 135px;
+		height: 34px;
+	}
+	.content .download .right{
+		width: 135px;
+		height: 34px;
+	}
+	.content .download .left img{
+		margin-left: 10px;
+		margin-right: 5px;
+		width: 16px;
+	}
+	.content .download .right img{
+		margin-left: 10px;
+		margin-right: 5px;
+		width: 16px;
+	}
+	.content{
+		padding-top: 25px;
+	}
+	.content p{
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.content p img{
+		width: 56px;
+	}
+	.content .txt{
+		margin: 45px 0 10px;
+	}
+
+	.content .login_1 input{
+		width:100%;
+		height: 16px;
+	}
+	.content .login_2{
+		margin-bottom: 9px;
+	}
+	.content .login_2 input{
+		width:100%;
+		height: 16px;
+	}
+	.content .login_3{
+		margin-bottom: 9px;
+	}
+	.content .login_3 .check{
+		width: 110px;
+		height: 16px;
+	}
+	.content .login_3 .btn{
+		width: 60px;
+		height: 18px;
+		display: block;
+		border: 1px solid #e8ebf2;
+	}
+	.content .login_4{
+		font-size: 12px;
+		padding-left: 12px;
+	}
+	.content .login_4 .l{
+		width: 100px;
+		line-height: 13px;
+	}
+	.content .login_4 .l em{
+		color: #ff2b27;
+	}
+	.login_4 .r{
+		width: 64px;
+	}
+	.login_4 .r img{
+		width: 100%;
+	}
+	.content form{
+		width: 176px;
+	}
+	.banner{
+
+		text-align: center;
+		margin: 20px 0 30px;
+	}
+	.banner img{
+		width: 176px;
+	}
+	.footer{
+		height: 40px;
+		background: #e89316;
+		padding-top: 10px;
+	}
+	.footer p{
+		color: white;
+		font-size: 12px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+}
+
+
+
+
+
+
