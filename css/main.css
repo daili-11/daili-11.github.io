@@ -6,6 +6,7 @@ html {
 }
 body {
   margin: 0;
+  background: pink;
 }
 article,
 aside,
@@ -2135,7 +2136,7 @@ a.search-result {
 .custom-logo-image {
   margin: 0 auto;
   padding: 5px;
-  max-width: 500px;
+  max-width: 150px;
   background: #fff;
 }
 @media (max-width: 767px) {
