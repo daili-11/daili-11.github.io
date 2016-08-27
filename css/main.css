@@ -190,7 +190,7 @@ body {
   font-size: 14px;
   line-height: 2;
   color: #555;
-  background: #fff;
+  background: pink;
 }
 @media (max-width: 767px) {
   body {
