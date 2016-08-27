@@ -6,7 +6,6 @@ html {
 }
 body {
   margin: 0;
-  background: pink;
 }
 article,
 aside,
@@ -190,6 +189,7 @@ body {
   font-size: 14px;
   line-height: 2;
   color: #555;
+  background: #fff;
 }
 @media (max-width: 767px) {
   body {
@@ -451,7 +451,6 @@ body {
 .container {
   position: relative;
   min-height: 100%;
-  background:#d3f4f6;
 }
 .header-inner {
   margin: 0 auto;
@@ -870,7 +869,7 @@ pre .javascript .function {
   bottom: 19px;
 }
 .header {
-  background:#d3f4f6;
+  background: #fff;
 }
 .header-inner {
   position: relative;
@@ -2126,9 +2125,8 @@ a.search-result {
 }
 .custom-logo .site-title {
   margin: 10px auto 0;
-  font-size: 32px;
-  color: #f72b43;
-  word-spacing: 10px;
+  font-size: 24px;
+  color: #222;
 }
 .custom-logo .site-title a {
   border: none;
