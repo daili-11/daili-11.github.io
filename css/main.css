@@ -2127,6 +2127,7 @@ a.search-result {
   margin: 10px auto 0;
   font-size: 32px;
   color: #f72b43;
+  word-spacing: 10px;
 }
 .custom-logo .site-title a {
   border: none;
@@ -2134,7 +2135,7 @@ a.search-result {
 .custom-logo-image {
   margin: 0 auto;
   padding: 5px;
-  max-width: 300px;
+  max-width: 500px;
   background: #fff;
 }
 @media (max-width: 767px) {
