@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Flappy Bird</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bird.css">
+</head>
+<body onselectstart="return false">
+	<div class="wrap">
+		<div class="start">
+			<div class="score"></div>
+			<div class="bird">
+				<img src="img/3.gif" alt="">
+			</div>
+			<p></p>
+		</div>
+		<div class="play">
+			<div class="num">  
+			</div>
+			<div class="play_b"></div>
+			<div class="zhu z1">
+				<div class="down">
+					<img src="img/down_pipe.png" alt="">
+				</div>
+				<div class="up">
+					<img src="img/up_pipe.png" alt="">
+				</div>
+			</div>
+			<div class="zhu z2">
+				<div class="down">
+					<img src="img/down_pipe.png" alt="">
+				</div>
+				<div class="up">
+					<img src="img/up_pipe.png" alt="">
+				</div>
+			</div>
+			<div class="zhu z3">
+				<div class="down">
+					<img src="img/down_pipe.png" alt="">
+				</div>
+				<div class="up">
+					<img src="img/up_pipe.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="end">
+			<div class="over"></div>
+			<div class="con">
+				<div class="modal"></div>
+				<div class="sco"></div>
+				<div class="best"></div>
+			</div>
+			<div class="submit"></div>
+		</div>
+		<div class="scroll"></div>
+		<audio src="Sounds/game_music.mp3" autoplay loop></audio>
+		<audio src="Sounds/Hit.wav"></audio>
+		<audio src="Sounds/Point.wav"></audio>
+		<audio src="Sounds/Die.wav"></audio>
+		<audio src="Sounds/Wing.wav"></audio>
+	</div>
+</body>
+<script type="text/javascript" src="js/tween.js"></script>
+<script type="text/javascript" src="js/bird.js"></script>
+</html>
