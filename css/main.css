@@ -451,7 +451,7 @@ body {
 .container {
   position: relative;
   min-height: 100%;
-  background:#9cefee;
+  background:#d3f4f6;
 }
 .header-inner {
   margin: 0 auto;
@@ -870,7 +870,7 @@ pre .javascript .function {
   bottom: 19px;
 }
 .header {
-  background:#9cefee;
+  background:#d3f4f6;
 }
 .header-inner {
   position: relative;
