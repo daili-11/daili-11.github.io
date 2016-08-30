@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			body,html{
+				width: 100%;
+				height: 100%;
+			}
+			.wrap{
+				width: 100%;
+				height: 100%;
+				background: url(img/game_bg.jpg);
+				background-size: 100% 100%;
+				max-width: 640px;
+				margin: auto;
+				position: relative;
+				cursor: pointer;
+			}
+			/*.wrap img{
+				width: 33.75%;
+				height: 21.0416667%;
+				position: absolute;
+				left: 31%;
+				top: 24%;
+			}*/
+			.wrap .apper{
+				width: 33.75%;
+				height: 21.0416667%;
+				position: absolute;
+				/*left: 33%;
+				top: 40%;*/
+				background-image: url(img/h.png);
+				background-size: 1000% 100%;
+				background-position-y: 0px;
+				/*cursor: url(img/att1.png),auto;*/
+				cursor: pointer;
+				display: none;
+			}
+			.wrap .progress{
+				width: 56.25%;
+				height: 3.333333%;
+				position: absolute;
+				top: 13.75%;
+				left: 19.6075%;
+				background: url(img/progress.png) no-repeat;
+				background-size: 100% 100%;
+				border-radius: 10px;
+				overflow: hidden;
+			}
+			.score{
+				width: 80%;
+				height: 4.166666%;
+				position: absolute;
+				top: 2.708333%;
+				left: 18%;
+				line-height: 20px;
+				font-size: 130%;
+				font-weight: bolder;
+				color: #a6bbe8;
+				text-shadow: 1px 1px 2px black;
+			}
+			.start{
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.75);
+				position: relative;
+				/*display: none;*/
+			}
+			.btn{
+				width: 25%;
+				height: 10%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				font-size: 140%;
+				border-radius: 5px;
+				background: rgba(255,255,255,0.5);
+				margin: auto;
+			}
+			.end{
+				width: 70%;
+				height: 70%;
+				overflow: hidden;
+				background: rgba(0,0,0,0.75);
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				color: white;
+				border-radius: 10px;
+				font-size: 150%;
+				display: none;
+			}
+			.end div{
+				width: 50%;
+				height: 10%;
+				text-align: center;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+			}
+			.end p{
+				width: 50%;
+				height: 10%;
+				text-align: center;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: 80% auto 0;
+			}
+			.end .btn{
+				width: 40%;
+				height: 15%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: 90% auto 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="score">0</div>
+			<div class="progress"></div>
+			<!--<img src="img/h0.png"/>-->
+			<div class="apper"></div>
+			<div class="apper"></div>
+			<div class="apper"></div>
+			<div class="apper"></div>
+			<div class="apper"></div>
+			<div class="apper"></div>
+			<div class="apper"></div>
+			<div class="apper"></div>
+			<div class="apper"></div>
+			<div class="start">
+				<button class="btn">开始游戏</button>
+			</div>
+			<div class="end">
+				<div>
+					游戏结束！<br />
+					您的得分是：
+				</div>
+				<p id="p">0</p>
+				<button class="btn">开始游戏</button>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/script.js"></script>
+</html>
