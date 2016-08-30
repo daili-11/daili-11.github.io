@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贪吃蛇</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding:0;
+		}
+		body{
+			padding: 200px;
+			background: pink;
+			font-size: 100px;
+			color: darkcyan;
+			text-indent: 2em;
+		}
+		canvas{
+			border: 5px solid black;
+		}
+		input{
+			font-size: 20px;
+			color: white;
+			text-align: center;
+			margin-right: 100px;
+			background: orange;
+			border-radius: 20px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	I am chowhound....
+	<canvas width="600" height="450"></canvas>
+	<input type="text" value="GameStart">
+	<input type="text" value="GameOver">
+</body>
+<script type="text/javascript">
+	var canvas = document.getElementsByTagName('canvas')[0];
+	var ctx = canvas.getContext('2d');
+	var snake = {l:Math.floor(Math.random()*40)*15,t:Math.floor(Math.random()*30)*15,w:15,h:15,color:'red'}
+	var food = {l:Math.floor(Math.random()*40)*15,t:Math.floor(Math.random()*30)*15,w:15,h:15,color:'blue'}
+
+	var img = new Image();
+	img.src = 'bg.png';
+	img.onload = function () {
+		imgFn()
+
+	}
+	function imgFn() {
+		var c = ctx.createPattern(img,'repeat');
+		ctx.fillStyle = c;
+		ctx.fillRect(0,0,canvas.width,canvas.height);
+	}
+	var timer = null;
+	var bol = false;
+	var arr =[snake];
+	var x = snake.l;
+	var y = snake.t;
+	var box = snake.w;
+	var vX = box;
+	var vY = 0;
+
+	foodFn()
+	snakeDraw()
+	foodDraw()
+	function foodFn() {
+		food = {l:Math.floor(Math.random()*40)*15,t:Math.floor(Math.random()*30)*15,w:15,h:15,color:'blue'}
+		for (var i = 0; i < arr.length; i++) {
+			if (food.l==arr[i].l&&food.t==arr[i].t) {
+				foodFn()
+			}
+		}
+		//定时器
+		var timer = setInterval(function () {
+			ctx.clearRect(0,0,canvas.width,canvas.height);
+			x +=vX;
+			y +=vY;
+			//穿墙
+			if (x<0) {x=canvas.width-box};
+			if (x>canvas.width-box) {x=0};
+			if (y<0) {y=canvas.height-box};
+			if (y>canvas.height-box) {y=0};
+
+			arr[arr.length-1].l = snake.l;
+			arr[arr.length-1].t = snake.t;
+
+			snake.l = x;
+			snake.t = y;
+			arr.splice(1,0,arr.pop());
+
+			imgFn()
+			snakeDraw()
+			foodDraw()
+			check()
+
+		},500)
+		document.onkeydown = function (event) {
+		    var e = event || window.event;
+		    var oCode = e.keyCode;
+		    switch (oCode) {
+		    case 37:
+		    	if (vX == 0) {
+		    		vX = -15;
+		        	vY = 0;
+		    	}
+		        break;
+		    case 38:
+		        if (vY == 0) {
+		    		vY = -15;
+		        	vX = 0;
+		    	}
+		        break;
+		    case 39:
+		        if (vX == 0) {
+		    		vX = 15;
+		        	vY = 0;
+		    	}
+		        break;
+		    case 40:
+		        if (vY == 0) {
+		    		vY = 15;
+		        	vX = 0;
+		    	}
+		        break;
+		    }
+		}
+	}
+
+	//蛇头
+	function snakeDraw() {
+		for (var i = 0; i < arr.length; i++) {
+			ctx.save();
+			ctx.beginPath();
+			ctx.fillStyle = arr[i].color;
+			ctx.fillRect(arr[i].l,arr[i].t,arr[i].w,arr[i].h);
+			ctx.closePath();
+			ctx.restore();
+		}
+		
+	}
+	//食物
+	function foodDraw() {
+		ctx.beginPath();
+		ctx.fillStyle = food.color;
+		ctx.fillRect(food.l,food.t,food.w,food.h);
+		ctx.closePath();
+	}
+
+	//身体
+	function bodyDraw() {
+		var body = {l:0,t:0,w:15,h:15,color:'gray'}
+		arr.push(body);
+	}
+
+	//判断
+	function check() {
+		if (food.l==snake.l&&food.t==snake.t) {
+			bodyDraw();
+			foodFn();
+		}
+		for (var i = 0; i < arr.length; i++) {
+			if (arr[0].l==arr[i].l&&arr[0].t==arr[i].t) {
+				clearInterval(timer)
+			}
+		}
+	}
+
+	
+	
+
+
+</script>
+</html>

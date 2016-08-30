@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fang</title>
+	<style type="text/css">
+		.wrap{
+			width: 350px;
+			height: 350px;
+			border: 1px solid black;
+			position: relative;
+		}
+		.wrap div{
+			width: 100px;
+			height: 100px;
+			background: yellow;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: none;
+		}
+		canvas{
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<img src="canvas.jpg" alt="">
+		<div></div>
+	</div>
+	<canvas width="400" height="400"></canvas>
+</body>
+<script type="text/javascript">
+
+	//记住放大镜必须是正方形
+	
+	var wrap = document.querySelector('.wrap');
+	var minImg = wrap.children[0];
+	var div = wrap.children[1];
+	var canvas = document.querySelector('canvas');
+	var ctx = canvas.getContext('2d');
+
+	//放大图清晰度好
+
+	/*var maxImg = new Image();
+	maxImg.src = '';//路径*/
+
+	wrap.onmouseenter = function () {
+		div.style.display = 'block';
+		var dx = wrap.offsetLeft;
+		var dy = wrap.offsetTop;
+		wrap.onmousemove = function (e) {
+		var e = e||window.event;
+		var x = e.clientX-dx-div.offsetWidth/2;
+		var y = e.clientY-dy-div.offsetHeight/2;
+		if (x<0) {x=0}
+		if (x>wrap.offsetWidth-div.offsetWidth) {x=wrap.offsetWidth-div.offsetWidth}
+		if (y<0) {y=0}
+		if (y>wrap.offsetHeight-div.offsetHeight) {y=wrap.offsetHeight-div.offsetHeight}
+		div.style.left = x +'px';
+		div.style.top = y + 'px';
+
+		/*//算比例 大图对小图的比例 然后下面截取的就是按这个比例来进行
+		var scale = 大图宽/小图宽;*/
+
+		ctx.drawImage(minImg,x,y,div.offsetWidth,div.offsetHeight,0,0,canvas.width,canvas.height)
+		}
+	}
+	
+	wrap.onmouseleave = function () {
+		wrap.onmousemove = '';
+		div.style.display = 'none';
+	}
+	
+	
+</script>
+</html>
