@@ -1,0 +1,173 @@
+body,html{height: 100%;}
+.wrap{height: 100%;display: -webkit-box;-webkit-box-orient:vertical;}
+.content{
+    -webkit-box-flex:1;
+    width: 100%;
+    background-image: url(../img/login_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 76px;
+    min-height: 453px;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+.content .main{width: 100%;min-width: 800px;max-width: 970px;margin: auto;}
+.content .box{width: 320px;background-color: rgba(255, 255, 255, 0.9);}
+/****************切换模式**********************/
+.content .box .h{background-color: #fff;width: 100%;height: 51px;}
+.content .box .h .login,.content .box .h .regsiter{width: 50%;height: 50px;border-bottom: 1px solid #cfcfcf;cursor: pointer;}
+.content .box .h .login p,.content .box .h .regsiter p{
+    width: 100%;
+    height: 49px;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    color: #666;
+}
+.content .box .h div:hover{border-color: #29b572;}
+.content .box .h div:hover p{color: #29b572;font-size: 18px;border-color: #29b572;}
+.content .box .h .sel{border-color: #29b572;}
+.content .box .h .sel p{color: #29b572;font-size: 18px;border-color: #29b572;}
+/********Login*********/
+#box_regsiter {display: none;}
+#box_login,#box_regsiter{width: 100%;padding-top: 36px;}
+#box_login>div,#box_regsiter>div{
+    width: 81.25%;
+    height: 38px;
+    border: 1px solid #ccc;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+/******User******/
+.content .box .user b,.content .box .pwd b,.content .box .checknum b{
+    width: 32px;
+    height: 20px;
+    margin-top: 9px;
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    background-image: url(../img/ico.png);
+    background-repeat: no-repeat;
+    background-position: 10px 2px;
+}
+.content .box .user input,.content .box .pwd input{
+    margin-left: 10px;
+    vertical-align: top;
+    margin-top: 9px;
+    height: 20px;
+    width: 200px;
+    display: inline-block;
+    border: 0;
+    color: black;
+}
+/****PassWord****/
+.content .box .pwd b{background-position: 10px -24px;}
+/*****Checknum*******/
+#box_login>.checknum,#box_regsiter>.checknum{background: transparent;border: 0;}
+.content .box .checknum div{background-color: #fff;margin-bottom: 0;border: 1px solid #ccc;}
+.content .box .checknum .fl{width: 158px;height: 38px;}
+.content .box .checknum input{
+    height: 20px;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-top: 9px;
+    height: 20px;
+    width: 200px;
+    display: inline-block;
+    border: 0;
+    color: black;
+}
+.content .box .checknum .fr{width: 90px;height: 38px;line-height: 38px;cursor: pointer;}
+.content .box .checknum b{background-position: 10px -49px;}
+#box_regsiter #phonecheck{color: #29b572;font-size: 14px;text-align: center;}
+#box_regsiter #phonecheck:hover{border-color: #29b572;}
+#box_regsiter #phonecheck.checked{color: #fff;border-color: #ccc;background-color: #ccc;}
+/******************提示信息*******************************/
+#box_login p,#box_regsiter p{
+    width: 81.25%;
+    margin: auto;
+    color: #eb0000;
+    height: 34px;
+    line-height: 34px;
+    margin-top: -15px;
+    display: none;
+}
+#box_login p span,#box_regsiter p span{
+    padding-left: 18px;
+    font-size: 13px;
+    background-image: url(../img/ico.png);
+    background-repeat: no-repeat;
+    background-position: 2px -146px;
+}
+/*********************其他选项****************************/
+#box_login>.other,#box_regsiter>.other{
+    height: 23px;
+    line-height: 23px;
+    margin-bottom: 5px;
+    border: 0;
+    background-color:transparent;
+}
+.content .box .other span{
+    padding-left: 18px;
+    color: #848585;
+    font-size: 13px;
+    background-image: url(../img/ico.png);
+    background-repeat: no-repeat;
+    background-position: 0 -72px;/*92px*/
+    cursor: pointer;
+}
+.content .box .other a{color: #848585;font-size: 13px;}
+.content .box .other a:hover{color: #29b572;}
+/**************按钮*******************/
+.content .box .btn{margin-bottom: 30px;height: 40px;cursor: pointer;}
+#box_regsiter .btn{margin-bottom: 60px;}
+.content .box .btn input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: #29b572;
+    color: #fff;
+    cursor: pointer;
+}
+/***************搭档**********************/
+#box_login .panner{border: 0;margin-bottom: 40px;height: auto;background-color:transparent;}
+#box_login .panner div{border: 0;margin: 0;background-color: transparent;height: auto;}
+#box_login .panner .txt{width: 100%;font-size: 14px;}
+#box_login .panner .txt div{position: relative;width: 27.5%;height: 16px;margin: auto;}
+#box_login .panner .txt div b{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#box_login .panner .txt>div:nth-child(2){
+    width: 45%;
+    height: 16px;
+    line-height: 16px;
+    color: #ccc;
+    text-align: center;
+}
+#box_login .panner .pLogo{width: 65.384615%;margin: auto;margin-top: 20px;}
+#box_login .panner .pLogo .a{float: left;width: 33.333333%;height: 30px;text-align: center;}
+#box_login .panner .pLogo a{width: 30px;height: 30px;display: inline-block;background-position: center;}
+#qq{background-image:url(../img/qq.png);}
+#weibo{background-image:url(../img/weibo.png);}
+#wechat{background-image:url(../img/wechat.png);}
+/****************脚部*********************/
+.footer{
+    width: 100%;
+    height: 54px;
+    font-size: 13px;
+    color: #808080;
+    line-height: 54px;
+    text-align: center;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+.footer span{margin: 0 4px 0 7px;color: black;}

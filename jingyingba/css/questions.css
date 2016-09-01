@@ -1,0 +1,133 @@
+.fixed{
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 90px;
+    z-index: 99;
+}
+.questions1{
+    width: 100%;
+    height: 705px;
+    background: url(../img/questions1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.questions2,.questions3,.questions4{
+    width: 100%;
+    height: 647px;
+    background-color: #fcfcfc;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    max-width: 1070px;
+}
+.phone,.txt{
+    position: absolute;
+    color: #737373;
+    font-size: 13px;
+    background-repeat: no-repeat;
+}
+.questions2 .phone{
+    width: 656px;
+    height: 536px;
+    bottom: 0;
+    left:0;
+    background-image: url(../img/ques2.png);
+}
+.questions2 .txt{
+    right:  0%;
+    bottom: 43.585780%;
+}
+.questions3{background-color: #f6f6f6;}
+.questions3 .phone{
+    width: 766px;
+    height: 514px;
+    bottom: 0;
+    left: 39.375%;
+    background-image: url(../img/ques3.png);
+}
+.questions3 .txt{
+    left: 0%;
+    top: 31.839258%;
+}
+.questions4{height: 807px;border-bottom: 1px solid #ccc;}
+.questions4 .phone{
+    width: 576px;
+    height: 648px;
+    bottom: 0;
+    left: 22.34375%;
+    background-image: url(../img/ques4.png);
+}
+.questions4 .txt{
+    right:  0%;
+    top: 39.157372%;
+}
+.txt h2{
+    font-size: 40px;
+    font-weight: lighter;;
+    margin-bottom: 15px;
+}
+.txt p{
+    width: 85.567010%;
+    margin: auto;
+    text-align: left;
+    line-height: 25px;
+}
+.txt{
+    width:auto;
+    max-width: 485px;
+    text-align: center;
+}
+.animate{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.questions2 .phone.animate{
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+.questions2 h2.animate{
+    -webkit-animation-name: lightSpeedIn;
+    animation-name: lightSpeedIn;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.questions2 p.animate{
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.questions3 .phone.animate{
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+}
+.questions3 h2.animate{
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
+}
+.questions3 p.animate{
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+}
+.questions4 .phone.animate{
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+}
+.questions4 h2.animate{
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+}
+.questions4 p.animate{
+    -webkit-animation-name: zoomInRight;
+    animation-name: zoomInRight;
+}
+.paused{
+    animation-play-state: paused;
+}
