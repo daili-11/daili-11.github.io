@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Self study practice</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			height: 100%;
+		}
+		#canvas{
+			position: absolute;
+			z-index: -1;
+		}
+		.sorry{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: 500px;
+			width: 700px;
+			color: #fff;
+			margin-top: -200px;
+			margin-left: -400px;
+		}
+		.sorry>img{
+			
+		}
+		h1{
+			display: inline-block;
+			position: relative;
+			top: -120px;
+		}
+		.sorry>a{
+			display: block;
+			position: relative;
+			box-sizing: border-box;
+			height: 100px;
+			
+			margin: 20px;
+			
+			
+			color: #333;
+			text-decoration: none;
+			line-height: 100px;
+			font-size: 40px;
+			text-align: center;
+			transition: all 0.5s;
+		}
+		.sorry>a:hover{
+			font-size: 60px;
+			color: #ccc;
+		}
+		.sorry>a>.bar{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			height: 5px;
+			background-color: #ccc;
+			transition: all 0.5s;
+		}
+		.sorry>a:hover .bar{
+			width: 100%;
+		}
+		.return{
+			position: absolute;			
+			bottom: 200px;
+			right: 200px;
+
+			font-size: 40px;
+			color: #ddd;
+			text-decoration: none;
+
+		}
+
+	</style>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<div class="sorry">
+		
+		<a href="./plan.html">
+			<span>模仿微信打飞机游戏</span>
+			<span class="bar"></span>
+		</a>
+		<a href="./canvas.html">
+			<span>CANVAS小闹钟</span>
+			<span class="bar"></span>
+		</a>
+		<a href="./snake.html">
+			<span>贪吃蛇小模板</span>
+			<span class="bar"></span>
+		</a>
+	</div>
+	<a class="return" href="http://daili-11.github.io/resume/test.html">返回简历</a>
+	<script type="text/javascript">
+			
+	"use strict";
+
+	var canvas = document.getElementById('canvas'),
+	  ctx = canvas.getContext('2d'),
+	  w = canvas.width = window.innerWidth,
+	  h = canvas.height = window.innerHeight,
+	    
+	  hue = 217,
+	  stars = [],
+	  count = 0,
+	  maxStars = 1400;
+
+	// Thanks @jackrugile for the performance tip! http://codepen.io/jackrugile/pen/BjBGoM
+	// Cache gradient
+	var canvas2 = document.createElement('canvas'),
+	    ctx2 = canvas2.getContext('2d');
+	    canvas2.width = 100;
+	    canvas2.height = 100;
+	var half = canvas2.width/2,
+	    gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
+	    gradient2.addColorStop(0.025, '#fff');
+	    gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
+	    gradient2.addColorStop(0.25, 'hsl(' + hue + ', 64%, 6%)');
+	    gradient2.addColorStop(1, 'transparent');
+
+	    ctx2.fillStyle = gradient2;
+	    ctx2.beginPath();
+	    ctx2.arc(half, half, half, 0, Math.PI * 2);
+	    ctx2.fill();
+
+	// End cache
+
+	function random(min, max) {
+	  if (arguments.length < 2) {
+	    max = min;
+	    min = 0;
+	  }
+	  
+	  if (min > max) {
+	    var hold = max;
+	    max = min;
+	    min = hold;
+	  }
+
+	  return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
+	var Star = function() {
+
+	  this.orbitRadius = random(w / 2 - 50);
+	  this.radius = random(100, this.orbitRadius) / 10;
+	  this.orbitX = w / 2;
+	  this.orbitY = h / 2;
+	  this.timePassed = random(0, maxStars);
+	  this.speed = random(this.orbitRadius) / 900000;
+	  this.alpha = random(2, 10) / 10;
+
+	  count++;
+	  stars[count] = this;
+	}
+
+	Star.prototype.draw = function() {
+	  var x = Math.sin(this.timePassed + 1) * this.orbitRadius + this.orbitX,
+	      y = Math.cos(this.timePassed) * this.orbitRadius/2 + this.orbitY,
+	      twinkle = random(10);
+
+	  if (twinkle === 1 && this.alpha > 0) {
+	    this.alpha -= 0.05;
+	  } else if (twinkle === 2 && this.alpha < 1) {
+	    this.alpha += 0.05;
+	  }
+
+	  ctx.globalAlpha = this.alpha;
+	    ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
+	  this.timePassed += this.speed;
+	}
+
+	for (var i = 0; i < maxStars; i++) {
+	  new Star();
+	}
+
+	function animation() {
+	    ctx.globalCompositeOperation = 'source-over';
+	    ctx.globalAlpha = 0.8;
+	    ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 1)';
+	    ctx.fillRect(0, 0, w, h)
+	  
+	  ctx.globalCompositeOperation = 'lighter';
+	  for (var i = 1, l = stars.length; i < l; i++) {
+	    stars[i].draw();
+	  };  
+	  
+	  window.requestAnimationFrame(animation);
+	}
+
+	animation();
+
+
+	</script>
+</body>
+</html>
