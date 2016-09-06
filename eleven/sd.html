@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{margin: 0;padding:0 }
+		.box{width: 135px;height: 135px;position: relative;margin-left: 100px;
+}
+
+		.inner{width: 135px;height: 135px;position: absolute;z-index: 1;background: url(s.png)no-repeat;background-position: -60px -50px;}
+		
+		.ni{width: 135px;height:135px;position: absolute;top: 0;left:0;background: green;z-index: 0}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul class="inner">
+			
+		</ul>
+		<ul class="ni">
+		</ul>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+	// $('.box').hover(function(){
+	// 	$('.ni').stop().animate({height:'300px'},400)
+	// 	$('.box').css({color:'white'})
+		
+	// },function(){
+	// 	$('.ni').stop().animate({height:'0px'},400)
+	// 	$('.box').css({color:'#808080'})
+	// })
+</script>
+</html>

@@ -1,0 +1,554 @@
+/*重置样式*/
+body,h1,h2,h3,h4,p,dl,dd,ul,ol,form,input,textarea,th,td,select{margin: 0;padding: 0;}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;vertical-align: middle;}
+table{border-collapse: collapse;}
+input,textarea{outline: none;border:none;background:none;}
+textarea{resize:none;overflow: auto;}
+
+html,body{
+	height: 100%;
+}
+
+.fl{float: left;}
+.fr{float: right;}
+
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+.serf_wrap{
+	min-width: 1200px;
+}
+
+/* 头部 */
+.header_position{
+	min-width: 800px;
+	width: 100%;
+	height: 50px;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	overflow: hidden;
+}
+.header_content{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	max-width: 1280px;
+	margin:0 auto;
+}
+.header_content a{
+	color: #fff;
+	margin: 0 10px;
+}
+.headerBar{
+	position: relative;
+}
+.headerBar_img1{
+	position: relative;
+	width: 100%;
+}
+
+.headerBar_img2{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.headerBar_list{
+	position: absolute;
+	top:60px;
+	left: 20%;
+	z-index: 999;
+	width: 6%;
+	background: #fff;
+	padding:2%;
+	min-width: 100px;
+}
+
+.headerBar_list img{
+	width: 100%;
+}
+.headerBar_list .ul1{
+	padding-left: 10%;
+	padding-top: 10%;
+	padding-bottom: 20%;
+}
+.headerBar_list ul li a{
+	color: #333;
+	font-size: 14px;
+}
+.headerBar_list .ul1 li{
+	line-height: 1.5em;
+	padding-left: 5%;
+	border-left: 2px solid #fff;
+}
+.headerBar_list .ul1 li.li_active{
+	border-left: 2px solid red;
+}
+.headerBar_list .ul2 li{
+	margin-bottom: 8%;
+}
+.headerBar_list .ul2 li img{
+	width: 25%;
+}
+.headerBar_list .ul2 li a{
+	padding-left: 10px;
+}
+.headerBar_add{
+	position: absolute;
+	width: 45%;
+	top: 18%;
+	left: 40%;	
+	display: none;
+}
+.headerBar_add img:nth-child(1){
+	width: 100%;
+	animation: move5 0.5s linear;
+}
+.headerBar_add img:nth-child(2){
+	padding-top: 90px;
+	width: 16.9%;
+	animation: move4 0.5s linear;
+}
+
+/* 第二部分 */
+.content_atival{
+	width: 100%;
+	max-width: 1120px;
+	margin:100px auto 0;
+	max-height: 500px;
+	overflow: hidden;
+}
+
+.content_atival div img{
+	width: 100%;
+}
+.content_atival div:nth-child(1){
+	width: 23.21%;
+	
+}
+
+.content_atival div p{
+	line-height: 34px;
+}
+.content_atival div h3{
+	color: #ff6600;
+	font-size: 16px;
+}
+.content_atival div span{
+	font-size:14px;
+	line-height: 1.5em;
+	color: #999;
+}
+.content_atival div:nth-child(2){
+	width: 41.96%;
+	margin-left: 4%;
+	margin-right: 1%;
+}
+.content_atival div:nth-child(3){
+	width: 28.125%;
+}
+
+/* 第三块部分 */
+.serf_man{
+	position: relative;
+	width: 100%;
+	top: 10px;
+}
+.serf_man  img:nth-child(1){
+	width: 100%;
+}
+.serf_man img:nth-child(2){
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 15%;
+	animation: move6 1s linear;
+	display: none;
+}
+
+/* 第四部分 */
+.serf_text{
+	position: relative;	
+	/*top:30px;*/
+	margin-top:20px;
+}
+.serf_text>img{
+	width: 100%;
+}
+.serf_text .serf_text_1{
+	width: 31.5%;
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	animation: move5 2s linear;
+	display: none;
+}
+.serf_text .serf_text_1 img:nth-child(1){
+	width: 100%;
+}
+.serf_text .serf_text_1 img:nth-child(2){
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+	width: 29%;
+}
+.serf_text_2{
+	width: 31%;
+	position: absolute;
+	top: 30%;
+	left: 34.5%;
+	animation: move4 2s linear;
+	display: none;
+}
+.serf_text_2 img{
+	width: 100%;
+}
+
+/* 第五部分 */
+.say{
+	position: relative;
+	top: 20px;
+}
+.say>img{
+	width: 100%;
+}
+.say_main{
+	width: 18.3%;
+	position: absolute;
+	left: 43%;
+	top: 22%;
+	
+}
+.say_main img{
+	width: 100%;
+	
+}
+.say_main_about,.say_main_linear{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.say_main_linear div{
+	position: absolute;
+	overflow: hidden;
+}
+.say_main_linear img{
+	width: 100%;
+}
+.say_main_about img{
+	display: none;
+}
+.say_main_about img:nth-child(1){
+	position: absolute;
+	left: 22%;
+	top: 15%;
+	width: 14.6%;
+	animation: move4 1s linear;
+
+}
+.say_main_about img:nth-child(2){
+	width: 14.45%;
+	position: absolute;
+	left: 27%;
+	top: 60%;
+	animation: move4 1s linear;
+}
+.say_main_about img:nth-child(3){
+	width: 12.9%;
+	position: absolute;
+	right: 22%;
+	top: 16%;
+	animation: move5 1s linear;
+}
+.say_main_about img:nth-child(4){
+	width: 12.9%;
+	position: absolute;
+	right: 23%;
+	top: 57.5%;
+	animation: move5 1s linear;
+}
+
+.say_main_linear div{
+	display: none;
+}
+.say_main_linear .say_main_linear_1{
+	width: 11.6%;
+	top: 29%;
+	left: 34.5%;
+	animation: move7 3s linear;
+}
+.say_main_linear .say_main_linear_2{
+	width: 9.8%;
+	top: 56%;
+	left: 36%;
+	animation: move7 3s linear;
+}
+.say_main_linear .say_main_linear_3{
+	width: 13.6%;
+	top: 30%;
+	right: 30%;
+	animation: move7 3s linear;
+}
+.say_main_linear .say_main_linear_4{
+	width: 11.6%;
+	top: 56%;
+	right: 34%;
+	animation: move7 3s linear;
+}
+
+
+@keyframes move1{
+	from {width: 0%;}
+	to {width: 11.6%;}
+}
+@keyframes move2{
+	from {width: 0%;}
+	to {width: 9.8%;}
+}
+@keyframes move3{
+	from {width: 0%;}
+	to {width: 13.6%;}
+}
+@keyframes move4{
+	from {transform:translateX(-900px)}
+	to {transform:translateX(0px)}
+}
+@keyframes move5{
+	from {transform:translateX(900px)}
+	to {transform:translateX(0px)}
+}
+@keyframes move6{
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+}
+@keyframes move7{
+	0% {opacity: 0}
+	70 {opacity: 0.4}
+	100% {opacity: 1}
+}
+
+
+
+/* 第七部分 */
+.seven{
+	position: relative;
+	margin-top:20px;
+	overflow: hidden;
+}
+.seven>img{
+	width: 100%;
+}
+
+.seven div{
+	position: absolute;
+	display: none;
+}
+.seven div img{
+	width: 100%;
+}
+.seven_content_1{
+	width: 17%;
+	left:20.5%;
+	top:0;
+	animation: move4 1s linear;
+}
+.seven_content_2{
+	width: 17%;
+	left:38.5%;
+	top:0;
+	animation: move6 1s linear;
+}
+.seven_content_3{
+	width: 23%;
+	left:56.5%;
+	top:0;
+	animation: move5 1s linear;
+}
+.seven_content_3 img{
+	width: 100%;
+	height: 100%;
+}
+.seven_content_4{
+	width: 17%;
+	left:20.5%;
+	top:31.13%;
+	animation: move4 1s linear;
+}
+.seven_content_5{
+	width: 17%;
+	left:38.5%;
+	top:31.13%;
+	animation: move6 1s linear;
+}
+.seven_content_6{
+	width: 16%;
+	left:20.5%;
+	top:68.875%;
+	overflow: hidden;
+	animation: move4 1s linear;
+}
+.seven_content_7{
+	width: 39%;
+	left:40.5%;
+	top:60.25%;
+	animation: move6 1s linear;
+}
+.seven_content_8{
+	width: 19%;
+	top: 86.74%;
+	left:40.5%;
+	animation: move4 1s linear;
+}
+.seven_content_9{
+	width: 19%;
+	top: 86.74%;
+	left: 60.4%;
+	animation: move5 1s linear;
+}
+
+
+.seven p{
+	padding-top: 5px;
+	font-weight: bold;
+	font-size:14px;
+	line-height: 2em;
+}
+.seven span{
+	font-size: 14px;
+	line-height: 1.5em;
+	color: #ccc;
+}
+.seven h3{
+	font-size: 16px;
+	line-height: 2em;
+	color: #ff6600;
+}
+
+
+/*  第九部分  */
+
+.video{
+	width: 54%;
+	margin:0 auto;
+	position: relative;
+	top: 20px;
+}
+.video img{
+	width: 100%;
+}
+.video div{
+	width: 5.45%;
+	position: absolute;
+	left: 47.5%;
+	top: 42.1%;
+	display: none;
+	cursor: pointer;
+}
+.video:hover div{
+	display: block;
+}
+.video div img{
+	width: 100%;
+}
+
+.video embed{
+	display: none;
+	margin:auto;
+}
+
+/* 页脚 */
+.foot{
+	min-width: 800px;
+	margin-top: 30px;
+	clear: both;
+	background: #1b1b1b;
+	color: #fff;
+	padding-bottom: 50px;
+}
+.footer,.footer_end{
+	width: 61%;
+	margin: 0 auto;
+}
+.footer ul{
+	width: 100%;
+	overflow: hidden;
+
+	
+}
+.footer_ul1>li{
+	width: 20%;
+	float: left;
+	margin-top: 10px;
+	font-size: 14px;
+}
+.footer_ul1>li ul li a{
+	color: #fff;
+	font-size: 12px;
+	line-height: 1.5em;
+	display: inline-block;
+}
+.footer_ul1>li ul{
+	margin-top: 20px;
+}
+.footer_ul1>li ul li img{
+	width: 30%;
+	margin-top: 5px;
+}
+
+.footer_ul1>li ul li{
+	font-size: 12px;
+	line-height: 1.5em;
+}
+.footerBr{
+	width: 100%;
+	height: 2px;
+	background: silver;
+	margin: 50px 0;
+
+}
+
+.footer_left{
+	width: 13.77%;
+}
+
+.footer_left img{
+	width: 100%;
+}
+
+.footer_right{
+	width: 24.6%;
+}
+.footer_right img{
+	width: 17.333%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+html,body{
+	width: 100%;
+	font-size: 100px;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.fl{float: left;}
+.fr{float: right;}
+.wrap{
+	width: 1200px;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+#logo{
+	width: 1200px;
+	height: 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	background: #000000;
+	margin: auto;
+	opacity: 0.8;
+}
+.wrap #logo img{
+	width: 5.166667%;
+	margin-left: 2.666667%;
+	margin-top: 0.37rem;
+}
+.wrap #logo .link{
+	margin-top: -0.37rem;
+}
+.wrap #logo .link a{
+	font-size: 0.16rem;
+	letter-spacing: 0.01rem;
+	color: #999999;
+}
+.wrap #logo .link a:hover{
+	font-size: 0.32rem;
+	background: green;
+}
+.content{
+	width: 1200px;
+	height: 5.8rem;
+	margin-top: 1rem;
+	background: #f6f2f2;
+}
+.content .news{
+	width: 4.25%;
+	margin-left: 5%;
+	margin-right: 4.666667%;
+}
+.content .left{
+	width: 29.833333%;
+}
+.content .left p:nth-child(1){
+	font-size: 0.2rem;
+	color: #595757;
+	margin-top: 0.3rem;
+	margin-bottom: 0.42rem;
+	cursor: pointer;
+}
+.content .left ul li{
+	font-size: 0.16rem;
+	color: #727272;
+	margin-bottom: 0.18rem;
+	/*display: none;*/
+}
+.content .right{
+	width: 29.833333%;
+	margin-right: 13.5%;
+}
+.content .video{
+	width: 96.089385%;
+	margin-top: 0.3rem;
+	margin-bottom: 0.2rem;
+}
+.content .right p:nth-child(2){
+	font-size: 0.2rem;
+	color: #595757;
+	margin-bottom: 0.27rem;
+}
+.content .right .font{
+	font-size: 0.16rem;
+	color: #727272;
+	margin-bottom: 0.37rem;
+	cursor: pointer;
+}
+.content .right .font:hover{
+	color: darkcyan;
+	/*animation: play 1s linear;*/
+}
+.content .right p:nth-child(2):hover{
+	color: red;
+	cursor: pointer;
+}
+@keyframes play{
+	from{transform: scale(1);}
+	50%{transform: scale(1.4);}
+	75%{transform: scale(1.2);}
+	to{transform: scale(1);}
+}
+.content .right .font img{
+	margin-right: 8.379888%;
+	vertical-align: middle;
+}
+.footer{
+	width: 100%;
+	height: 1.14rem;
+	color: #727272;
+	padding-top: 0.4rem;
+	background: #141414;
+	font-size: 0.16rem;
+	text-align: center;
+}
+.footer p:nth-child(1){
+	margin-bottom: 0.15rem;
+}
+.footer p:nth-child(2){
+	margin-bottom: 0.15rem;
+}

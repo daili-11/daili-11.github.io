@@ -1,0 +1,35 @@
+body,h1,h2,h3,h4,p,dl,dd,ul,ol,form,input,textarea,th,td,select{
+    margin: 0;
+    padding: 0;
+}
+var{
+    font-style: normal;
+}
+em{
+    font-style: normal;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: none;
+    vertical-align: top; /*取消img下面多出来的部分*/
+}
+/*<!-- img嵌套a标签会有边框。 -->*/
+table{
+    border-collapse: collapse;
+}
+input,textarea{
+    outline: none; /*外边框没有*/
+}
+textarea{
+    resize:none;  /*取消拉缩*/
+    overflow: auto;
+}
+body{
+    font-size:12px;
+    font-family: arial;
+}

@@ -1,0 +1,234 @@
+
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.wrap{
+	width: 100%;
+	min-width: 1200px;
+	height: 100%;
+	min-height: 800px;
+	position: relative;
+}
+
+
+
+
+
+/*=====================zhuye1======================*/
+.yi{
+	width: 100%;
+	height: 100%;
+	background-image:url(../img/yibg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	
+}
+
+.yi p:nth-child(1){
+	width: 690px;
+	line-height: 90px;
+	color: white;
+	font-size: 53px;
+	position: absolute;
+	left: 100px;
+	top:176px;
+}
+.yi p:nth-child(2){
+	width: 690px;
+	line-height: 20px;
+	color: white;
+	font-size: 13px;
+	position: absolute;
+	left: 100px;
+	top:356px;
+}
+.er{
+	width: 100%;
+	height: 100%;
+	background: #f5f6fa;
+	display: none;
+}
+.er .left{
+	width: 45%;
+	height: 100%;
+	
+	background-image:url(../img/erleft.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.er .right{
+	width: 49%;
+	height: 100%;
+	padding-left: 40px;
+
+}
+.er p:nth-child(1){
+	width: 650px;
+	line-height: 70px;
+	font-size: 53px;
+	margin-top: 106px;
+	
+}
+.er p:nth-child(2){
+	width: 650px;
+	line-height: 20px;
+	font-size: 13px;
+	margin-top:50px;
+	
+}
+
+.tk{
+	width: 100%;
+	height: 100%;
+	background: #141414;
+	display: none;
+	position: relative;
+}
+
+.tk .xiaqu{
+	width: 1020px;
+	height: 320px;
+	position: absolute;
+	left: 100px;
+	top: 150px;
+	/*border: 1px solid red;*/
+	display: -webkit-box;
+}
+.tk .xiaqu div{
+	width: 20%;
+}
+.tk .xiaqu div p{
+	font-size: 22px;
+	color: #e51837;
+	cursor: pointer;
+}
+.tk .xiaqu div ul{
+	margin-top: 50px;
+}
+.tk .xiaqu div ul li{
+	margin-bottom: 25px;
+}
+.tk .xiaqu div ul a{
+	font-size: 18px;
+	color: #919191;
+}
+
+.tk .shangqu{
+	width: 1020px;
+	height: 180px;
+	position: absolute;
+	left: 100px;
+	top: 594px;
+	
+	display: -webkit-box;
+	font-size: 18px;
+}
+.tk .shangqu div:nth-child(1) p{
+	margin-bottom: 18px;
+	color: #e51837;
+
+}
+.tk .shangqu div:nth-child(2) span{
+	color: #e51837;
+
+}
+.tk .shangqu div:nth-child(2) p{
+	color: #919191;
+	height: 100%;
+	
+	margin-bottom: 140px;
+}
+.tk .shangqu div:nth-child(2){
+	margin-left: 200px;
+	text-align: center;
+}
+
+.tk .shangqu div:nth-child(2) var{
+	color: #585858;
+	font-style: normal;
+}
+.tk .shangqu div:nth-child(3) p{
+	color: #e51837;
+	margin-bottom: 28px;
+}
+.tk .shangqu div:nth-child(3){
+	margin-left: 95px;
+}
+
+
+
+
+
+
+#nav{
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	padding: 0 33px;
+}
+#nav .logoi{
+	vertical-align: middle;
+}
+#nav strong{
+	color: white;
+	font-size: 22px;
+	display: none;
+}
+#nav span{
+	color: #5e5f5f;
+	font-size: 22px;
+	display: none;
+}
+#nav var{
+	font-size: 22px;
+	color: white;
+	position: absolute;
+	right: 87px;
+	top: 4px;
+	font-style: normal;
+	display: none;
+}
+#nav a{
+	color: #5e5f5f;
+	font-size: 17px;
+	margin-right: 27px;
+}
+#nav a:nth-child(1){
+	color: white;
+}
+#nav a:nth-child(4){
+	margin-right: 0px;
+}
+#nav img{
+	margin-right: 27px;
+	vertical-align: middle;
+}
+
+#nav .r{
+	margin-right: 27px;
+	height: 100%;
+	line-height: 70px;
+}
+
+
+
+

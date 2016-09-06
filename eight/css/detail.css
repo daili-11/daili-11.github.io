@@ -1,0 +1,486 @@
+body {
+  background-color: #f9f9f9;
+}
+.backTop {
+  position: fixed;
+  right: 0;
+  bottom: 1rem;
+}
+nav {
+  margin: .1rem auto;
+  width: 8rem;
+}
+nav .back {
+  position: fixed;
+  top: 0;
+  float: left;
+  padding: 0 .1rem;
+  font-size: .14rem;
+  line-height: .3rem;
+  background-color: #757575;
+}
+nav .back a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+nav .shift {
+  float: right;
+  width: 2rem;
+  font-size: .12rem;
+}
+nav .shift section span {
+  color: #3ae214;
+}
+nav .shift .prev {
+  float: left;
+}
+nav .shift .next {
+  float: right;
+}
+#content {
+  padding-top: .44rem;
+  background-color: #fff;
+  width: 8rem;
+  margin: .26rem auto 1.6rem;
+  color: #9a9a9a;
+}
+#content .street:hover .left1 {
+  animation: fly1L 2s;
+}
+#content .street:hover .left2 {
+  animation: fly1L 2s 1s;
+}
+#content .street:hover .left3 {
+  animation: fly1L 2s 2s;
+}
+#content .street:hover .right1 {
+  animation: fly1R 1s .5s;
+}
+#content .street:hover .right2 {
+  animation: fly1R 1s 1.5s;
+}
+@keyframes fly1L{
+  50% {
+    transform: translateX(-7rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fly1R{
+  50% {
+    transform: translateX(7rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+#content .street {
+  font-size: .18rem;
+  text-align: center;
+}
+#content .street h2 {
+  margin: 0 auto .3rem;
+  text-align: center;
+}
+#content .street img {
+  margin: 0 auto;
+  width: 6.8rem;
+}
+#content .street p {
+  text-align: left;
+
+  margin: 0.5rem .4rem 1.7rem .6rem;
+}
+#content .street p span{
+   display: inline-block;
+}
+#content .street p .left1{
+   text-indent: 0.36rem; 
+}
+#content .street p .left3 .big {
+  font-size: .3rem;
+}
+#content .show1 {
+  position: relative;
+}
+#content .show1 .tittle {
+  text-align: center;
+  font-size: .24rem;
+}
+#content .show1 .tittle div {
+  margin-top: .12rem;
+  width: 40%;
+  border-top: 1px dotted;
+}
+#content .show1 .tittle .dottedPrev {
+  float: left;
+}
+#content .show1 .tittle .dottedNext {
+  float: right;
+}
+#content .show1 .date {
+  font-size: .2rem;
+}
+#content .show1 .date span {
+  font-size: .3rem;
+}
+#content .show1 .show1Img img {
+  float: right;
+}
+#content .show1 .show1Img .img1 {
+  position: absolute;
+  left: .1rem;
+  top: 1.6rem;
+  width: 3.5rem;
+}
+#content .show1 .show1Img .img2 {
+  width: 6rem;
+}
+#content .show1 .show1Img .img2:hover {
+  transition: all 1s;
+  transform: scale(1.5);
+}
+#content .show1 .show1Txt .Paris {
+  font-size: .24rem;
+  color: #000000;
+  font-weight: bold;
+}
+#content .show1 .show1Txt .txt {
+  float: right;
+}
+#content .show2:hover .lineTxt {
+  transition: all .5s;
+  transform: rotateZ(90deg);
+  transform-origin: left center;
+}
+#content .show2:hover .photo {
+  transition: all 1s;
+  transform: rotateY(180deg);
+  transform-origin: left;
+}
+#content .show2 {
+  margin: 1.7rem 0;
+}
+#content .show2 .paper {
+  float: left;
+  margin-top: .3rem;
+  width: 3.98rem;
+  background-image: url(../img/detailShow2.jpg);
+  background-size: cover;
+}
+#content .show2 .paper .photo {
+  width: 100%;
+}
+#content .show2 .cap {
+  float: right;
+  width: 3.7rem;
+  color: #000000;
+  font-size: .3rem;
+}
+#content .show2 .cap .top {
+  border-bottom: 4px solid;
+}
+#content .show2 .cap .top img {
+  display: inline-block;
+  margin-right: .7rem;
+}
+#content .show2 .cap .top span {
+  vertical-align: bottom;
+}
+#content .show2 .cap .lineTxt {
+  position: relative;
+  white-space: nowrap;
+  margin-left: .2rem;
+}
+#content .show2 .cap .lineTxt .line1 {
+  position: absolute;
+  top: .2rem;
+  left: -.1rem;
+  border-top: 2px solid;
+  width: 3.8rem;
+}
+#content .show2 .cap .lineTxt .line2 {
+  position: absolute;
+  top: .67rem;
+  left: -.1rem;
+  border-top: 2px solid;
+  width: 5.3rem;
+}
+#content .show2 .cap .txtImg {
+  margin-left: 1.5rem;
+}
+#content .show2 .Beautiful {
+  text-align: center;
+  margin-top: 1.1rem;
+  letter-spacing: .16rem;
+  font-size: .25rem;
+  color: #000000;
+}
+#content .show3:hover .happy {
+  transition: all 1s;
+  animation: photo 2s forwards;
+}
+#content .show3 {
+  position: relative;
+  padding-left: .35rem;
+}
+#content .show3 .wed {
+  margin: .4rem 0;
+}
+#content .show3 .happy {
+  width: 7.26rem;
+}
+#content .show3 .like {
+  color: #000000;
+  font-size: .28rem;
+}
+#content .show3 .like span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 5px .5rem;
+  color: #fff;
+  font-size: .2rem;
+  background-color: #bc5152;
+  animation: jump 3s infinite;
+}
+#content .show4:hover .wantImg {
+  animation: want 2s 1s forwards;
+}
+#content .show4:hover .want {
+  animation: wantTxt 1s forwards;
+}
+#content .show4 {
+  margin: 2.4rem 0;
+}
+#content .show4 .want {
+  border-bottom: 5px double;
+  padding: 5px .4rem;
+  display: inline-block;
+  font-size: .5rem;
+  color: #000000;
+  transform-origin: right bottom;
+}
+#content .show4 .wantImg {
+  display: inline-block;
+  width: 4.7rem;
+  vertical-align: middle;
+}
+#content .show5:hover .sayL {
+  animation: change1 1s forwards;
+}
+#content .show5:hover .sayR {
+  animation: change2 1s .2s forwards;
+}
+#content .show5 {
+  text-align: center;
+  position: relative;
+}
+#content .show5 .cornerR {
+  position: absolute;
+  top: 0;
+  right: 2.25rem;
+}
+#content .show5 div {
+  padding-top: .5rem;
+  z-index: 10;
+}
+#content .show5 div .sayL {
+  float: left;
+  width: 5.2rem;
+}
+#content .show5 div span {
+  font-size: .5rem;
+  color: #000000;
+  float: left;
+  transform: rotateZ(90deg);
+  transform-origin: left bottom;
+}
+#content .show5 .love {
+  width: 6.65rem;
+  margin: .6rem auto;
+}
+#content .show5 .sayR {
+  width: 5.2rem;
+  margin-left: 2.8rem;
+}
+#content .show5 p {
+  text-align: right;
+}
+#content .show5 .cornerL {
+  transform: rotateZ(-180deg);
+  position: absolute;
+  bottom: -.4rem;
+  left: 2rem;
+}
+#content .black {
+  text-align: center;
+  line-height: .8rem;
+  color: #fff;
+  font-size: .24rem;
+  background-color: #333333;
+  width: 2.6rem;
+  margin: .8rem 0 .5rem 4.6rem;
+}
+#content .show6:hover .fren {
+  animation: flyR .5s forwards;
+}
+#content .show6:hover .champs {
+  animation: flyL .5s forwards;
+}
+#content .show6:hover .frenImg {
+  animation: photo 1s .5s forwards;
+}
+#content .show6 {
+  position: relative;
+  left: .5rem;
+  margin-top: 2rem;
+}
+#content .show6 .fren {
+  position: absolute;
+  left: .5rem;
+  top: .5rem;
+  line-height: .7;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+#content .show6 .frenImg {
+  width: 7rem;
+  margin-top: .3rem;
+}
+#content .show6 .champs {
+  position: absolute;
+  left: .5rem;
+  bottom: .7rem;
+  color: #fff;
+  line-height: 2;
+  font-size: .24rem;
+}
+#content .code {
+  margin: 1.6rem auto .3rem;
+  text-align: center;
+}
+#content .code .ph {
+  margin-bottom: .7rem;
+}
+@keyframes photo {
+  from {
+    transform: scale(.5);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+@keyframes jump {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes want {
+  to {
+    transform: scale(1.5) rotateZ(360deg);
+  }
+}
+@keyframes wantTxt {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(90deg);
+  }
+  100% {
+    transform: rotateZ(-90deg);
+  }
+}
+@keyframes change1 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(.2);
+  }
+  50% {
+    transform: translate3d(2.06rem, 6.34rem, 0) scale(.2);
+  }
+  100% {
+    transform: translate3d(2.06rem, 6.34rem, 0) scale(1.5);
+  }
+}
+@keyframes change2 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(.2);
+  }
+  50% {
+    transform: translate3d(-2.06rem, -6.34rem, 0) scale(.2);
+  }
+  100% {
+    transform: translate3d(-2.06rem, -6.34rem, 0) scale(1.5);
+  }
+}
+@keyframes flyR {
+  to {
+    transform: translateX(7rem);
+  }
+}
+@keyframes flyL {
+  to {
+    transform: translateX(-7rem);
+  }
+}
+footer{  
+  background: white;
+  width: 100%;
+  min-width: 800px;
+  height: 30px;
+  line-height: 30px;
+  color: #494949;
+  position: fixed;
+  bottom: 0;
+}
+footer .left{
+  margin-left: 20px;
+}
+footer a{
+  color: #494949;
+}
+footer .erweima{
+  cursor: pointer;
+}
+footer .fangda{
+  position: absolute;
+  bottom: 25px;
+  left: 480px;
+  width: 0;
+}
+footer .erweima:hover .fangda{
+  animation: fangda 0.5s forwards;
+}
+@keyframes fangda{
+  100%{
+    width: 187px;
+  }
+}
+footer em{
+  color: #4fe434;
+}
+footer img{
+  margin-top: 6px;
+}
+footer .right{
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+footer .right span{
+  margin-left: 25px;
+}
+
+/*# sourceMappingURL=detail.css.map */

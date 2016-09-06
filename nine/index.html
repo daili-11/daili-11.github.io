@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<header>
+		<a href="index.html" class="select">Home</a>
+		<a href="menu.html">Menu</a>
+		<a href="###" class="a3">About Us</a>
+		<img src="img/logo.png" alt="">
+		<a href="###" class="a4">News</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="###">Locations</a>
+	</header>
+	<div class="banner">
+		<img src="img/bannerIndex.png" alt="" class="bannerBg">
+		<a href="###"><img src="img/bannerTxt.png" alt="" class="bannerTxt"></a>
+		<img src="img/xiahua.png" alt="" class="xiahua">
+	</div>
+	<div class="content">
+		<section class="sec1">
+			<p class="title">
+				<img src="img/dashed.png" alt="" class="xuxian1">
+				New Products
+				<img src="img/dashed.png" alt="" class="xuxian2">
+			</p>
+			<div class="item item1">
+				<img src="img/newProducts1.png" alt=""><div class="txt">
+					<h3>New Year wishes</h3>
+					<p>It is a year when a vow , limit special drink latte for you to bring New Year 's blessing. In the newly launched wish cookies latte in the promise of the new year wishes.
+				</div>
+			</div>
+			<div class="item item2 clearfix">
+				<img src="img/newProducts2.png" alt=""><div class="txt">
+					<h3>Fall in love with Cheese</h3>
+					<p>Not to the New Year in advance to give you a new taste. Both added a new cheese cake with a rich cheese flavor, the taste for the New Year bring warmth.</p>
+				</div>
+			</div>
+		</section>
+		<section class="sec2">
+			<p class="title">
+				<img src="img/dashed.png" alt="" class="xuxian1">
+				NEW&EVENTS
+				<img src="img/dashed.png" alt="" class="xuxian2">
+			</p>
+			<div>
+				<ul class="clearfix">
+					<a href="###">
+						<li>
+							<img src="img/newEvents1.png" alt="" class="main">
+							<img src="img/seeMore.png" alt="" class="more">
+						</li>
+					</a>
+					<a href="###">
+						<li>
+							<img src="img/newEvents2.png" alt="" class="main">
+							<img src="img/seeMore.png" alt="" class="more">
+						</li>
+					</a>
+
+					<a href="###">
+						<li>
+							<img src="img/newEvents3.png" alt="" class="main">
+							<img src="img/seeMore.png" alt="" class="more">
+						</li>
+					</a>
+
+					<a href="###">
+						<li>
+							<img src="img/newEvents4.png" alt="" class="main">
+							<img src="img/seeMore.png" alt="" class="more">
+						</li>
+					</a>
+
+					<a href="###">
+						<li>
+							<img src="img/newEvents5.png" alt="" class="main">
+							<img src="img/seeMore.png" alt="" class="more">
+						</li>
+					</a>
+
+					<a href="###">
+						<li>
+							<img src="img/newEvents6.png" alt="" class="main">
+							<img src="img/seeMore.png" alt="" class="more">
+						</li>
+					</a>
+				</ul>
+			</div>			
+		</section>
+		<section class="sec3">
+			<p class="title">
+				<img src="img/dashed.png" alt="" class="xuxian1">
+				COSTA`S LOCATION
+				<img src="img/dashed.png" alt="" class="xuxian2">
+			</p>
+			<div>
+				<img src="img/library.png" alt="">
+				<p>
+					Address: Beijing Daxing Yizhuang Str.<br>
+					Phone:+00008812<br>
+					Working Days:Mon - Sun<br>
+					Working Hours:10:00 - 24:00<br>
+				</p>
+			</div>
+		</section>
+	</div>
+	<footer><img src="img/footerBg.png" alt=""></footer>
+</body>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/public.js"></script>
+<script>
+	var xiahua=$(".xiahua")
+	var sec=$(".sec1");
+	var header=$("header");
+	var img=header.find("img");
+	xiahua.click(function () {
+		var sTop=$(window).scrollTop();
+		var secH=parseInt(sec.offset().top-header.height()-img.height()/2);
+		var timer=setInterval(function () {
+			sTop+=10;
+			if (sTop>=secH) {
+				clearInterval(timer)
+				sTop=secH;
+			}
+			$(window).scrollTop(sTop)
+		},20)
+	})
+
+	var move_bol=true
+	wheelFn(window,function (down) {
+		var sTop=$(window).scrollTop();
+		var secH=parseInt(sec.offset().top-header.height()-img.height()/2);
+		if (down&&sTop<secH&&move_bol) {
+			move_bol=false
+			var timer=setInterval(function () {
+				sTop+=10;
+				if (sTop>=secH) {
+					clearInterval(timer)
+					sTop=secH;
+					move_bol=true
+				}
+				$(window).scrollTop(sTop)
+			},17)
+		}
+	})
+
+	function wheelFn(obj,cb) {
+		if (navigator.userAgent.indexOf('Firefox')>-1) {
+			obj.addeventListener('DOMMouseScroll'.fn)
+		}
+		else {
+			obj.onmousewheel=fn
+		}
+		function fn(e) {
+			var e=e||window.event
+			var down=true
+			if (e.detail) {
+				down=e.detail>0
+			}
+			else {
+				down=e.wheelDelta<0
+			}
+			cb.call(obj,down)
+		}
+	}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

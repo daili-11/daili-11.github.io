@@ -1,0 +1,69 @@
+html,body{
+	min-width: 360px;
+}
+header{
+	width: 100%;
+	min-width: 360px;
+	height: 1rem;
+	background: #f0ece3;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+header img{
+	width: 1.52rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 0.24rem;
+}
+header a{
+	display: inline-block;
+	font-size: 0.2rem;
+	color: #97022c;
+	margin: 0.55rem 0.2rem 0;
+}
+header .a3{
+	margin-right: 0.8rem;
+}
+header .a4{
+	margin-left: 0.8rem;
+}
+header a:hover,header .select{
+	color: #d1aa4e;
+}
+footer{
+	width: 100%;
+	height: 5.3rem;
+}
+footer img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

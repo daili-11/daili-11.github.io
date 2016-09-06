@@ -1,0 +1,193 @@
+html, body {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #eee;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-container-v {
+    background: #eee;
+}
+.swiper-container-v span{
+	background: #f00;
+}
+.nav{
+	width: 100%;
+	min-width: 1200px;
+	height: 70px;
+	background: rgba(0,0,0,0.6);
+	position: fixed;
+	top: 0;
+	z-index: 9;
+}
+.nav img{
+	position: absolute;
+	left: 3.6rem;
+	top: 6px;
+}
+.nav div{
+	width: 650px;
+	height: 0.56rem;
+	position: absolute;
+	left: 8.5rem;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.nav a{
+	font-size: 0.16rem;
+	line-height: 0.54rem;
+	color: #fff;
+	display: inline-block;
+	margin-right: 0.4rem;
+}
+.nav .link{
+	color:#f00;
+	border-bottom:2px solid #f00;
+}
+.ver1{
+	overflow: hidden;
+}
+.datu{
+	width: 100%;
+	min-width: 1200px;
+}
+.inter .in{
+	position: relative;
+}
+.inter .in a{
+	display: inline-block;
+	width: 20.83%;
+	height: 8.8235%;
+	border-radius: 12px;
+	position: absolute;
+	top: 74.0196%;
+	left: 39.53%;
+}
+.about div{
+	position: relative;
+}
+.about div div{
+	position: absolute;
+	border-radius: 12px;
+	padding: 0 33px;
+	box-sizing: border-box;
+	height: 45.49%;
+	text-align: center;
+	color: #fff;
+	width: 15.625%;
+	outline: 0;
+	border: 1px solid #fff;
+}
+.about div div:hover{
+	border: 1px solid #f00;
+	background: rgba(0,0,0,0.6);
+}
+.about div div h3{
+	padding: 10.77% 0;
+	font-size: 0.26rem;
+}
+.about div div p{
+	line-height: 24px;
+	font-size: 0.2rem;
+}
+.about .idea{
+	top: 35.29%;
+	left: 21.458%;
+}
+.about .mission{
+	top: 35.29%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.about .serve{
+	top: 35.29%;
+	left: 62.916667%;
+}
+.cooperate .coop{
+	position: relative;
+}
+.cooperate .coop .inner{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 29.3137%;
+	margin: auto;
+	width: 44.21875%;
+	height: 60%;
+}
+.cooperate .coop .inner div{
+	position: absolute;
+	width: 40.047%;
+	height: 48.2026%;
+	background: url(../img/cooperate1.png);
+	background-size: 100% 100%;
+}
+.cooperate .coop .inner div:hover{
+	background: url(../img/cooperate.png);
+	background-size: 100% 100%;
+}
+.cooperate div div .shimao{
+	top: 0;
+	left: 0;
+}
+.cooperate div div .jinqiao{
+	top: 0;
+	right: 0;/*
+	background: url(../img/cooperate1.png);
+	background-size: 100% 100%;*/
+}
+.cooperate div div .chengtou{
+	bottom: 0;
+	left: 0;/*
+	background: url(../img/cooperate1.png);
+	background-size: 100% 100%;*/
+}
+.cooperate div div .lvdi{
+	bottom: 0;
+	right: 0;/*
+	background: url(../img/cooperate1.png);
+	background-size: 100% 100%;*/
+}
+.footer{
+	width: 100%;
+}
+.footer img{
+	width: 100%;
+}
+
+
+
+

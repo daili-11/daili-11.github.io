@@ -1,0 +1,499 @@
+/*重置样式*/
+body,h1,h2,h3,h4,p,dl,dd,ul,ol,form,input,textarea,th,td,select{margin: 0;padding: 0;}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;color: #333;}
+img{border: none;vertical-align: middle;}
+table{border-collapse: collapse;}
+input,textarea{outline: none;border:none;background:none;}
+textarea{resize:none;overflow: auto;}
+
+.fl{float: left;}
+.fr{float: right;}
+
+html,body{
+	width: 100%;
+	height: 100%;
+	font-size:12px;
+}
+
+.wrap{	
+	width: 100%;
+	height: 100%;
+}
+
+/* 顶部导航*/
+.wrap .headerBar_top{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 99999;
+	top: 0px;
+	left: 0px;
+	background:rgba(0,0,0,0.5);
+}
+.wrap .headerBar_top .headerBar_top_content{
+	width: 1210px;
+	height: 50px;
+	line-height: 50px;
+	margin:0 auto;
+}
+.headerBar_top_content_tel img{
+	vertical-align: middle;
+}
+.headerBar_top_content_tel a{
+	margin:0 10px;
+	color: #fff;
+	font-size:14px;
+	vertical-align: middle;
+}
+
+
+/* 顶部图片 */
+.header_wrap{
+	height: 1230px;
+	position: relative;
+}
+
+.header_wrap>img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+
+.header_wrap_content{
+	width: 1210px;
+	height: 900px;
+	position: absolute;
+	left: 50%;
+	top: 60px;
+	margin-left: -605px;
+	z-index: 9;
+	overflow: hidden;
+}
+.header_wrap_content_left{
+	width: 180px;
+	height: 900px;
+	background: #fff;
+}
+.header_wrap_content_left .ul1{
+	padding-left:20px;
+	margin:35px 0 100px;
+}
+.header_wrap_content_left .ul1 li.active{
+	border-left: 2px solid #ff6600;
+}
+.header_wrap_content_left .ul1 li{
+	height: 45px;
+	line-height: 45px;
+	border-left: 2px solid #fff;
+}
+.header_wrap_content_left .ul1 li a{
+	padding-left:10px;
+	font-size: 20px;
+}
+.header_wrap_content_left .ul2{
+	padding-left: 30px;
+}
+.header_wrap_content_left .ul2 li{
+	height: 32px;
+	line-height: 32px;
+	margin-bottom:15px;
+	
+}
+.header_wrap_content_left .ul2 li:nth-child(1){
+	background:url(../images/icon/sina_weibo.jpg)no-repeat left center;
+}
+.header_wrap_content_left .ul2 li:nth-child(2){
+	background:url(../images/icon/qq_weibo.jpg)no-repeat left center;
+}
+.header_wrap_content_left .ul2 li:nth-child(3){
+	background:url(../images/icon/qq.jpg)no-repeat left center;
+}
+.header_wrap_content_left .ul2 li:nth-child(4){
+	background:url(../images/icon/weixin.jpg)no-repeat left center;
+}
+.header_wrap_content_left .ul2 li a{
+	font-size: 14px;
+	padding-left: 40px;
+}
+
+
+.header_wrap_content_left .logo{
+	display: block;
+	width: 128px;
+	height: 55px;
+	margin: 0 auto;
+}
+
+
+
+.logo img{
+	width: 100%;
+}
+
+.header_wrap_content_right{
+	width: 920px;
+	height: 900px;
+}
+.header_wrap_content_right_text{
+	margin:305px 0 90px 0;
+	animation: move1 0.5s linear;
+}
+.header_wrap_content_right_more{
+	animation: move2 0.5s  linear;
+}
+@keyframes move1{
+	from {transform:translateX(900px)}
+	to {transform:translateX(0px)}
+}
+@keyframes move2{
+	from {transform:translateX(-500px)}
+	to {transform:translateX(0px)}
+}
+
+
+
+.nav_content{
+	width: 1210px;
+	margin: 90px auto 40px;
+	height: 700px;
+}
+.nav_content_left{
+	width: 260px;
+	height:700px;
+	font-size: 14px;
+	animation: move2 0.5s  linear;
+}
+.nav_content div p{
+	line-height: 34px;
+}
+.nav_content div h3{
+	color: #ff6600;
+	font-size: 16px;
+}
+.nav_content div span{
+	font-size:14px;
+	line-height: 1.5em;
+	color: #999;
+}
+.nav_content_pic{
+	width: 470px;
+	height: 700px;
+	margin:0 30px 0 100px;
+	animation: move3 0.5s  linear;
+}
+.nav_content_pic img{
+	width: 100%;
+	height: 100%;
+}
+.nav_content_right{
+	width: 320px;
+	height:700px;
+	animation: move1 0.5s  linear;
+}
+.nav_content_right img{
+	width: 100%;
+}
+
+.serf_1{
+	width: 100%;
+	height: 380px;
+	background:url(../images/serf_bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	margin: 10px 0;
+}
+
+.serf_1 div{
+	padding-left: 15%;
+	animation: move3 1s linear;
+	overflow: hidden;
+}
+
+@keyframes move3{
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+}
+@keyframes move4{
+	from {width:0px;}
+	to {width:232px;}
+}
+
+.serf_2{
+	width: 100%;
+	height: 900px;
+	background: url(../images/serf_bg_2.png) no-repeat;
+	background-size: 100% 100%;
+	margin:10px 0;
+	position: relative;
+}
+.serf_2_left{
+	position: absolute;
+	top:30%;
+	left:35%;
+	z-index: 9;
+	animation: move2 0.5s linear;
+}
+
+.serf_2_right{
+	width: 630px;
+	height: 565px;
+	background: url(../images/serf_bg_3.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 5%;
+	top: 2%;
+	animation: move1 0.5s linear;
+}
+.serf_2_right img{
+	position: absolute;
+	right: 20px;
+	bottom:25px;
+}
+
+.say{
+	width: 100%;
+	height: 1140px;
+	position: relative;
+}
+.say_main{
+	width: 366px;
+	height: 465px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	background:url(../images/icon/say.png) no-repeat;
+	background-size: 100% 100%;
+}
+.say_main img{
+	display: none;
+}
+.say_main .say_main_1{
+	animation: move3 0.5s linear;
+}
+.say_main .say_main_2{
+	animation: move4 2s  linear;
+}
+
+.say_main img:nth-child(5){
+	top:16%;
+	left:-44%;
+}
+.say_main img:nth-child(6){
+	width: 232px;
+	top:85%;
+	left:-50%;
+}
+.say_main img:nth-child(7){
+	top:22%;
+	left:72%;
+}
+.say_main img:nth-child(8){
+	top:84%;
+	left:62%;
+}
+.say_main img{
+	position: absolute;
+}
+.say_main img:nth-child(1){
+	top:-19%;
+	left:-108%;
+	
+}
+.say_main img:nth-child(2){
+	top:105%;
+	left:-105%;
+	
+}
+.say_main img:nth-child(3){
+	top:-12%;
+	left:116%;
+	
+}
+.say_main img:nth-child(4){
+	top:87%;
+	left:113%;
+	
+}
+
+.serf_news{
+	width: 100%;
+	height: 1515px;
+	background: url(../images/serf_bg_4.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.serf_news_wrap{
+	width: 1180px;
+	height: 100%;
+	margin: 0 auto;
+}
+.serf_news_wrap_left{
+	width: 720px;
+}
+.serf_news_wrap_left div{
+	width: 340px;
+	margin-right:20px;
+	float: left;
+	margin-bottom:10px;
+	animation: move3 1s linear;
+}
+.serf_news_wrap_left div img{
+	width: 100%;
+	height: 305px;
+}
+.serf_news_wrap_left div p{
+	padding-top: 20px;
+	font-weight: bold;
+	font-size:16px;
+	line-height: 24px;
+}
+.serf_news_wrap_left div span{
+	font-size: 14px;
+	line-height: 18px;
+	color: #ccc;
+}
+.serf_news_wrap_right{
+	width: 460px;
+	height: 845px;
+	animation: move3 1s linear;
+}
+.serf_news_wrap_right img{
+	width: 100%;
+	height: 100%;
+}
+.serf_news_wrap_pades{
+	width: 315px;
+	height: 340px;
+	padding-top: 100px;
+	animation: move2 1s linear;
+}
+.serf_news_wrap_pades p{
+	line-height: 34px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.serf_news_wrap_pades h3{
+	color: #ff6600;
+	font-size: 16px;
+	line-height: 2em;
+}
+.serf_news_wrap_pades span{
+	font-size: 14px;
+	line-height: 1.5em;
+	color: #999;
+}
+.serf_news_wrap_photo{
+	width: 785px;
+	margin-top: 20px;
+	animation: move3 1s linear;
+}
+
+.serf_news_wrap_photo img{
+	width: 100%;
+}
+.serf_news_wrap_photo a{
+	display: inline-block;
+	width: 380px;
+	height: 180px;
+	margin:10px 4px;
+}
+.serf_news_wrap_photo a img{
+	width: 100%;
+	height: 100%;
+}
+
+.serf_video{
+	width: 1080px;
+	height: 570px;
+	margin:0 auto;
+	position: relative;
+}
+.serf_video img{
+	width: 100%;
+	height: 100%;
+}
+.serf_video a{
+	width: 109px;
+	height: 109px;
+	position: absolute;
+	top:0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	display: none;
+}
+.serf_video:hover a{
+	display: block;
+}
+
+.footer{
+	width: 100%;
+	height: 435px;
+	background: #1b1b1b;
+	margin-top: 20px;
+}
+.footer_content{
+	width: 1233px;
+	margin: 0 auto;
+	color: #fff;
+	overflow: hidden;
+	padding-bottom:20px;
+}
+.footer_content div{
+	float: left;
+}
+
+.footer_ul1{
+	width: 100%;
+	overflow: hidden;
+	padding:0px;
+}
+
+.footer_ul1 li{
+	width: 20%;
+	height: 90px;
+	line-height: 90px;
+	font-size: 16px;
+	float: left;
+}
+.footer_link{
+	width: 20%;
+}
+.footer_pic{
+	width: 230px;
+}
+.footer_pic img{
+	margin:5px;
+}
+.footer_link p{
+	line-height: 1.5em;
+}
+.footer_link p a{
+	color: #fff;
+}
+
+.footer_br{
+	width: 100%;
+	height: 2px;
+	background: #3d3d3d;
+}
+
+.footer_end{
+	width: 1233px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.footer_end_left{
+	padding-top: 30px;
+}
+
+.footer_end_right{
+	padding-top: 45px;
+}
+

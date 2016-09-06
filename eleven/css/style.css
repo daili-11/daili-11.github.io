@@ -1,0 +1,311 @@
+html{font-size: 100px;}
+body{font-size: 12px;}
+.wrap{width: 100%; min-width: 1200px;}
+.wrap .header{width: 100%;}
+.wrap .header img{width: 100%;}
+.wrap .header .intro{position: absolute;width: 10.51rem;top: 5.05rem;left:5.2rem;color: white;}
+.wrap .header .intro .true{width: 10.23rem;margin: 0.3rem auto 0.17rem}
+.header .intro .true div:nth-child(2n+1){width: 3.1rem;margin-top:0.38rem;}
+.header .intro .true div:nth-child(2){font-size: 0.85rem;margin:0 0.30rem;}
+.header .intro .jiesao{
+	width: 10.23rem;margin: auto;background: rgba(255,255,255,.3);
+	border-radius: 0.09rem;text-align: center;
+}
+.header .intro .jiesao p:nth-child(1){font-size: 0.32rem;padding-top: 0.22rem;margin-bottom:0.2rem;}
+.header .intro .jiesao p:nth-child(2){font-size: 0.19rem;margin-bottom:0.13rem;}
+.header .intro .jiesao p:nth-child(3){font-size: 0.19rem;margin-bottom:0.29rem;line-height:0.28rem }
+.header .intro .jiesao p:nth-child(4){font-size: 0.21rem;padding-bottom: 0.13rem}
+.header .intro .jiesao p:nth-child(4) img{width: 0.23rem;padding-left: 0.2rem;cursor: pointer;}
+.content{width: 100%;}
+.content .part1{width: 100%;position: relative;}
+.part1 .tittle{height: 1rem;padding-left: 4.02rem;background: white;position: relative;z-index: 999;}
+.part1 .tittle li a{font-size: 0.18rem;color: red;}
+.part1 .tittle li{height: 1rem;line-height: 1rem;margin-right: 1.25rem;cursor: pointer;}
+.part1 .tittle li:nth-child(4) span{font-size: 0.27rem;color: black}
+.part1 .tittle li:nth-child(4) em{font-size: 0.27rem;}
+.part1 .tittle li:nth-child(7){margin-right: 0}
+.part1 .yuan{position: absolute;top: 0rem;left: 8.45rem;z-index: 2}
+.part1 .yuan img{width: 3.1rem;}
+.part1 .cons{width: 100%;height: 8.2rem;background:rgb(238,238,238);}
+.part1 .cons .about{text-align: center;font-size: 0.17rem;padding-top: 1.86rem}
+.part1 .cons .quan1{
+	width: 2.91rem;height: 2.91rem;border-radius: 50%;background: white;
+	top: 3.44rem;left: 3.98rem;position: absolute;border: 2px solid white;
+	cursor: pointer;
+}
+.part1 .cons .quan1 p:nth-child(1){text-align: center;padding-top: 0.85rem;font-size: 0.18rem;}
+.part1 .cons .quan1 p:nth-child(2){
+	text-align: center;margin-top: 0.3rem;font-size: 0.14rem;
+	line-height: 0.24rem;
+}
+.part1 .cons .quan1 div:nth-child(3){
+	width: 0.32rem;height: 0.32rem;text-align: center;margin: 0.49rem auto 0;
+	background: url(../img/7.png);
+	background-size: 100% 100%;
+}
+.part1 .cons .quan1 div:nth-child(4){
+	width: 1.08rem;height: 1.08rem;border-radius: 50%;background: rgb(229,229,229);
+	position: absolute;left: 0.95rem;top: -0.4rem;
+	 }
+.part1 .cons .quan1 div:nth-child(4) img{
+	width: 0.49rem;
+	position: absolute;left: 0;top: 0;right: 0;bottom: 0;margin: auto;
+}
+.part1 .cons .quan2{
+	width: 3.33rem;height: 3.33rem;border-radius: 50%;background: white;
+	top: 3.14rem;left: 8.30rem;position: absolute;border: 2px solid white;cursor: pointer;
+}
+.part1 .cons .quan2 p:nth-child(1){text-align: center;padding-top: 1.05rem;font-size: 0.2rem;}
+.part1 .cons .quan2 p:nth-child(2){
+	text-align: center;margin-top: 0.35rem;font-size: 0.14rem;
+	line-height: 0.28rem;
+}
+.part1 .cons .quan2 div:nth-child(3){
+	width: 0.39rem;height:0.39rem;text-align: center;margin: 0.59rem auto 0;
+	background: url(../img/7.png);
+	background-size: 100% 100%;
+}
+.part1 .cons .quan2 div:nth-child(4){
+	width: 1.26rem;height: 1.26rem;border-radius: 50%;background: rgb(229,229,229);
+	position: absolute;left: 1.08rem;top: -0.4rem;
+	 }
+.part1 .cons .quan2 div:nth-child(4) img{
+	width: 0.54rem;
+	position: absolute;left: 0;top: 0;right: 0;bottom: 0;margin: auto;
+}
+.part1 .cons .quan3{
+	width: 2.91rem;height: 2.91rem;border-radius: 50%;background: white;
+	top: 3.44rem;left: 13.04rem;position: absolute;border: 2px solid white;cursor: pointer;
+}
+.part1 .cons .quan3 p:nth-child(1){text-align: center;padding-top: 0.85rem;font-size: 0.18rem;}
+.part1 .cons .quan3 p:nth-child(2){
+	text-align: center;margin-top: 0.35rem;font-size: 0.14rem;
+	line-height: 0.24rem;
+}
+.part1 .cons .quan3 div:nth-child(3){
+	width: 0.32rem;height: 0.32rem;text-align: center;margin: 0.68rem auto 0;
+	background: url(../img/7.png);
+	background-size: 100% 100%;
+}
+.part1 .cons .quan3 div:nth-child(4){
+	width: 1.08rem;height: 1.08rem;border-radius: 50%;background: rgb(229,229,229);
+	position: absolute;left: 0.95rem;top: -0.4rem;
+	 }
+.part1 .cons .quan3 div:nth-child(4) img{
+	width: 0.44rem;
+	position: absolute;left: 0;top: 0;right: 0;bottom: 0;margin: auto;
+}
+.part1 .cons .quan1:hover{border: 2px solid red;background: rgb(238,238,238)}
+.part1 .cons .quan1:hover div:nth-child(3){background: url(../img/10.png);background-size: 100% 100%}
+.part1 .cons .quan1:hover div:nth-child(4){background: rgb(203,31,31);}
+.part1 .cons .quan2:hover{border: 2px solid red;background: rgb(238,238,238)}
+.part1 .cons .quan2:hover div:nth-child(3){background: url(../img/10.png);background-size: 100% 100%}
+.part1 .cons .quan2:hover div:nth-child(4){background: rgb(203,31,31);}
+.part1 .cons .quan3:hover{border: 2px solid red;background: rgb(238,238,238)}
+.part1 .cons .quan3:hover div:nth-child(3){background: url(../img/10.png);background-size: 100% 100%}
+.part1 .cons .quan3:hover div:nth-child(4){background: rgb(203,31,31);}
+.part2 p:nth-child(1){text-align: center;padding-top: 0.2rem;font-size: 0.18rem;}
+.part2 p:nth-child(2){
+	text-align: center;margin-top: 0.36rem;font-size: 0.15rem;line-height: 0.28rem;
+	margin-bottom: 1.05rem;
+}
+.part2 img{width: 100%;}
+.part2 .rush1{width: 66.6%;}
+.rush1_1 .rush1_1_1{width: 100%;background: rgba(145,1,22,0.5);height: 5.02rem;}
+.rush1_1 .rush1_1_2{background: rgba(145,1,22,0.5);}
+.rush1_2{width: 50%;}
+.rush1_2 .rush1_2_1{width: 100%;background: rgba(80,191,205,0.5);height: 5.02rem;}
+.rush1_2 .rush1_2_2{background: rgba(80,191,205,0.5);}
+.rush1_3{width: 50%;}
+.rush1_3 .rush1_3_1{width: 100%;background: rgba(231,153,0,0.5);height: 5.02rem;}
+.rush1_3 .rush1_3_2{background: rgba(231,153,0,0.5);}
+.rush2{width: 33.4%;}
+.rush2_1 {width: 100%;background: rgba(208,20,33,0.5);height: 10.04rem;}
+.rush2_2 {background: rgba(208,20,33,0.5);}
+.rush3_1{width: 33.3%;}
+.rush3_1 .rush3_1_1{width: 100%;background: rgba(216,0,0,0.5);height: 5rem;}
+.rush3_1 .rush3_1_2{background: rgba(216,0,0,0.5);}
+.rush3_2{width: 66.7%;}
+.rush3_2 .rush3_2_1{width: 100%;background: rgba(77,94,176,0.5);height: 5rem;}
+.rush3_2 .rush3_2_2{background: rgba(77,94,176,0.5);}
+#suo{position: relative;overflow: hidden;}
+#niu{
+	width: 100%;position: absolute;top:-100%;
+	background: rgba(145,1,22,0.5);
+}
+#niu1{
+	width: 100%;position: absolute;height: 2rem;
+	left: 0;top: 0;bottom: 0;right: 0;margin: auto;
+}
+#niu1 div:nth-child(1){text-align: center;margin-bottom: 0.18rem}
+#niu1 div:nth-child(1) img{width: 0.37rem;}
+#niu1 p{
+	text-align: center;font-size: 0.3rem;color: white;font-size: 0.3rem;line-height: 0.4rem;
+	margin: 0;
+}
+#niu1 div:nth-child(3){
+	width: 0.8rem;height: 0.3rem;border: 1px solid white;
+	border-radius: 0.08rem;color: white;line-height: 0.3rem;
+	margin: 0.18rem auto 0;text-align: center;
+}
+#niu2{
+	width: 3.7rem;height: 0.9rem;border-radius: 0 0.45rem 0.45rem 0;position: absolute;
+	left: 0;bottom: 0.4rem;
+}
+#niu2 p{
+	text-align: left;padding-left: 0.55rem;padding-top: 0.12rem;font-size: 0.17rem;
+	color: white;line-height: 0.25rem;
+}
+.select1{animation: move1 0.4s linear both;cursor: pointer;}
+.select2{animation: move2 0.4s linear both;cursor: pointer;}
+.select3{animation: go1 0.4s linear both;cursor: pointer;}
+.select4{animation: go2 0.4s linear both;cursor: pointer;}
+@keyframes move1{
+	from{top: -100%}
+	50%{top:15%}
+	to{top: 0}
+}
+@keyframes move2{
+	from{top: 0%}
+	to{top: -100%}
+}
+@keyframes go1{
+	from{left: 0%}
+	to{left: -100%}
+}
+@keyframes go2{
+	from{left: -100%}
+	to{left: 0%}
+}
+.part2 .bt{
+	width: 100%;height: 0.98rem;text-align: center;line-height: 0.98rem;background: rgb(238,238,238);cursor: pointer;
+}
+.part2 .bt img{width: 0.52rem;vertical-align: middle;}
+.part3{width: 100%;height: 10.65rem;position: relative;}
+.part3 p:nth-child(1){text-align: center;padding-top: 1.96rem;font-size: 0.18rem;}
+.part3 p:nth-child(2){
+	text-align: center;margin-top: 0.36rem;font-size: 0.15rem;line-height: 0.28rem;
+}
+.part3 .people1{position: absolute;width: 2.9rem;top: 3.8rem;left:4rem;}
+.people1 .pic1{width: 2.9rem;height: 2.9rem;background: url(../img/20.png);background-size: 100% 100%}
+.equl h2{text-align: center;font-size: 0.19rem;margin-top: 0.27rem}
+.equl p{text-align: center;font-size: 0.14rem;color: rgb(173,173,173);margin-top: 0.12rem}
+.guan1{text-align: center;margin-top: 0.15rem}
+.guan1 img{width: 0.32rem;}
+.guan1 img:nth-child(2){padding:0 0.15rem }
+.part3 .people2{position: absolute;width: 3.26rem;top: 3.65rem;left:8.58rem;}
+.people2 .pic2{width: 3.26rem;height: 3.26rem;background: url(../img/22.png);background-size: 100% 100%}
+.people2 .ren{text-align: center;font-size: 0.14rem;color: rgb(173,173,173);margin-top: 0.27rem}
+.guan2{text-align: center;margin-top: 0.34rem}
+.guan2 img{width: 0.37rem;}
+.guan2 img:nth-child(2){padding:0 0.17rem }
+.part3 .people3{position: absolute;width: 2.9rem;top: 3.8rem;right:3.96rem;}
+.people3 .pic3{width: 2.9rem;height: 2.9rem;background: url(../img/21.png);background-size: 100% 100%}
+.part4{width: 100%;background: rgb(238,238,238);overflow: hidden; position: relative;}
+.part4 p:nth-child(1){text-align: center;padding-top: 0.8rem;font-size: 0.18rem;}
+.part4 p:nth-child(2){
+	text-align: center;margin-top: 0.4rem;font-size: 0.15rem;line-height: 0.28rem;
+}
+.part4 .inner{position: relative;width: 100%;height: 5.75rem;margin: 0.8rem 0 1.5rem; }
+.inner img{width: 100%;}
+.inner div{position: relative;overflow: hidden;}
+.inner div:nth-child(1){width: 22.8%;position: relative;}
+.inner div:nth-child(2){width: 27.25%;position: relative;}
+.inner div:nth-child(3){width: 27.1%;position: relative;}
+.inner div:nth-child(4){width: 22.85%;position: relative;}
+.part4 .l,.part4 .r{width: 0.64rem;position: absolute;left: 0;top: 4.8rem;z-index: 999;cursor: pointer;}
+.part4 .r{right: 0;left: auto}
+#up1{
+	width:100%;height:5.75rem;position: absolute;top: -102%;background: rgba(0,0,0,.5);
+}
+#center{
+	width: 3.04rem;height: 1.9rem;position: absolute;background: rgba(194,2,38,0.8);
+	top: 0;left: 0;right: 0;bottom: 0;margin: auto;border-radius: 0.08rem;overflow: visible;
+}
+#center p:nth-child(1){text-align: center;padding-top: 0.42rem;font-size: 0.2rem;}
+#center p:nth-child(2){text-align: center;margin-top: 0.14rem;font-size: 0.17rem;}
+#center img{width: 0.29rem;position: absolute;top:-0.13rem;right: -0.08rem }
+@keyframes change1{
+	from{top: -102%}
+	to{top: 0%}
+}
+@keyframes change2{
+	from{top: 0%}
+	to{top: -102%}
+}
+.move1{animation: change1 0.5s linear both;cursor: pointer;}
+.move2{animation: change2 0.5s linear both;cursor: pointer;}
+.part5{width: 100%;}
+.part5 p:nth-child(1){text-align: center;padding-top: 1.54rem;font-size: 0.18rem;}
+.part5 p:nth-child(2){
+	text-align: center;margin-top: 0.42rem;font-size: 0.15rem;line-height: 0.28rem;
+}
+.part5 .news{width: 1200px;margin: 115px auto 82px }
+.news .new{width: 538px;background: rgb(229,229,229);border-radius: 9px;color: rgb(112,112,122);cursor: pointer;}
+.news .new .pho{
+	width: 142px;border-radius:8px;padding-top: 33px ;margin-left: 30px;
+	margin-bottom:33px;
+}
+.news .new .pho img{width: 100%;}
+.news .new .word{width: 308px;padding-top: 33px;margin-left: 28px;}
+.news .new .word p:nth-child(1){font-size: 16px;padding-top: 0;text-align: left}
+.news .new .word p:nth-child(2){font-size: 14px;margin-top: 20px;text-align: left}
+.news .new .word p:nth-child(3){font-size: 14px;margin-top: 20px;}
+.news .new .word p:nth-child(3) span{padding-right: 70px}
+.news .new_1,.news .new_3{margin-right: 123px;}
+.news .new_3,.news .new_4{margin-top: 31px;}
+.new_1:hover,.new_2:hover,.new_3:hover,.new_4:hover{background: rgb(203,46,46);color: white}
+.part5 .again{text-align: center;padding-bottom: 1.75rem}
+.part5 .again img{width: 0.52rem;}
+.part6{width: 100%;background: rgb(238,238,238);position: relative;}
+.part6 .top{position: absolute;right: 35px;bottom: 20px;cursor: pointer;}
+#allmap {width:100%;height:5.86rem;top: 0.45rem;}
+.part6 .box{width: 1200px;margin:105px auto 0rem;}
+.box1{margin-right: 155px;margin-bottom: 87px}
+.box1 p:nth-child(1){font-size: 15px;margin-bottom: 24px}
+.box1 p:nth-child(2){font-size: 56px;margin-bottom: 30px}
+.box1 p:nth-child(3){font-size: 31px;}
+.box2 div{font-size: 19px;margin-right: 145px}
+.box2 div span{margin-right: 20px}
+.box2 div input{width: 317px;height: 35px;border-radius: 8px;border:none;}
+.box2 div:nth-child(1) {margin-bottom: 27px}
+.box2 div:nth-child(2) {margin-bottom: 30px}
+.box3 .qu{
+	width: 246px;height: 76px;font-size: 32px;line-height: 76px;
+	background: rgb(205,29,29);border-radius: 76px;text-align: center;margin-bottom: 17px;cursor: pointer;
+}
+.box3 .qu a{color: white;}
+.box3 p{text-align: center;margin-bottom: 15px;cursor: pointer;}
+.box3 img{width: 36px;}
+.box3 img:nth-child(1){padding-right: 65px}
+.box3 img:nth-child(2){padding-right: 69px}
+.box3 img:nth-child(2){padding-right: 69px}
+.footer{width: 100%;background: rgb(35,35,35);}
+.footer .bottom{width: 1200px;padding-top: 40px;margin: auto;color: white;}
+.footer a{color: white}
+.bottom div:nth-child(1){width: 248px;letter-spacing: 4.5px;margin-bottom: 30px;margin-right: 194px}
+.bottom div:nth-child(1) img{width: 245px;}
+.bottom p{letter-spacing: 0;line-height: 30px;margin-bottom: 37px}
+.bottom div:nth-child(3) img{width: 64px;}
+.bottom div:nth-child(3) img:nth-child(1){margin-right: 28px}
+.bottom div:nth-child(3) img:nth-child(2){margin-right: 27px}
+.bottom ul{width: 755px;font-size: 12px;}
+.bottom ul li{width: 225px;margin-bottom: 34px;height: 200px;margin-right: 20px}
+.bottom ul li p:nth-child(1){font-size: 17px;line-height: 30px;margin-bottom: 20px}
+.bottom ul li p:nth-child(2){line-height: 32px;margin-bottom: 0;}
+.bottom div:nth-child(3) img{cursor: pointer;}
+.bottom div:nth-child(3) img:nth-child(1):hover{animation: sk 0.5s linear both}
+.bottom div:nth-child(3) img:nth-child(2):hover{animation: sk 0.5s linear both}
+.bottom div:nth-child(3) img:nth-child(3):hover{animation: sk 0.5s linear both}
+@keyframes sk{
+	from{transform: translate3d(0,0,0);}
+	25%{transform: translate3d(0,-15px,0);}
+	50%{transform: translate3d(0,0px,0);}
+	75%{transform: translate3d(0,-8px,0);}
+	to{transform: translate3d(0,0px,0);}
+}
+.part1 .topnav{
+	width: 100%;
+	position: fixed;
+	top: 0;
+}

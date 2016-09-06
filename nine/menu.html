@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css"/>
+	
+</head>
+<body>
+	<header>
+		<a href="index.html">Home</a>
+		<a href="menu.html" class="select">Menu</a>
+		<a href="###" class="a3">About Us</a>
+		<img src="img/logo.png" alt="">
+		<a href="###" class="a4">News</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="###">Locations</a>
+	</header>
+	<div id="content">
+		<div class="mainImg">
+			<img src="img/bannerMenu.jpg"/>
+		</div>
+		<div class="Explore">
+			<section>
+				- -- -- -- -- -- -- -- -- -- -- -- Explore Our Menu - -- -- -- -- -- -- -- -- -- -- -
+			</section>
+			<p class="cp">Choose a quick bite or indulge a little.</p>
+			<div class="Bakery clearfix">
+				<div class="menu">
+					<p class="select">Bakery</p>
+					<p>Petities</p>
+					<p>Bistro Boxes</p>
+					<p>Bottled Drinks</p>
+					<p>Freshly Brewed Coffee</p>
+					<p>Evolution Fresh</p>
+					<p>Chocolate Beverages</p>
+					<p>Frappuccino Beverages</p>
+					<p>Kid's Drinks & Others</p>
+					<p>Smoothies</p>
+					<p>Teas</p>
+					<div class="search">
+						<img src="img/search.jpg"/>
+						<input type="text" placeholder="Search">
+					</div>
+				</div>
+				<div class="pic">
+					<img id="bakeryImg" src="img/menuBakery.jpg"/>	
+					<img id="bakeryImg" src="img/newEvents4.png"/>	
+					<img id="bakeryImg" src="img/newEvents1.png"/>	
+					<img id="bakeryImg" src="img/newEvents2.png"/>	
+					<img id="bakeryImg" src="img/newEvents3.png"/>	
+					<img id="bakeryImg" src="img/newEvents4.png"/>	
+					<img id="bakeryImg" src="img/newEvents5.png"/>	
+					<img id="bakeryImg" src="img/newEvents6.png"/>	
+					<img id="bakeryImg" src="img/newEventsBg.png"/>	
+					<img id="bakeryImg" src="img/newEvents5.png"/>	
+					<img id="bakeryImg" src="img/newEvents2.png"/>	
+				</div>			
+			</div>
+			<div class="food">
+				<div class="top clearfix">
+					<div class="foodDiv food1"><img src="img/menuHot.jpg" alt=""><p>HOT BREAKFAST</p></div>
+					<div class="foodDiv food2"><img src="img/menuBakery1.jpg" alt=""><p>BAKERY</p></div>
+					<div class="foodDiv food3"><img src="img/menuChees.jpg" alt=""><p>CHEESE</p></div>
+				</div>
+				<div class="bottom clearfix">
+					<div class="foodDiv food4"><img src="img/menuSandwitch.jpg" alt=""><p>SANDWICHES</p></div>
+					<div class="foodDiv food5"><img src="img/menuSala.jpg" alt=""><p>SALANDS</p></div>
+					<div class="foodDiv food6"><img src="img/menuYogu.jpg" alt=""><p>YOGURT</p></div>
+					<div class="foodDiv food7"><img src="img/menuEven.jpg" alt=""><p>EVENIGS</p></div>
+				</div>		
+			</div>		
+		</div>
+		
+		<section>
+			- -- -- -- -- -- -- -- -- -- Find Your Favorite Pairing - -- -- -- -- -- -- -- -- -- 
+		</section>
+		<p class="cp">Try our paings,or ask your barista for their recommendations.</p>
+		<div class="con clearfix">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div class="active"></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div class="last"></div>
+		</div>
+		<div class="txt clearfix">
+			<span>cozy</span>
+			<span>savory</span>
+			<span>sweet</span>
+			<span>spicy</span>
+			<span>bright</span>
+			<span>rich</span>
+		</div>
+		<div class="bottomImg clearfix">
+			<img class="img1" src="img/menuBottom_03.png"/>
+			&
+			<img class="img2" src="img/menuBottom_05.jpg"/>
+		</div>
+		<div class="bottomTxt">
+			<div class="f clearfix">
+				<p class="p1">ITALIAN-STYLE HAM & SPICY SALAMI</p>
+				<p class="p2">BLACK TEA LEMONADE</p>
+			</div>
+			<div class="line">
+				 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ---- -- -- -- -- -- -- -- -- -- ---- -- -- -- -- -- -- -- -- -- --
+			</div>
+			
+			Robust and savory Italian seasonings are balanced by the perfect mariage of bright,
+refreshing flavorsin our black tea and lemonade.
+		</div>
+		
+	</div>
+	<footer><img src="img/footerBg.png" alt=""></footer>
+</body>
+<script src="js/jquery-3.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var menu=$(".Bakery .menu p");
+	var pic=$('.Bakery .pic img');
+	pic.eq(0).fadeIn()
+	menu.click(function () {
+		$(this).addClass("select").siblings().removeClass("select");
+		pic.eq($(this).index()).fadeIn().siblings().hide();
+	})
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

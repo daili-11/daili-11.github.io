@@ -1,0 +1,402 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	min-width: 900px;
+}
+body{
+    background: url(../img/bg.jpg);
+    background-size:cover; 
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+header{
+	width: 100%;
+    height: 140px;
+    background: #f2f2f2;
+    position: absolute;
+    z-index: 2;
+}
+header .jiyu{
+	position: absolute;
+	bottom: 0;
+}
+header .logo{
+	position: absolute;
+	left: 10%;
+	bottom: 0;
+}
+header .newsArea{
+	width: 300px;
+	height: 50px;
+	background: white;
+	position: absolute;
+	top: 30px;
+	right: 10px;
+}
+header .newsArea .add{
+	position: absolute;
+	z-index: 1;
+	top: -15px;
+	left: -15px;
+	cursor: pointer;
+}
+header .newsArea .news{
+	width: 82px;
+	height: 34px;
+	background: #3ae214;
+	font-size: 14px;
+	text-align: center;
+	line-height: 34px;
+	color: white;
+	margin: 8px;
+	float: left;
+	border-radius: 3px;
+}
+header .newsArea .title{
+	float: left;
+	color: #333333;
+	line-height: 50px;
+	margin-left: 8px;
+}
+header .newsArea .title:hover{
+	text-decoration: underline;
+}
+.content{
+	width: 100%;
+	position: absolute;
+	bottom: 30px;
+}
+.content .txt{
+	width: 800px;
+	color: #999999;
+	position: absolute;
+    bottom: 370px;	
+    left: 50%;	
+    margin-left: -400px;
+}
+.content .txt p{
+	font-size: 36px;
+	line-height: 1.5;
+}
+.content .txt h3{
+	font-size: 72px;
+}
+.content .nav{
+	width: 505px;
+	height: 68px;
+	background: white;
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+}
+.content .nav .first{
+	width: 75px;
+	height: 100%;
+	text-align: center;
+	float: left;
+}
+.content .nav .first img{
+	margin-top: 7px;
+}
+.content .nav li{
+	width: 86px;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 68px;
+	font-size: 14px;
+	color: #5d5d5d;
+	cursor: pointer;
+	box-sizing: border-box;
+	position: relative;
+}
+.content .nav .navDown{
+	position: absolute;
+	left: 75px;
+	bottom: -5px;
+}
+.content .nav .select{
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.content .zuixin{
+	width: 240px;
+	height: 170px;
+	background: #f9f9f9;
+	position: absolute;
+	right: 30px;
+	bottom: 80px;
+	opacity: 0;
+	animation: zuixin 2s linear 2s forwards;
+}
+@keyframes zuixin{
+	100%{
+		opacity: 1;
+	}
+}
+.content .zuixin .logo{
+	position: absolute;
+	left: -30px;
+	top: -30px;
+}
+.content .zuixin .prev{
+	position: absolute;
+	right: 21px;
+	top: -20px;
+	cursor: pointer;
+}
+.content .zuixin .next{
+	position: absolute;
+	right: 0;
+	top: -20px;
+	cursor: pointer;
+}
+.content .zuixin .main{
+	width: 220px;
+	height: 150px;
+	position: absolute;
+	margin: 10px;
+	overflow: hidden;
+}
+.content .zuixin .main .inner{
+	width: 500%;
+	height: 100%;
+	position: absolute;
+}
+.content .zuixin .main .inner img{
+	width: 20%;
+	float: left;
+}
+.content form{
+	width: 240px;
+	height: 25px;
+	background: white;
+	border-top: 1px solid #b3b3b3;
+	box-shadow: inset 0 1px 1px #b3b3b3;
+	position: absolute;
+	border-radius: 10px;
+	bottom: 30px;
+	right: 20px;
+}
+.content form .search{
+	width: 180px;
+	height: 20px;
+	border: 0;
+	margin-top: 2px;
+	margin-left: 20px;
+}
+.content form img{
+	height: 25px;
+	position: absolute;
+	right: 0;
+}
+.content .example{
+	height: 350px;
+	background: white;
+	position: absolute;
+	bottom: 96px;
+	z-index: 1;
+	overflow: hidden;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	display: none;
+}
+.content .example ul{
+    position: absolute;
+    display: none;
+}
+.content .example .show{
+	display: block;
+}
+.content .example ul li{
+	width: 240px;
+	margin: 10px;
+	float: left;
+}
+.content .example ul li .banner{
+	width: 100%;
+	height: 170px;
+	background: #ececec;
+	position: relative;
+	margin-bottom: 2px;
+}
+.content .example ul li .banner .pic{
+	width: 220px;
+	height: 150px;
+	margin: 10px;
+}
+.content .example ul li .banner .fangda{
+	position: absolute;
+	left: 100px;
+	top: 55px;
+	display: none;
+}
+.content .example ul li .banner .more{
+	width: 220px;
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	color: white;
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+	display: none;
+	background: #3ae214;
+}
+.content .example ul li .info{
+	width: 238px;
+	height: 88px;
+	border: 1px solid #ececec;
+	background: #ececec;
+}
+.content .example ul li .info h3{
+	font-size: 18px;
+	color: #333333;
+	line-height: 2;
+	margin-left: 10px;
+}
+.content .example ul li .info p{
+	font-size: 14px;
+	color: #666666;
+	line-height: 16px;
+	margin-left: 10px;
+}
+.content .example ul li:hover .banner{
+	background: #3ae214;
+}
+.content .example ul li:hover .banner .fangda,.content .example ul li:hover .banner .more{
+	display: block;
+}
+.content .example ul li:hover .info{
+	border: 1px solid #3ae214;
+}
+.content .example .progressArea{
+	width: 100%;
+	height: 8px;
+	background: #e1e1e1;
+	position: absolute;
+	top: 282px;
+}
+.content .example .progressArea .progress{
+	height: 8px;
+	background: gray;
+	position: absolute;
+	cursor: pointer;
+}
+.content section .btn{
+	width: 100%;
+	height: 20px;
+	background: #a3a5a6;
+	position: absolute;
+	top: 318px;
+}
+.content section .btn span{
+	width: 80px;
+	height: 18px;
+	display: inline-block;
+	text-align: center;
+	line-height: 20px;
+	color: white;
+	cursor: pointer;
+}
+.content section .btn span:nth-child(1){
+	margin-left: 20px;
+}
+.content section .btn .select{
+	background: white;
+	color: #4fe434;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.content .example .xiajiantou{
+	position: absolute;
+	left: 201px;
+	top: 338px;
+}
+.content .service{
+	width: 100%;
+	height: 350px;
+	background: white;
+	position: absolute;
+	bottom: 96px;
+	z-index: 1;
+	display: none;
+}
+.content .service .contain{
+	height: 66%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 40px;
+	margin: auto;
+	display: none;
+}
+.content .service .show{
+	display: block;
+}
+.content .service .xiajiantou{
+	position: absolute;
+	left: 300px;
+	top: 338px;
+}
+footer{	 
+    background: white;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	color: #494949;
+	position: absolute;
+	bottom: 0;
+}
+footer .left{
+	margin-left: 20px;
+}
+footer a{
+	color: #494949;
+}
+footer .erweima{
+	cursor: pointer;
+}
+footer .fangda{
+	position: absolute;
+	bottom: 25px;
+	left: 480px;
+	width: 0;
+}
+footer .erweima:hover .fangda{
+	animation: fangda 0.5s forwards;
+}
+@keyframes fangda{
+	100%{
+		width: 187px;
+	}
+}
+footer em{
+	color: #4fe434;
+}
+footer img{
+	margin-top: 6px;
+}
+footer .right{
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+footer .right span{
+	margin-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

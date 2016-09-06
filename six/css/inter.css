@@ -1,0 +1,67 @@
+html, body {
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+}
+.nav{
+	width: 100%;
+	min-width: 1200px;
+	height: 70px;
+	background: rgba(0,0,0,0.6);
+	position: fixed;
+	top: 0;
+	z-index: 9;
+}
+.nav img{
+	position: absolute;
+	left: 3.6rem;
+	top: 6px;
+}
+.nav div{
+	width: 650px;
+	height: 0.56rem;
+	position: absolute;
+	left: 8.5rem;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.nav a{
+	font-size: 0.16rem;
+	line-height: 0.54rem;
+	color: #fff;
+	display: inline-block;
+	margin-right: 0.4rem;
+}
+.nav .link{
+	color:#f00;
+	border-bottom:2px solid #f00;
+}
+.content{
+	width: 100%;
+	background: url(../img/inter2.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.content .kong{
+	width: 100%;
+	height: 6rem;
+}
+.content .con{
+	width: 62.34375%;
+	padding: 0 18.828125%;
+	background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

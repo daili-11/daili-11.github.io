@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/zishiying2.js"></script>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="nav">
+		<img src="img/logo1.png" alt="">
+		<div><a class="link" href="###">首页</a><a href="###">走进美格菲</a><a href="###">关于我们</a><a href="###">合作伙伴</a><a href="###">我的团队</a><a href="###">联系我们</a></div>
+    </div>
+    <div class="swiper-container swiper-container-v">
+        <div class="swiper-wrapper cuiwrap">
+            <div class="swiper-slide cuizhi">
+                <div class="swiper-container swiper-container-h">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ver1"><img class="datu" src="img/home.jpg" alt=""></div>
+                        <div class="swiper-slide ver1"><img class="datu" src="img/hor2.jpg" alt=""></div>
+                        <div class="swiper-slide ver1"><img class="datu" src="img/hor3.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-h"></div>
+                </div>
+            </div>
+            <div class="swiper-slide cuizhi inter"><div class="in"><img class="datu" src="img/inter.jpg" alt=""><a href="inter.html"></a></div></div>
+            <div class="swiper-slide cuizhi about"><div><img class="datu" src="img/about.jpg" alt="">
+	            	<div class="idea"><h3>美格菲的理念</h3><p>美格菲深信，健身不仅仅是一种简单的强身健体手段和短暂的休闲娱乐活动，而且也是引导人们培养良好生活习惯，提高生活质量，从而达到拥有健康心态和良好体态的目标。</p></div>
+	            	<div class="mission"><h3>美格菲的使命</h3><p>美格菲竭诚为会员提供先进的健身器材，采用国际化的管理模式，配合专业化的课程，加上一流的管理队伍和员工的热情，从而营造一个动感的环境，把健康带给每一位会员，把效益带给投资者。</p></div>
+	            	<div class="serve"><h3>美格菲的服务宗旨</h3><p>以“科学、健康、专业”及个人优质服务为宗旨， 让会员感受在一个充满朝气和活力的俱乐部，享有专业服务和优越地位。</p></div>
+            	</div>
+            </div>
+            <div class="swiper-slide cuizhi cooperate">
+            <div class="coop"><img class="datu" src="img/coop.jpg" alt="">
+					<div class="inner">
+						<div class="shimao"></div>
+						<div class="jinqiao"></div>
+						<div class="chengtou"></div>
+						<div class="lvdi"></div>
+					</div>
+            	</div>
+            </div>
+            <div class="swiper-slide cuizhi team"><div><img class="datu" src="img/team.jpg" alt=""></div></div>
+            <div class="swiper-slide cuizhi"><img class="datu" src="img/contact.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-v"></div>
+    </div>
+    <div class="footer"><img src="img/footer.jpg" alt=""></div>
+</body>
+    <!-- Swiper JS -->
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+// 第一屏图片自动播放
+var nav = $('.nav a');
+var cuizhi = $('.cuizhi');
+var cuiwrap = $('.cuiwrap');
+var winH = $(window).innerHeight();
+var swiperH = new Swiper('.swiper-container-h', {
+    pagination: '.swiper-pagination-h',
+    paginationClickable: true,
+    spaceBetween: 50,
+    loop : true,
+    autoplay:5000,
+    autoplayDisableOnInteraction: false
+});
+// 屏幕改变链接到对应的左边小点点
+var swiperV = new Swiper('.swiper-container-v', {	
+    pagination: '.swiper-pagination-v',
+    paginationClickable: true,
+    direction: 'vertical',
+    spaceBetween: 50,
+    mousewheelControl : true,
+	mousewheelInvert : false,
+	onSlideChangeEnd: function(swiper){
+      nav.removeClass('link');
+      nav.eq(swiperV.activeIndex).addClass('link');
+      console.log(swiperV.activeIndex);
+    }
+});
+// 上下切换屏幕
+nav.on('click',function() {
+	nav.removeClass('link');
+	var index = $(this).index();
+    nav.eq(index).addClass('link');
+    cuiwrap.css({transform: "translate3d(0px, -"+(winH+50)*index+"px, 0px)", transitionDuration: '300ms'});
+    cuizhi.removeClass('swiper-slide-prev swiper-slide-active swiper-slide-next');
+    cuizhi.eq(index).addClass('swiper-slide-active');
+    if (index!=0) {
+    	cuizhi.eq(index-1).addClass('swiper-slide-prev');
+    }
+    if (index!=5) {
+    	cuizhi.eq(index+1).addClass('swiper-slide-next');
+    }
+    swiperV.activeIndex = index;
+})
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

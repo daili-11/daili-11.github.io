@@ -1,0 +1,186 @@
+header .select{
+	color: 
+}
+.con{
+	width: 12rem;
+	margin: 1rem auto 0;
+}
+.con .con_first{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.con .con_first img{
+	width: 100%;
+}
+.con .con_first p{
+	text-align: center;
+	font-size: 0.18rem;
+	color: #97022C;
+	line-height: 2rem;
+}
+.con .con_first .con_first_text{
+	width: 54.333333%;
+	margin: 0 auto;
+	overflow: hidden;
+	font-size: 0.18rem;
+}
+.con .con_first .con_first_text > div{
+	
+	text-align: center;
+	height: 0.3rem;
+	margin: 0.8rem 0 0.9rem 0;
+	color: #97022C;
+	line-height: 0.3rem;
+	position: relative;
+}
+.con .con_first .con_first_text > div:nth-child(1){
+	width: 35%;
+	float: left;
+
+}
+.con .con_first .con_first_text > div:nth-child(2){
+	width: 30%;
+	float: left;
+
+}
+.con .con_first .con_first_text > div:nth-child(3){
+	width: 35%;
+	float: right;
+
+}
+.con .con_first .con_first_text .dashed{
+	position: relative;
+}
+.con .con_first .con_first_text .dashed img{
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+ /*.second_one..................................................*/
+.con .con_second{
+	width: 66.666666%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.con .con_second .second_one{
+	width: 100%;
+	overflow: hidden;
+}
+.con .con_second .second_one .left{
+	width: 50%;
+	float: left;
+}
+.con .con_second .second_one .left img{
+	width: 100%;
+}
+.con .con_second .second_one .right{
+	width: 46%;
+	float: right;
+	padding: 0 2% 0 2%;
+	overflow: hidden;
+}
+.con .con_second .second_one .right p:nth-child(1){
+	padding-top: 0.7rem;
+	padding-bottom: 0.08rem;
+	font-size: 0.24rem;
+	color: #97022c;
+	border-bottom: 2px dashed #97022c;
+}
+.con .con_second .second_one .right p:nth-child(2){
+	padding-top: 0.08rem;
+	font-size: 0.12rem;
+}
+.con .con_second .second_one .right p:nth-child(3){
+	font-size: 0.16rem;
+	margin-top: 0.2rem;
+}
+.con .con_second .second_one .right p:nth-child(3) > span{
+	background: #97022c;
+	color: #ffffff;
+	display: inline-block;
+	padding: 0.03rem 0.03rem;
+	margin-bottom:0.3rem ;	
+}
+/*.second_two..................................................*/
+
+.con .con_second .second_two .left{
+	width: 46%;
+	float: left;
+	padding: 0 2% 0 2%;
+}
+.con .con_second .second_two .right{
+	width: 50%;
+	float: right;
+}
+.con .con_second .second_two .left p:nth-child(1){
+	padding-top: 0.7rem;
+	font-size: 0.24rem;
+	color: #97022c;
+	padding-bottom: 0.08rem;
+	border-bottom: 2px dashed #97022c;
+}
+.con .con_second .second_two .left p:nth-child(2){
+	font-size: 0.12rem;
+	padding-top: 0.08rem;
+}
+.con .con_second .second_two .left p:nth-child(3){
+	font-size: 0.16rem;
+	margin-top: 0.2rem;
+}
+.con .con_second .second_two .left p:nth-child(3) > span{
+	background: #97022c;
+	color: #ffffff;
+	display: inline-block;
+	padding: 0.03rem 0.03rem;
+	margin-bottom: 0.3rem;	
+}
+.con .con_second .second_two .right img{
+	width: 100%;
+}
+/*.second_six...............................................................*/
+.con .con_second .second_six{
+	width: 100%;
+}
+.con .con_second .second_six .middle{
+	width: 44.125%;
+	margin: 0 auto;
+	padding: 1.7rem 0;
+	padding-bottom: 0;
+	text-align: center;
+	color: #97022c;
+}
+.con .con_second .second_six .middle p:nth-child(1){
+	font-size: 0.24rem;
+	border-top:2px dashed #97022c;
+	border-bottom: 2px dashed #97022c;
+	line-height: 0.44rem;
+}
+.con .con_second .second_six .middle p:nth-child(2){
+	font-size: 0.14rem;
+	line-height: 0.4rem;
+}
+/*媒体查询.................................................*/
+@media screen and (max-width:900px){
+	.con .con_second .second_one .left{
+	  width: 100%;
+	  float: none;
+	}
+	.con .con_second .second_one .right{
+		width: 96%;
+		float: none;
+	}
+	.con .con_second .second_two .left{
+		width: 96%;
+		float: none;
+		padding: 0 2% 0 2%;
+	}
+	.con .con_second .second_two .right{
+		width: 100%;
+		float: none;
+	}  
+}
+ 
+  
