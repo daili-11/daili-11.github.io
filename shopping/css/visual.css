@@ -1,0 +1,180 @@
+
+		body,html{
+			width: 100%;
+			font-size: 100px;
+		}
+		.clear:after{
+			content: '';
+			clear: both;
+			display: block;
+		}
+		.fl{float: left;}
+		.fr{float: right;}
+		.wrap{
+			width: 100%;
+			position: relative;
+			background: #ebeae4;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% 100%;
+		}
+		.header{
+			height: 0.41rem;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-image: url(../img/nav.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% 100%;
+			z-index: 999;
+		}
+		.header img{
+			width: 5.466667%;
+			position: absolute;
+			right: 3.90625%;
+			bottom: 0.115rem;
+		}
+		.header .border{
+			width: 31.6%;
+			height: 0.285rem;
+			line-height: 0.285rem;
+			text-align: right;
+			font-size: 0.15rem;
+			color: #72634d;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			left: 33.398437%;
+			border-right: 3px solid #6c5441;
+			border-bottom: 3px solid #6c5441;
+			box-shadow: 3px 3px 3px 3px #2c221b inset;
+			border-radius:0.05rem;
+		}
+		.header .border span{
+			margin-right: 15.500992%;
+		}
+		.header .left{
+			width: 15.8%;
+			height: 0.285rem;
+			line-height: 0.285rem;
+			text-align: center;
+			font-size: 0.15rem;
+			color: #72634d;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			left: 33.398437%;
+			background: #4d3c30;
+			border-right: 3px solid #2f241c;
+			border-bottom: 3px solid #2f241c;
+			box-shadow: -5px -5px 5px 3px #44352a;
+			border-radius: 0.05rem 0 0 0.05rem;
+		}
+		.content{
+			width: 90%;
+			padding-top: .53rem;
+			margin: auto;
+			position: relative;
+			padding-bottom: .495rem;
+		}
+		.content div p{
+			width: 100%;
+			height: 1.22rem;
+			line-height: 0.25rem;
+			padding-top: .87rem;
+			text-align: center;
+			font-size: 0.15rem;
+			color: white;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: rgba(0,0,0,0.2);
+			z-index: 9;
+		}
+		.content div p span{
+			font-family: '楷体';
+			font-weight: lighter;
+		}
+		.content div{
+			width: 100%;
+			margin-bottom: 0.1rem;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% 100%;
+		}
+		.content .one{
+			position: relative;
+			height: 2.09rem;
+			margin-bottom: 0.1rem;
+			background-image: url(../img/visual8.jpg);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% 100%;
+		}
+		.content .one img{
+			width: 10%;
+			position: absolute;
+			top: 1.9rem;
+			right: 15.190972%;
+		}
+		.content .two{
+			position: relative;
+			height: 2.09rem;
+			margin-bottom: 0.1rem;
+			background-image: url(../img/visual7.jpg);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% 100%;
+		}
+		.content .two img{
+			width: 10%;
+			position: absolute;
+			top: 1.9rem;
+			right: 15.190972%;
+		}
+		.content .three{
+			position: relative;
+			height: 2.09rem;
+			background-image: url(../img/visual9.jpg);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% 100%;
+		}
+		.content .three img{
+			width: 10%;
+			position: absolute;
+			top: 1.9rem;
+			right: 15.190972%;
+		}
+		 @media screen and (min-width:400px) {
+        html{
+          font-size: 120px;
+        }
+      }
+      @media screen and (min-width:500px) {
+        html{
+          font-size: 130px;
+        }
+      }
+      @media screen and (min-width:600px) {
+        html{
+          font-size: 140px;
+        }
+      }
+      @media screen and (min-width:700px) {
+        html{
+          font-size: 150px;
+        }
+        .header img{
+			bottom: 0.0575rem;
+		}
+      }
+      @media screen and (min-width:800px) {
+        html{
+          font-size: 160px;
+        }
+      }

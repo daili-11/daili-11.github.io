@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>订单</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <link rel="stylesheet" href="../css/reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="../css/order.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="header">
+              <a href="javascript:history.go(-1);"></a>
+              确认订单
+            </div>
+            <div class="content">
+                <a href="###" class="address">
+                    <div class="mess">
+                        <p><span id="user">罗小新</span><span id="phone">158****8727</span></p>
+                        <span id="addr">北京 大兴区 亦庄经济开发区 BDA国际广场kZUO座</span>
+                    </div>
+                    <div class="link"></div>
+                    <div class="hr"></div>
+                </a>
+                <a href="###" class="goods">
+                    <div class="list">
+                        <div class="li"><div class="img"><img src="../img/goods1.jpg" alt=""></div><div class="message"><div class="name">精选延庆生态芦笋300g</div><div class="price">¥21.80</div></div></div>
+                        <div class="li"><div class="img"><img src="../img/goods2.jpg" alt=""></div><div class="message"><div class="name">精选山东迷你小土豆500g</div><div class="price">¥5.00</div></div></div>
+                        <div class="li"><div class="img"><img src="../img/goods3.jpg" alt=""></div><div class="message"><div class="name">精选本地卷心菜600g</div><div class="price">¥6.90</div></div></div>
+                    </div>
+                    <div class="count"></div>
+                    <div class="link"></div>
+                </a>
+                <a href="###" class="pay">
+                    <span class="h">支付配送</span>
+                    <div class="txt">
+                        <p>支付方式</p>
+                        <p>快递方式</p>
+                        <div><b></b>工作日、双休日与假日均可送货</div>
+                    </div>
+                    <div class="link"></div>
+                </a>
+                <a href="###" class="fb">
+                    <span class="hh">发票信息</span>
+                    <p class="p">明细（纸质）-个人</p>
+                </a>
+                <strong></strong>
+                <ul>
+                    <li><a href="###"><span class="hh">优惠券</span><p class="p">无可用</p><div class="link"></div></a></li>
+                    <li><a href="###"><span class="hh">积分兑换</span><p class="p">无可用</p><div class="link"></div></a></li>
+                    <li><a href="###"><span class="hh">商品金额</span><p class="p" style="color:red;">￥16.80</p><div class="link"></div></a></li>
+                    <li><a href="###"><span class="hh">运费</span><p class="p" style="color:red;">￥0.00</p><div class="link"></div></a></li>
+                </ul>
+            </div>
+            <div class="footer">
+                <div class="footer clear">
+                    <div class="fl">
+                        合计：<span id="sum">￥0.00</span>
+                    </div>
+                    <div class="fr">立即下单</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../js/jquery-3.0.0.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        var list = $(".list .li");
+        var count = $(".goods .count");
+        var li = $("li");
+        var $sum = $("#sum");
+
+
+        var goodsT = li.eq(2).find("p").text();
+        var sendT = li.eq(3).find("p").text();
+        var num1 = parseFloat(goodsT.split("￥")[1]);
+        var num2 = parseFloat(sendT.split("￥")[1]);
+        var sum = num1+num2;
+        $sum.text("￥"+sum.toFixed(2));
+
+        count.html("共"+list.length+"件");
+        init();
+        function init() {
+            var mR = 0.0768;
+            var mL = 0.128;
+            var w = 0.5504;
+            list.each(function(i){
+                if (i!=0) {
+                    var L = mL+(w+mR)*i;
+                    list.eq(i).css("left",L+"rem");
+                }
+            });
+        }
+    </script>
+</html>

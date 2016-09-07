@@ -1,0 +1,99 @@
+
+body,html{
+		font-size: 100px;
+	}
+.wrap{
+	width: 100%;
+	position: relative;
+	background: #eeeeee;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+.header{
+	height: 0.44rem;
+	width: 100%;
+	font-size: 0.171707rem;
+	text-align: center;
+	line-height: 0.44rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url(../img/nav.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	z-index: 999;
+}
+.header .nav{
+	position: absolute;
+	left: 3.5%;
+	top: 0.125rem;
+	width: 2.8%;
+}
+.content{
+	width: 100%;
+	background: #eeeeee;
+	position: absolute;
+	top: 0.44rem;
+	left: 0;
+	font-size: 0.171707rem;
+	
+}
+.content div{
+	width: 100%;
+	line-height: 0.44rem;
+	background: #ffffff;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.content div .help{
+	vertical-align: middle;
+	margin-left: 4%;
+	margin-right: 2.666667%;
+}
+.content div .data{
+	width: 3.466667%;
+	position: absolute;
+	right: 4.533333%;
+	top: 0.22rem;
+	transform: rotateX(180deg);
+} 
+.content .one{
+	margin-top: 0.139512rem;
+}
+.content p{
+	display: none;
+	line-height: 0.33rem;
+	background: #eeeeee;
+	border-top: 1px solid #ccc;
+}
+
+@media screen and (min-width:400px) {
+        html{
+          font-size: 120px;
+        }
+      }
+@media screen and (min-width:500px) {
+    html{
+      font-size: 130px;
+    }
+  }
+@media screen and (min-width:600px) {
+    html{
+      font-size: 140px;
+    }
+  }
+@media screen and (min-width:700px) {
+    html{
+      font-size: 150px;
+    }
+    .footer .open{
+	  bottom:0.03rem;
+	}
+  }
+@media screen and (min-width:800px) {
+    html{
+      font-size: 160px;
+    }
+  }

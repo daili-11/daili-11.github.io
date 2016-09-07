@@ -1,0 +1,146 @@
+@charset="UTF-8";
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background: #ffffff;
+}
+.header {
+	width: 100%;
+	height: 0.8rem;
+	background: #48382b;
+	font-size: 0.3rem;
+	line-height: 0.8rem;
+	color: #fefbfb;
+	text-align: center;
+}
+.header .div1{
+	width: 0.45rem;
+	height: 0.45rem;
+	position: absolute;
+	vertical-align: middle;
+	left: 0.2rem;
+}
+#img1{
+	vertical-align: middle;
+	width: 0.24rem;
+}
+/*.con///////////////////////////////////////*/
+.con .ul{
+	width: 100%;
+}
+.con .ul .li{
+	width: 100%;
+	height: 2.34rem;
+	border-bottom: 1px solid #bfbfbf;
+}
+.con .ul .li .div1{
+	width: 92%;
+	height: 2.34rem;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+}
+
+.con .ul .li .div1 h3{
+	line-height: 0.6rem;
+	font-size: 0.3rem;
+	position: relative;
+}
+#em{
+	font-size: 0.2rem;
+	color: #999999;
+	position: absolute;
+	right: 0;
+}
+.con .ul .li .div1  span{
+	display: inline-block;
+	line-height: 0.45rem;
+	float: left;
+}
+.con .ul .li .div1 span:nth-child(1){
+	width: 30%;
+	line-height: 2.34rem;
+}
+.con .ul .li .div1 span:nth-child(1) img{
+	vertical-align: middle;
+	width: 1.72rem;
+}
+.con .ul .li .div1 span:nth-child(2){
+	width: 70%;
+	padding-top: 0.38rem;
+
+}
+.con .ul .li .div1 span:nth-child(2) p{
+	font-size: 0.2rem;
+	color: #999999;
+}
+.con .ul .li .div1 .cancle{
+	position: absolute;
+	color: #6ab439;
+	width: 1.04rem;
+	height: 0.35rem;
+	line-height: 0.35rem;
+	text-align: center;
+	font-size: 0.2rem;
+	border-radius: 0.08rem;
+	border: 1px solid  #6ab439;
+	right: 0;
+	bottom: 0.3rem;
+}
+
+
+
+@media screen and (max-width:700px ) {
+	html{
+		font-size: 93.3333px;
+	}
+}
+
+
+@media screen and (max-width:650px ) {
+	html{
+		font-size: 85px;
+	}
+}
+
+
+@media  screen and (max-width:600px ) {
+	html{
+		font-size: 60px;
+	}
+}
+
+
+
+@media  screen and (max-width:500px ) {
+	html{
+		font-size: 55px;
+	}
+}
+
+
+@media  screen and (max-width:400px ) {
+	html{
+		font-size: 50px;
+	}
+}
+
+@media  screen and (max-width:350px ) {
+	html{
+		font-size: 45px;
+	}
+	.con .ul .li .div1 .cancle{
+	width: 1.25rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	font-size: 0.1rem;
+	bottom: 0.15rem;
+}
+.con .ul .li .div1 span:nth-child(2) p{
+	font-size: 0.15rem;
+
+}
+}
+

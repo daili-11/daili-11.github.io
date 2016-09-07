@@ -1,0 +1,112 @@
+html{
+	font-size: 100px;
+}
+.xl_header{
+	width: 96%;
+	height: 0.57rem;
+	background: rgb(72,56,43);
+	padding-left: 4%;
+	padding-top: 0.35rem;
+	-webkit-box-shadow: 0px 6px 10px rgb(163,163,163);
+}
+.xl_header a img{
+	width: 0.21rem;
+}
+.xl_header span{
+	font-size: 0.32rem;
+	color: white;
+	margin-top: 0.03rem;
+	margin-left: 34.4%;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+ul{
+	width: 92%;
+	margin: auto;
+}
+ul li{
+	width: 100%;
+	margin-top: 0.26rem;
+	border: 1px solid rgb(169,169,169);
+}
+ul li>img{
+	width: 40.145%;
+}
+ul div{
+	margin-left: 2.9%;
+	margin-top: 0.22rem;
+	width: 54.058%;
+	position: relative;
+}
+ul div h4{
+	font-size: 0.25rem;
+	color: rgb(110,110,110);
+}
+ul div img{
+	margin-top: 0.19rem;
+	width: 9.383%;
+}
+ul div p{
+	margin-top: 0.22rem;
+}
+ul div p span{
+	font-size: 0.21rem;
+	color: rgb(176,176,176);
+	margin-right: 9.383%;
+}
+ul div h6{
+	font-size: 0.18rem;
+	color: rgb(176,176,176);
+	margin-top: 0.61rem;
+}
+ul div .xl_star{
+	width: 10.724%;
+	position: absolute;
+	bottom: -0.06rem;
+	right: 0;
+}
+@media screen and (max-width: 700px){
+	html{
+		font-size: 85px;
+	}
+}
+@media screen and (max-width: 650px){
+	html{
+		font-size: 80px;
+	}
+}
+@media screen and (max-width: 600px){
+	html{
+		font-size: 70px;
+	}
+}
+@media screen and (max-width: 500px){
+	html{
+		font-size: 60px;
+	}
+}
+@media screen and (max-width: 450px){
+	html{
+		font-size: 50px;
+	}
+}
+@media screen and (max-width: 400px){
+	html{
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 350px){
+	html{
+		font-size: 35px;
+	}
+}
+

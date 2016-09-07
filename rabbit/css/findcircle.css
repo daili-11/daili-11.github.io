@@ -1,0 +1,248 @@
+@charset="UTF-8";
+html{
+	width: 100%;
+	height: 100%;
+	font-size: 100px;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+.wrap{
+	width: 100%;;
+	height: 100%;
+	background: rgb(235,234,228);
+}
+.header{
+	width: 100%;
+	font-size: 0.21rem;
+	background: rgb(72,56,43);	
+	font-size: 0.2rem;
+	color: rgb(143,127,100);
+}
+.header .header1{
+	width: 32.4%;
+	overflow: hidden;
+	line-height: 0.83rem;
+	margin: 0 auto;
+}
+.header .header1 div{
+	display: inline-block;
+	line-height: 0.57rem;
+	width: 50%;
+	margin: 0.13rem 0;
+	text-align: center;	
+	box-shadow: inset; 0.03rem 0.03rem 0.03rem 
+}
+.header .header1 div:nth-child(1){
+	border-radius: 0.1rem 0 0 0.1rem;
+	background: rgb(66,51,41);
+	box-shadow:inset  0.03rem 0.03rem 0.03rem #342920;
+	border-bottom: 0.02rem solid #6c5441;
+
+}
+.header .header1 div:nth-child(2){
+	border-radius: 0 0.1rem 0.1rem 0;
+	background: rgb(78,61,49);
+	box-shadow: -0.03rem -0.03rem 0.03rem #342920;
+}
+/*con......................................*/
+.wrap .con{
+	margin-top: 0.08rem;
+}
+.con .ul1{
+	margin-top: 0.16rem;
+	position: relative;
+	background: rgb(255,255,255);
+}
+.con ,.con .ul1,.con .ul1 li{
+	width: 100%;
+}
+.con .ul1 .li1 >img{
+	width: 100%;
+}
+.con .ul1 li:nth-child(1)>div{
+	font-size: 0.22rem;
+	color: white;	
+	width: 92%;
+	position: absolute;
+	left: 4%;
+	top: 0.18rem;
+}
+.con .ul1 .li1 .con1 .div1{
+	width: 0.6rem;
+	height: 0.6rem;
+}
+.con .ul1 .li1 .con1 .div1 img{
+	width: 100%;
+}
+.con .ul1 .li1 .con1 .div2{
+	margin-left: 0.1rem;
+}
+.con .ul1 .li1 .con1 .div2 span{
+	line-height: 0.3rem;
+}
+.con .ul1 .li1 .con1 div:nth-child(3) {
+	width:0.65rem ;
+	height: 0.4rem;
+	text-align: center;
+	float: right;
+	line-height: 0.4rem;
+	margin-top: 0.08rem;
+	border-radius: 0.1rem;
+	
+}
+/*/////////////////////////////div3/收藏样式*/
+.div3{
+	border: 2px solid white;
+	background: none;
+}
+.div31{
+	border: 2px solid red;
+	background: red;
+}
+/*////////////////////////////////*/
+.con .ul1 .li2{
+	margin: 0 auto;
+	font-size: 0.23rem;
+	padding: 0.16rem 0 0.2rem 0;
+	border-bottom: 1px solid rgb(218,218,218);
+}
+.con .ul1 .li2 p{
+	position: relative;
+	left: 4%;
+	line-height:0.32rem ;	
+	width: 96%;
+}
+.con .ul1 .li2 p:nth-child(2){
+	color: rgb(169,169,169);
+}
+.con .ul1 .li3{
+	width: 92%;	
+	position: relative;
+	height: 0.85rem;
+	margin: 0 auto;
+}
+.con .ul1 .li3 div{
+	width: 0.39rem;
+	height: 0.39rem;
+	position: absolute;
+	overflow: hidden;
+	top: 0.24rem;
+	text-align: center;
+	display: inline-block;
+}
+.con .ul1 .li3 div:nth-child(1){
+	left: 0;
+}
+.con .ul1 .li3 div:nth-child(2){
+	left:12.75% ;	
+}
+.con .ul1 .li3 div:nth-child(3){
+	right: 0;	
+}
+.ctop1{
+	background: url(../img/icon.png) 0 0;
+	background-size: 1.16rem 0.78rem;
+}
+.ctop11{
+	background: url(../img/aixin.png) 0 0.05rem no-repeat;
+	background-size:0.39rem ;
+}
+.ctop2{
+	background: url(../img/icon.png) 0.775864rem 0;
+	background-size: 1.16rem 0.78rem;
+}
+.ctop3{
+	background: url(../img/icon.png) 0.39rem 0;
+	background-size: 1.16rem 0.78rem;
+}
+
+
+
+
+
+/*/////////////////////////////////footer*/
+.footer{
+	width: 100%;
+	height: 0.95rem;
+	position: fixed;
+	bottom: 0;
+	background: rgb(72,56,43);
+	font-size: 0.24rem;	
+	overflow: hidden;
+}
+.footer a{
+	margin-top: 0.1rem;
+	display: inline-block;
+	width: 20%;
+	float: left;
+	color: #c3ad88;
+	text-align: center;
+}
+.footer span{	
+	display:block;
+	margin: 0 auto;
+	width: 0.5rem;
+	height: 0.5rem;
+}
+.ftop1{
+	background: url(../img/LOGO.png) -0.08rem -1.0rem;
+	background-size: 3.54rem 2.35rem;
+}
+.ftop2{
+	background: url(../img/LOGO.png)-0.8rem -1.0rem;
+	background-size: 3.54rem 2.35rem;
+}
+.ftop3{
+	background: url(../img/LOGO.png) -1.5rem -1.0rem;
+	background-size: 3.54rem 2.35rem;
+}
+
+.ftop5{
+	background: url(../img/LOGO.png) -3rem -1.0rem;
+	background-size: 3.54rem 2.35rem;
+}
+
+.ftop41{
+	background: url(../img/LOGO.png) -2.3rem -1.67rem;
+	background-size: 3.54rem 2.35rem;
+}
+.footer a:nth-child(4){
+	color: #6AB439;
+}
+
+
+
+@media screen and (max-width:700px ) {
+	html{
+		font-size: 93.3333px;
+	}
+}
+
+
+@media  screen and (max-width:600px ) {
+	html{
+		font-size: 80px;
+	}
+}
+
+
+@media  screen and (max-width:500px ) {
+	html{
+		font-size: 66.6666px;
+	}
+}
+
+
+@media  screen and (max-width:400px ) {
+	html{
+		font-size: 53.3333px;
+	}
+}
+
+
+
+
+
+

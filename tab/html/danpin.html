@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/danpin.css">
+</head>
+<body>
+	<div class="xl_header">
+		<a href="###"><img src="../img/11.png" alt=""></a>
+		<span class="xl_title">湾仔小精排</span>
+		<div>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="xl_wrap">
+		<div class="xl_inner">
+			<img src="../img/34.png" alt="">
+			<img src="../img/34.png" alt="">
+			<img src="../img/34.png" alt="">
+			<img src="../img/34.png" alt="">
+			<img src="../img/34.png" alt="">
+			<img src="../img/34.png" alt="">
+		</div>
+		<div class="xl_select">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<ul>
+		<li class="xl_introduce">
+			<div class="fr">
+				<div class="fr xl_share"><img src="../img/35.png" alt=""><p>分享</p></div>
+				<div class="fl xl_collect"><img src="../img/36.png" alt=""><p>收藏</p></div>
+			</div>
+			<h4>湾仔码头精选1000g超级小精排</h4>
+			<h6>米其林三星专供</h6>
+			<p>￥ 120</p>
+			<span class="xl_sales">月销量120份</span>
+		</li>
+		<li class="xl_rank">
+			<p>规格： 1000g</p>
+			<div>因该产品加工时鲜肉精分割后抽真空包装在进行急速冷冻的，所以包装内会出现少量的血冰，为正常现象，不会影响商品的品质及口感。</div>
+		</li>
+		<li class="xl_pay">16:00前付款，预计3月23日送达</li>
+		<li class="xl_pay xl_dif">
+			<span><img src="../img/37.png" alt="">信用卡支付</span>
+			<span><img src="../img/37.png" alt="">微信支付</span>
+			<span><img src="../img/37.png" alt="">当天无理由</span>
+		</li>
+	</ul>
+</body>
+<script type="text/javascript" src="../js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+	$wrap = $('.xl_wrap');
+	$inner = $('.xl_inner');
+	$span = $('.xl_wrap').find('span');
+	$wrap.css('height',$inner.find('img').height());
+	var disX = 0;
+	var index = -1;
+	var bol = false;
+	function move() {
+		timer=setInterval(function () {
+			index--
+			$inner.animate({
+				left:index*$inner.find('img').width(),
+			},function () {
+				if (index==0) {
+					$inner.css('left',-4*$inner.find('img').width());
+					index=-4;
+				}
+				if (index==-5) {
+					$inner.css('left',-$inner.find('img').width());
+					index=-1;
+				}
+				$span.each(function () {
+					$(this).css('background','rgb(94,94,94)');
+				})
+				$span.eq(-index-1).css('background','rgb(189,189,189)');
+			})
+		},2000)
+	}
+	move()
+	$inner.on('touchstart',function (e) {
+		$(this).stop();
+		clearInterval(timer);
+		disX = e.originalEvent.targetTouches[0].pageX;
+		var l = $(this).offset().left;
+		$inner.on('touchmove',function (e) {
+			var x = e.originalEvent.targetTouches[0].pageX-disX;
+			$(this).css('left',x+l);
+		})
+		e.preventDefault();
+	})
+	$inner.on('touchend',function (e) {
+		$(this).off('touchmove');
+		var x = e.originalEvent.changedTouches[0].pageX-disX;
+		if (Math.abs(x)>=$(this).find('img').width()/2) {
+			bol=true;
+		}else {
+			bol=false;
+		}
+		if (bol&&x>0) {
+			index++
+		}else if(bol&&x<0){
+			index--
+		}
+		$(this).animate({
+			left:index*$(this).find('img').width(),
+		},function () {
+			if (index==0) {
+				$(this).css('left',-4*$(this).find('img').width());
+				index=-4;
+			}
+			if (index==-5) {
+				$(this).css('left',-$(this).find('img').width());
+				index=-1;
+			}
+			$span.each(function () {
+				$(this).css('background','rgb(94,94,94)');
+			})
+			$span.eq(-index-1).css('background','rgb(189,189,189)');
+			move()
+		})
+	})
+	$span.each(function () {
+		$(this).on('click',function () {
+			$span.each(function () {
+				$(this).css('background','rgb(94,94,94)');
+			})
+			$(this).css('background','rgb(189,189,189)');
+			index=-$(this).index()-1;
+			$inner.animate({
+				left:index*$inner.find('img').width(),
+			})
+		})
+	})
+	var a = 'abc'
+	window[a] = function () {
+		console.log(1)
+	}
+	abc()
+</script>
+</html>

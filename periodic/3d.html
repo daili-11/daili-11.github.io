@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3d</title>
+	<style type="text/css">
+	body{
+		/*-webkit-perspective:100;*/
+		perspective:1000px;
+		background: black;
+	}
+	.wrap{
+		width: 160px;
+		height: 240px;
+		border: 5px solid black;
+		position: relative;
+		margin: 100px auto;
+		transform-style: preserve-3d;
+		transform: rotateX(0deg) rotateY(0deg)
+	}
+	.wrap div{
+		width: 160px;
+		height: 240px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		-webkit-box-reflect:below 10px linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1));
+		box-shadow: 0px 0px 10px 2px #21edff;
+	}
+	.wrap div img{
+		width: 100%;
+	}
+	.d1{
+		animation:d1 1s both;
+	}
+	@keyframes d1{
+		from{
+			transform:rotateY(0deg) translateZ(0px);
+		}
+		to{
+			transform:rotateY(0deg) translateZ(400px);
+		}
+	}
+	.d2{
+		animation:d2 1s both 1s;
+	}
+	@keyframes d2{
+		from{
+			transform:rotateY(40deg) translateZ(0px);
+		}
+		to{
+			transform:rotateY(40deg) translateZ(400px);
+		}
+	}
+	.d3{
+		animation:d3 1s both 2s;
+	}
+	@keyframes d3{
+		from{
+			transform:rotateY(80deg) translateZ(0px);
+		}
+		to{
+			transform:rotateY(80deg) translateZ(400px);
+		}
+	}
+	.d4{
+		animation:d4 1s both 3s;
+	}
+	@keyframes d4{
+		from{
+			transform:rotateY(120deg) translateZ(0px);
+		}
+		to{
+			transform:rotateY(120deg) translateZ(400px);
+		}
+	}
+	.d3{
+		transform:rotateY(80deg) translateZ(400px);
+	}
+	.d4{
+		transform:rotateY(120deg) translateZ(400px);
+	}
+	.d5{
+		transform:rotateY(160deg) translateZ(400px);
+	}
+	.d6{
+		transform:rotateY(200deg) translateZ(400px);
+	}
+	.d7{
+		transform:rotateY(240deg) translateZ(400px);
+	}
+	.d8{
+		transform:rotateY(280deg) translateZ(400px);
+	}
+	.d9{
+		transform:rotateY(320deg) translateZ(400px);
+	}
+	p{
+		width: 1200px;
+		height: 1200px;
+		background: -webkit-radial-gradient(50% 50%,500px 500px,#ccc,transparent);
+		transform: rotateX(90deg) translateX(-500px) translateZ(250px);
+	}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="d1"><img src="me4.jpg" alt=""></div>
+		<div class="d2"><img src="me5.jpg" alt=""></div>
+		<div class="d3"><img src="me6.jpg" alt=""></div>
+		<div class="d4"><img src="me5.jpg" alt=""></div>
+		<div class="d5"><img src="me6.jpg" alt=""></div>
+		<div class="d6"><img src="me4.jpg" alt=""></div>
+		<div class="d7"><img src="me6.jpg" alt=""></div>
+		<div class="d8"><img src="me4.jpg" alt=""></div>
+		<div class="d9"><img src="me5.jpg" alt=""></div>
+		<p></p>
+	</div>
+</body>
+</html>
+
+

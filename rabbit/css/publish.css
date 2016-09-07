@@ -1,0 +1,139 @@
+@charset="UTF-8";
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background: #ebeae4;
+}
+.header {
+	width: 100%;
+	height: 0.8rem;
+	background: #48382b;
+	font-size: 0.3rem;
+	line-height: 0.8rem;
+	color: #fefbfb;
+	text-align: center;
+}
+.header .div1{
+	width: 0.45rem;
+	height: 0.45rem;
+	position: absolute;
+	vertical-align: middle;
+	left: 0.2rem;
+}
+#img1{
+	vertical-align: middle;
+	width: 0.24rem;
+}
+/*///////////////////////////////////////////*/
+.con .con1{
+	width: 100%;
+	background: red;
+	background: #ffffff;
+	margin: 0 auto;
+}
+.con .con1 textarea{
+	width: 92%;
+	height: 1.75rem;
+	margin: 0 auto;
+	margin-left: 4%;
+	border: none;
+	padding: 0.4rem 0 0.4rem 0;
+	font-size: 0.2rem;	
+	text-align: justify;
+}
+.con .con2{
+	width: 100%;
+	height: 1.87rem;
+	background: #ffffff;
+}
+.con .con2 ul{
+	width: 100%;
+	overflow: hidden;
+}
+.con2 ul>li{
+	float: left;
+	display: block;
+	width: 25%;
+}
+.con .con2 .li1 div{
+	height: 1.45rem;
+	width: 1.45rem;
+	margin: 0 auto;
+}
+ .con2 .li1 div img{
+	width: 100%;
+}
+.con2 .li1 .ldiv{
+	position: relative;
+	border: 2px solid #cbcbcb;
+}
+.con2 .li1 .ldiv >img{
+	width: 40%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.con .con3{
+	width: 100%;
+	height: 0.8rem;
+	background: #ffffff;
+	font-size: 0.24rem;
+	line-height: 0.8rem;
+	margin: 0.1rem 0 0.1rem 0;
+}
+.con .con3 img{
+	vertical-align: middle;
+	margin-left: 3%;
+	width: 0.27rem;
+}
+.con .con3 .img1{
+	margin-right: 24%;
+	width: 0.23rem;
+}
+/*footer...................................*/
+.footer{
+	width: 100%;
+	height: 0.88rem;
+	background: #ffa842;
+
+	margin-top: 4.93rem;
+	color: white;
+	text-align: center;
+	font-size: 0.24rem;
+	line-height: 0.88rem;
+}
+
+
+
+@media screen and (max-width:700px ) {
+	html{
+		font-size: 93.3333px;
+	}
+}
+
+
+@media  screen and (max-width:600px ) {
+	html{
+		font-size: 80px;
+	}
+}
+
+
+@media  screen and (max-width:500px ) {
+	html{
+		font-size: 66.6666px;
+	}
+}
+
+
+@media  screen and (max-width:400px ) {
+	html{
+		font-size: 50px;
+	}
+}
+

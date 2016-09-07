@@ -1,0 +1,226 @@
+html,body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "microsoft yahei";
+  font-size: 12px;
+}
+img {
+  border: 0;
+  position: absolute;
+}
+#loading {
+  width: 100%;
+  height: 100%;
+  background: #EFEFEF;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+}
+#loading > div {
+  width: 80%;
+  height: 3%;
+  border: solid 2px #000;
+  -webkit-border-radius: 5px;
+  margin: auto;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 57%;
+  background-color: transparent;
+  position: absolute;
+}
+#loading > div > div {
+  position: absolute;
+  width: 99%;
+  height: 80%;
+  -webkit-border-radius: 5px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+#loading > div > div > div {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  opacity: .4;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+@-webkit-keyframes tipmove {
+  0% {
+    bottom: 10px;
+    opacity: 0;
+  }
+  50% {
+    bottom: 15px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 20px;
+    opacity: 0;
+  }
+}
+#array {
+  width: 20px;
+  height: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  z-index: 999;
+  -webkit-animation: tipmove 1.5s infinite ease-in-out;
+}
+@keyframes wheelrot {
+  0% {
+    -webkit-transform: rotateZ(-360deg);
+  }
+}
+#ss_1 {
+  background-image: url(img/bg1.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+#ss_1 > img {
+  z-index: 3;
+}
+#ss_1 > img:nth-child(1) {
+  width: 80%;
+  left: 2%;
+  top: 15%;
+}
+#ss_1 > img:nth-child(2) {
+  width: 90%;
+  left: 2%;
+  top: 33%;
+}
+#ss_1 #car {
+  top: 62%;
+  width: 120%;
+  height: 48%;
+  left: -23%;
+  position: absolute;
+  background-image: url(img/car.png);
+  background-size: 100% auto;
+}
+#ss_1 #car > img {
+  width: 13.5%;
+  top: 26.5%;
+  left: 52%;
+  -webkit-animation-delay: 0.8s;
+  -webkit-animation: wheelrot 1.5s;
+}
+#ss_2 {
+  background-image: url(img/bg2.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+#ss_2 > img {
+  width: 76%;
+  left: 3%;
+  top: 11%;
+  z-index: 3;
+}
+#ss_3 {
+  background-image: url(img/bg3.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+#ss_3 > img {
+  width: 76%;
+  right: 4%;
+  top: 13%;
+  z-index: 3;
+}
+#ss_4 {
+  background-color: #fff;
+  position: relative;
+}
+#ss_4 > img {
+  z-index: 3;
+}
+#ss_4 > img:nth-child(1) {
+  width: 80%;
+  left: 2%;
+  top: 8%;
+}
+#ss_4 > img:nth-child(2) {
+  width: 80%;
+  left: 2%;
+  top: 30%;
+}
+#ss_4 > img:nth-child(3) {
+  width: 100%;
+  bottom: 0;
+}
+#ss_5 {
+  background-image: url(img/bg5.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+#ss_5 > img:nth-child(1) {
+  width: 80%;
+  left: 2%;
+  top: 8%;
+}
+#ss_5 > img:nth-child(2) {
+  width: 45%;
+  left: 50%;
+  top: 26%;
+}
+#ss_5 > img:nth-child(3) {
+  width: 90%;
+  left: 0;
+  top: 58%;
+}
+#logo {
+  position: fixed;
+  top: 1%;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+#logo > img {
+  position: absolute;
+  z-index: 10;
+}
+#logo > img:nth-child(1) {
+  width: 28.5%;
+  left: 2%;
+  top: 2%;
+}
+#logo > img:nth-child(2) {
+  width: 7.5%;
+  right: 2%;
+}
+
+@media screen and (min-width: 700px){
+    #ss_1 #car > img {
+    width: 13.5%;
+    top: 35.5%;
+    left: 52%;
+    -webkit-animation-delay: 0.8s;
+    -webkit-animation: wheelrot 1.5s;
+  }
+}
+/*# sourceMappingURL=index.css.map */

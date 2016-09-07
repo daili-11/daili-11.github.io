@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/container3.css">
+</head>
+<body>
+	<div class="xl_header">
+		<a href="do.html"><img src="../img/11.png" alt=""></a>
+		<span>菜品详情</span>
+	</div>
+	<img src="../img/20.png" alt="" class="xl_title">
+	<div class="clear xl_introduce">
+		<div class="fl">
+			<h4>香煎杏鲍菇</h4>
+			<span>酱香口味</span><span>5分钟</span>
+		</div>
+		<div class="fr xl_judge">
+			<img src="../img/22.png" alt="">
+			<img src="../img/22.png" alt="">
+			<img src="../img/22.png" alt="">
+			<img src="../img/22.png" alt="">
+			<img src="../img/22.png" alt="">
+			<p>305人浏览</p>
+		</div>
+	</div>
+	<h6>菜单</h6>
+	<div class="menu">
+		<div class="xl_all clear">
+			<div class="fl">
+				<p>杏鲍菇</p>
+				<img src="../img/23.png" alt="" class="xl_gu">
+			</div>
+			<div class="fl xl_dif">
+				<p>鲜葱</p>
+				<img src="../img/24.png" alt="" class="xl_con">
+			</div>
+			<div class="fl">
+				<p>玉米油</p>
+				<img src="../img/25.png" alt="" class="xl_you">
+			</div>
+			<div class="fr">
+				<p>山椒酱</p>
+				<img src="../img/25.png" alt="" class="xl_you">
+			</div>
+		</div>
+	</div>
+	<h6>攻略</h6>
+	<ul>
+		<li class="xl_main">主料</li>
+		<li class="xl_material">
+			<p>杏鲍菇 (2个)</p>
+			<p></p>
+		</li>
+		<li class="xl_main">辅料</li>
+		<li class="xl_material">
+			<p>鲜葱 (1颗)</p>
+			<p>山椒酱 (45毫升)</p>
+		</li>
+		<li class="xl_material">
+			<p>玉米油 (2.5毫升)</p>
+			<p></p>
+		</li>
+		<li class="xl_step clear">
+			<div><img src="../img/26.png" alt=""><h4><p>步骤一</p><span>杏鲍菇洗净，拭干水分，切片；尽量厚薄均匀；再切点葱花；</span></h4></div>
+			<div><img src="../img/27.png" alt=""><h4><p>步骤二</p><span>电饼铛上下两个煎盘都刷上一层玉米油；</span></h4></div>
+			<div><img src="../img/28.png" alt=""><h4><p>步骤三</p><span>通电，打开上下两个开关，预热</span></h4></div>
+			<div><img src="../img/29.png" alt=""><h4><p>步骤四</p><span>预热完成后，将杏鲍菇片铺在电饼铛里；启动“大饼/馅饼”功能；</span></h4></div>
+			<div><img src="../img/30.png" alt=""><h4><p>步骤五</p><span>一个程序完成后，将杏鲍菇翻面；启动“煎蛋/薄饼”功能；</span></h4></div>
+			<div><img src="../img/31.png" alt=""><h4><p>步骤六</p><span>程序完成后，关掉上开关；调入适量山椒酱；将酱料同杏鲍菇炒均匀；</span></h4></div>
+			<div><img src="../img/32.png" alt=""><h4><p>步骤七</p><span>食材都煎熟之后，撒入葱花；</span></h4></div>
+			<div><img src="../img/33.png" alt=""><h4><p>步骤八</p><span>装盘，上桌咯。</span></h4></div>
+		</li>
+	</ul>
+	<div class="xl_accounts clear">
+		<p>加入购物车</p>
+		<p>立即购买</p>
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+	$all = $('.xl_all')
+	var disX = 0;
+	$all.on('touchstart',function (e) {
+		disX = e.originalEvent.targetTouches[0].pageX;
+		var left = $(this).offset().left;
+		var index = 0;
+		var dx = 0;
+		$all.on('touchmove',function (e) {
+			var x = e.originalEvent.targetTouches[0].pageX-disX;
+			$(this).css('left',x+left);
+		})
+	})
+	$all.on('touchend',function () {
+		$all.off('touchmove');
+		if ($(this).offset().left>$(window).width()*0.04) {
+			$(this).animate({
+				left:$(window).width()*0.04+'px',
+			})
+		}
+		if ($(this).offset().left<-($(this).width()-$(window).width()*0.96)) {
+			$(this).animate({
+				left:-($(this).width()-$(window).width()*0.96)+'px',
+			})
+		}
+	})
+</script>
+</html>

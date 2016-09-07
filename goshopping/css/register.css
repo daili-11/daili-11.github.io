@@ -1,0 +1,217 @@
+.wrap{
+  width: 100%;
+  position: relative;
+}
+.header{
+  width: 100%;
+  height: .415rem;
+  background-color: #48382b;
+  position: relative;
+  text-align: center;
+  color: #f1f1f1;
+  font-size: .17rem;
+  line-height: .415rem;
+  box-shadow: 0px 2px 5px #a3a3a3;
+}
+.header a{
+  position: absolute;
+  width: .1rem;
+  height: .185rem;
+  background-image: url(../img/login.png);
+  background-size: .94500005rem .21rem;
+  background-position: 0 0;
+  top:.115rem;
+  left: 4%;
+}
+.content{
+  width: 100%;
+}
+.content .img{
+  width: 86.8%;
+  text-align: center;
+  height: 1.465rem;
+  margin: auto;
+}
+.content .img img{
+  vertical-align: middle;
+  width: 26.88172%;
+}
+.content form{
+    width: 86.8%;
+    margin: 0 auto;
+    margin-bottom: .435rem;
+}
+.content form input{
+  margin: 0;
+  margin-bottom: .025rem;
+  width: 100%;
+  height: .4rem;
+  display: inline;
+  border: 0;
+  border-bottom: 1px solid #a1a1a1;
+  float: left;
+  font-size: .13rem;
+}
+.content form div{
+  width: 100%;
+  margin-bottom: .025rem;
+  height: .435rem;
+  border-bottom: 1px solid #a1a1a1;
+  position: relative;
+}
+.content form div input{
+  border: 0;
+  width: 60%;
+}
+.content form div span{
+  position: absolute;
+  text-align: center;
+  width: 23%;
+  height: .22rem;
+  line-height: .22rem;
+  top:0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+  border: 1px solid #000;
+  color: #000;
+  font-size: .12rem;
+}
+.content form .btn{
+  margin: 0;
+  margin-top: .4025rem;
+  height: .31rem;
+  line-height: .31rem;
+  border-radius: .31rem;
+  background-color: #48382b;
+  color: #fff;
+  font-size: .17rem;
+}
+.other_login{
+  width: 100%;
+}
+p{
+  font-size: .12rem;
+  text-align: center;
+  color: #000;
+  margin-bottom: .125rem;
+}
+.login_logos{
+  width: 54.266666%;
+  margin: auto;
+}
+.login_logos a{
+  width: 25%;
+  float: left;
+  text-align: center;
+  height: .21rem;
+}
+.login_logos a span{
+  display: block;
+  margin: auto;
+  background-image: url(../img/login.png);
+  background-position-y:0;
+}
+.qq span{
+  width: .19rem;
+  height: .21rem;
+  background-size: .945rem .21rem;
+  background-position-x:-.10999998rem;
+}
+.wechat span{
+  width: .235rem;
+  height: .21rem;
+  background-size: .945rem .21rem;
+  background-position-x:-.30999998rem;
+}
+.weibo span{
+  width: .23rem;
+  height: .21rem;
+  background-size: .945rem .21rem;
+  background-position-x:-.53999998rem;
+}
+.baidu span{
+  width: .17rem;
+  height: .21rem;
+  background-size: .945rem .21rem;
+  background-position-x:-.76999998rem;
+}
+.link{
+  width: 86.8%;
+  margin: auto;
+  font-size: .12rem;
+  margin-top: .85877061rem;
+  margin-bottom: .09835082rem;
+}
+.link a{
+  color: #000;
+}
+.link a:active{
+  color: #000;
+  text-decoration: underline;
+}
+.tips{
+  height: 0.2rem;
+  line-height: 0.2rem;
+  color: red;
+  border-radius: .05rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: .12rem;
+  text-align: center;
+  padding: 0 2%;
+  position: absolute;
+  box-shadow: 2px 2px 2px #ccc;
+  display: none;
+  left: 10%;
+}
+.tips span{
+  display: block;
+}
+.tips b{
+  width: 0;
+  height: 0;
+  border: .1rem solid black;
+  border-color: #ccc transparent transparent transparent;
+  position: relative;
+  bottom: -0.06rem;
+}
+.tips var{
+  width: 0;
+  height: 0;
+  border: .09rem solid black;
+  border-color: #fff transparent transparent transparent;
+  position: relative;
+  left: -.19rem;
+  bottom: -.03rem;
+}
+@media screen and (min-width:360px) {
+  html{
+    font-size: 110px;
+  }
+}
+@media screen and (min-width:400px) {
+  html{
+    font-size: 120px;
+  }
+}
+@media screen and (min-width:500px) {
+  html{
+    font-size: 130px;
+  }
+}
+@media screen and (min-width:600px) {
+  html{
+    font-size: 150px;
+  }
+}
+@media screen and (min-width:700px) {
+  html{
+    font-size: 180px;
+  }
+}
+@media screen and (min-width:800px) {
+  html{
+    font-size: 190px;
+  }
+}

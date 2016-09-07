@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>兔购他人个人信息</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="../css/reset.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/pyq_someone.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="header">
+      <a href="javascript:history.go(-1);"></a>
+      <span id="tosee">+关注</span>
+    </div>
+    <div class="message">
+      <div class="icon">
+        <img src="../img/nzbst.png" alt="" />
+      </div>
+      <div class="self">
+        <div class="user">你咋不上天</div>
+      </div>
+      <div class="other">
+        <div class="someone clear">
+          <div class="see fl">关注 <span id="see">6</span></div>
+          <div class="likeme fl">粉丝  <span id="like">17</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="trends">
+      <div class="th">
+        Ta的动态 <span>153</span>
+      </div>
+      <div class="td clear">
+        <div class="img fl">
+          <img src="../img/fd1.jpg" alt="劲脆盐酥鸡" />
+        </div>
+        <div class="con fl">
+          <a href="###" class="h clear">
+            <span class="title fl">劲脆盐酥鸡</span><span class="date fr">2016-3-23</span>
+          </a>
+          <div class="text">明媚的阳光，懒洋洋的中午，炸上几块鲜香...</div>
+          <div class="make clear">
+            <a href="###" class="reward fl"><span class="person">12</span>人打赏</a>
+            <a href="###" class="comment fl"><var></var>写评论</a>
+            <a href="###" class="share fr"><strong></strong>分享</a>
+          </div>
+        </div>
+        <a href="###" class="more"></a>
+      </div>
+      <div class="td clear">
+        <div class="img fl">
+          <img src="../img/fd2.jpg" alt="麻麻的红烧肉" />
+        </div>
+        <div class="con fl">
+          <a href="###" class="h clear">
+            <span class="title fl">麻麻的红烧肉</span><span class="date fr">2016-3-21</span>
+          </a>
+          <div class="text">最好吃不过麻麻亲手做的红烧肉~这次我也....</div>
+          <div class="make clear">
+            <a href="###" class="reward fl"><span class="person">22</span>人打赏</a>
+            <a href="###" class="comment fl"><var></var>写评论</a>
+            <a href="###" class="share fr"><strong></strong>分享</a>
+          </div>
+        </div>
+        <a href="###" class="more"></a>
+      </div>
+      <div class="td clear">
+        <div class="img fl">
+          <img src="../img/fd3.jpg" alt="黑椒牛排" />
+        </div>
+        <div class="con fl">
+            <a href="###" class="h clear">
+              <span class="title fl">黑椒牛排</span><span class="date fr">2016-3-15</span>
+            </a>
+            <div class="text">温暖的烛光，浪漫的气氛，怎么少得了一份...</div>
+          <div class="make clear">
+            <a href="###" class="reward fl"><span class="person">8</span>人打赏</a>
+            <a href="###" class="comment fl"><var></var>写评论</a>
+            <a href="###" class="share fr"><strong></strong>分享</a>
+          </div>
+        </div>
+        <a href="###" class="more"></a>
+      </div>
+      <div class="td clear">
+        <div class="img fl">
+          <img src="../img/fd4.jpg" alt="梅子番茄" />
+        </div>
+        <div class="con fl">
+          <a href="###" class="h clear">
+            <span class="title fl">梅子番茄—恋爱的味道</span><span class="date fr">2016-2-23</span>
+          </a>
+          <div class="text">撒娇女人最好命！还记得酸酸甜甜的初恋吗...</div>
+          <div class="make clear">
+            <a href="###" class="reward fl"><span class="person">2</span>人打赏</a>
+            <a href="###" class="comment fl"><var></var>写评论</a>
+            <a href="###" class="share fr"><strong></strong>分享</a>
+          </div>
+        </div>
+        <a href="###" class="more"></a>
+      </div>
+    </div>
+  </body>
+  <script src="../js/jquery-3.0.0.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    var bol = false;
+    $('#tosee').on('click',function() {
+      if (!bol) {
+        $(this).html('取消关注');
+        bol = true;
+      }else {
+        $(this).html('+关注');
+        bol = false;
+      }
+    });
+  </script>
+</html>

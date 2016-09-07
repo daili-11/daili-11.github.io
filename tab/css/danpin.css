@@ -1,0 +1,171 @@
+html{
+	font-size: 100px;
+}
+.xl_header{
+	width: 92%;
+	height: 0.57rem;
+	background: rgb(72,56,43);
+	padding: 0.35rem 4% 0 4%;
+	-webkit-box-shadow: 0px 6px 10px rgb(163,163,163);
+}
+.xl_header a img{
+	width: 0.21rem;
+}
+.xl_header .xl_title{
+	font-size: 0.32rem;
+	color: white;
+	margin-top: 0.03rem;
+	margin-left: 34.4%;
+}
+.xl_header div{
+	float: right;
+	width: 8%;
+}
+.xl_header div span{
+	display: inline-block;
+	width: 0.07rem;
+	height: 0.07rem;
+	border: 1px solid white;
+	border-radius: 50%;
+}
+.xl_header div span:nth-child(2){
+	margin: 0 0.08rem;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.xl_wrap{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.xl_wrap .xl_inner{
+	width: 600%;
+	position: absolute;
+	left: -100%;
+	top: 0;
+}
+.xl_wrap .xl_inner img{
+	display: block;
+	width: 16.6666%;
+	float: left;
+}
+.xl_wrap .xl_select{
+	width: 100%;
+	position: absolute;
+	bottom: 0.32rem;
+	text-align: center;
+}
+.xl_wrap .xl_select span{
+	display: inline-block;
+	width: 0.13rem;
+	height: 0.13rem;
+	background: rgb(94,94,94);
+	margin-right: 3.333%;
+	border-radius: 50%;
+}
+.xl_wrap .xl_select span:nth-child(1){
+	background: rgb(189,189,189);
+}
+ul{
+	width: 100%;
+}
+ul .xl_introduce{
+	width: 92%;
+	padding: 0.21rem 4%;
+	border-bottom: 1px solid rgb(125,125,125);
+	position: relative;
+}
+ul .xl_introduce h4{
+	font-size: 0.26rem;
+	color: rgb(100,100,100);
+}
+ul .xl_introduce h6{
+	font-size: 0.23rem;
+	color: rgb(160,160,160);
+	margin: 0.23rem 0;
+}
+ul .xl_introduce>p{
+	font-size: 0.23rem;
+	color: rgb(255,93,93);
+}
+ul .xl_introduce div{
+	text-align: center;
+	width: 20.667%;
+}
+ul .xl_introduce div p{
+	font-size: 0.19rem;
+	color: rgb(183,183,183);
+	margin-top: 0.16rem;
+}
+ul .xl_introduce div .xl_share{
+	width: 50%;
+	border-left: 1px solid rgb(169,169,169);
+	padding-left: 20%;
+	box-sizing: border-box;
+}
+ul .xl_introduce div .xl_collect{
+	width: 30%;
+}
+ul .xl_sales{
+	font-size: 0.23rem;
+	color: rgb(100,100,100);
+	position: absolute;
+	right: 4%;
+	bottom: 0.21rem;
+}
+ul .xl_rank{
+	width: 92%;
+	padding: 0.21rem 4%;
+	border-bottom: 1px solid rgb(169,169,169);
+}
+ul .xl_rank p{
+	font-size: 0.23rem;
+	color: rgb(100,100,100);
+	margin-bottom: 0.09rem;
+}
+ul .xl_rank div{
+	font-size: 0.22rem;
+	line-height: 0.4rem;
+	color: rgb(100,100,100);
+	text-indent: 2em;
+	width: 92%;
+	margin: auto; 
+}
+ul .xl_pay{
+	width: 92%;
+	height: 0.57rem;
+	padding: 0 4%;
+	font-size: 0.22rem;
+	color: rgb(100,100,100);
+	line-height: 0.57rem;
+	border-bottom: 1px solid rgb(169,169,169);
+}
+ul .xl_dif{
+	text-align: center;
+}
+ul .xl_pay span{
+	width: 100%;
+}
+ul .xl_pay span:nth-child(1){
+	position: absolute;
+	left: 4%;
+	text-align: left;
+}
+ul .xl_pay span:nth-child(3){
+	position: absolute;
+	right: 4%;
+	text-align: right;
+}
+ul .xl_pay img{
+	vertical-align: middle;
+	width: 3.768%;
+}

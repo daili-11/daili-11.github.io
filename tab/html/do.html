@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/container2.css">
+</head>
+<body>
+	<div class="xl_header">
+		<a href="select.html"><img src="../img/11.png" alt=""></a>
+		<span>可做菜品</span>
+	</div>
+	<ul>
+		<li class="clear"><img src="../img/12.png" alt="" class="fl"><div class="fl">
+			<h4>辣子鸡</h4>
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<p>
+				<span>家常菜</span><span>白领</span><span>香辣</span>
+			</p>
+			<h6>
+				>15分钟
+			</h6>
+			<img src="../img/19.png" alt="" class="xl_star">
+		</div></li>
+		<li class="clear"><img src="../img/13.png" alt="" class="fl"><div class="fl">
+			<h4>竹简筒湘味小河虾</h4>
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<p>
+				<span>家常菜</span><span>白领</span>
+			</p>
+			<h6>
+				>15分钟
+			</h6>
+			<img src="../img/19.png" alt="" class="xl_star">
+		</div></li>
+		<li class="clear"><img src="../img/14.png" alt="" class="fl"><div class="fl">
+			<h4>粉皮如意卷</h4>
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<p>
+				<span>家常菜</span><span>白领</span>
+			</p>
+			<h6>
+				>15分钟
+			</h6>
+			<img src="../img/19.png" alt="" class="xl_star">
+		</div></li>
+		<li class="clear"><img src="../img/15.png" alt="" class="fl"><div class="fl">
+			<h4>可乐鸡翅</h4>
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<p>
+				<span>家常菜</span><span>白领</span><span>时尚</span>
+			</p>
+			<h6>
+				>15分钟
+			</h6>
+			<img src="../img/19.png" alt="" class="xl_star">
+		</div></li>
+		<li class="clear"><img src="../img/13.png" alt="" class="fl"><div class="fl">
+			<h4>香辣蟹</h4>
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<img src="../img/17.png" alt="">
+			<p>
+				<span>家常菜</span><span>白领</span><span>香辣</span>
+			</p>
+			<h6>
+				>15分钟
+			</h6>
+			<img src="../img/19.png" alt="" class="xl_star">
+		</div></li>
+	</ul>
+</body>
+<script type="text/javascript">
+	var ul = document.querySelector('ul');
+	var li = ul.querySelectorAll('li');
+	var star = document.querySelectorAll('.xl_star');
+	function score(options) {
+		var ops={
+			"heart":[0,0,0,0,0],
+		}
+		for(var key in options){
+			ops[key]= options[key]
+		}
+		for (var i = 0; i < ops.heart.length; i++) {
+			if (ops.heart[i]>4) {ops.heart[i]=4}
+		}
+		for (var i = 0; i < li.length; i++) {
+			var img = li[i].querySelectorAll('img')
+			for (var j = 1; j < 1+ops.heart[i]; j++) {
+				img[j].src="../img/16.png"
+			}
+		}
+	}
+	for (var i = 0; i < star.length; i++) {
+		star[i].addEventListener('click',function () {
+			if (this.src.indexOf('19.png')!=-1) {
+				this.src='../img/18.png'
+			}else {
+				this.src='../img/19.png'
+			}
+		})
+	}
+	score({
+		"heart":[1,2,3,1,2],
+	})
+
+</script>
+</html>
+

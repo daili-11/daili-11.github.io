@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>video</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/video.css">
+	<script type="text/javascript" src="../js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="../js/video.js"></script>
+</head>
+<body>
+	<div class="wrap" id="wrap">
+		
+	</div>
+</body>
+<script type="text/javascript" src="ckplayer6.4/ckplayer/ckplayer.js"></script>
+<script type="text/javascript">
+	var wrap = document.querySelector('.wrap');
+	var flashvars={
+        p:0,
+        e:1,
+        i:'../img/video1.png'
+    };
+    var video=['video_2.mp4'];
+    var support=['all'];
+    CKobject.embedHTML5('wrap','ckplayer_a1',"100%","600",video,flashvars,support);
+</script>
+</html>
+<!--
+用到的知识点1:
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+device-width——设备的宽度
+initial-scale——初始大小
+maximum-scale——最大缩放
+user-scalable——用户操作 0为不能操作 
+-->
+
+<!-- 
+用到的知识点2:
+Orientation-设备方向
+@media screen and (orientation:portrait){} 竖屏
+@media screen and (orientation:landscape){} 横屏 
+-->
+<!-- http://v.qq.com/x/cover/wp1j7w0tgyj1a6m.html?vfm=bdvppzq&ptag=baidu.video.variety.singchina&frp=v.baidu.com%2Fshow_intro%2F&bl=jp_video -->
