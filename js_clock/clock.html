@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>clock</title>
+	<style type="text/css">
+	.wrap{
+		position: absolute;
+	}
+	img{
+		width: 500px;
+		height: 500px;
+	}
+	.h{
+		width: 10px;
+		height: 150px;
+		background: green;
+		position: absolute;
+		left: 245px;
+		top: 100px;
+		transform: rotate(0deg);
+		transform-origin: 5px 150px;
+	}
+	.m{
+		width: 5px;
+		height: 180px;
+		background: yellow;
+		position: absolute;
+		left: 247.5px;
+		top: 70px;
+		transform: rotate(0deg);
+		transform-origin: 2.5px 180px;
+	}
+	.s{
+		width: 3px;
+		height: 250px;
+		background: red;
+		position: absolute;
+		left: 248.5px;
+		top: 50px;
+		transform: rotate(0deg);
+		transform-origin: 1.5px 200px;
+	}
+	#time{
+		width: 100px;
+		height: 50px;
+		/*border: 1px solid black;*/
+		position: absolute;
+		left: 40%;
+		top: 58%;
+		font-size: 30px;
+	}
+	#week{
+		width: 100px;
+		height: 50px;
+		position: absolute;
+		/*border: 1px solid black;*/
+		left: 54%;
+		top: 45%;
+		font-size: 30px;
+	}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<img src="clock.jpg" alt="">
+		<div id="h" class="h"></div>
+		<div id="m" class="m"></div>
+		<div id="s" class="s"></div>
+		<div id="time"></div>
+		<div id="week"></div>
+	</div>
+</body>
+<script type="text/javascript">
+var oH = document.getElementById('h');
+var oM = document.getElementById('m');
+var oS = document.getElementById('s');
+var time = document.getElementById('time');
+function timeFn() {
+	var oDate = new Date();//获取当前时间9.30
+	var h = oDate.getHours();//获取小时数0-23
+	var m = oDate.getMinutes();//获取分
+	var s = oDate.getSeconds();//获取秒
+	var w = oDate.getDay();//获取星期0-6 从星期天开始	
+	var arr = ["星期天","星期一","星期二","星期三","星期四","星期五","星期六"]
+	oH.style.transform = "rotate("+(h*30+m*6/360*30)+"deg)";
+	oM.style.transform = "rotate("+(m*6+s*6/360*6)+"deg)";
+	oS.style.transform = "rotate("+s*6+"deg)";
+	time.innerHTML = h+":"+m+":"+s;
+	week.innerHTML = arr[w];
+}
+timeFn()
+setInterval(timeFn,1000)
+</script>
+</html>
+
+
+
+
+
+
+
