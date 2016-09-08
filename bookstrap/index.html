@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bootstrap</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style type="text/css">
+	body{
+		position: relative;
+		text-align: center;
+		font-size: 20px;
+	}
+	.row div div{
+		margin-bottom: 20px;
+	}
+	.row div div img{
+		width: 100%;
+	}
+	.wrap{
+		margin-bottom: 50px;
+	}
+	</style>
+	<!-- col-lg-offset-1 空一个格 --> <!-- margin-left:8.33333333%; -->
+	<!-- 栅格系统--工作原理 row container 固定宽度 container-fluid aligment padding  -->
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-pills nav-justified"> 
+			<li class="active"><a href="#">田 园 风</a></li> 
+			<li><a href="#">南 海 湾</a></li> 
+			<li><a href="#">中 国 风</a></li> 
+			<li><a href="#">西 方 教 堂</a></li> 
+			<li><a href="#">龙 凤 山 庄</a></li> 
+		</ul>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-sm-3">
+				<div><img src="img/me1.jpg" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<ul class="pagination"> 
+	    <li><a href="#">上一页</a></li> 
+	    <li class="active"><a href="#">1</a></li> 
+	    <li><a href="#">2</a></li> 
+	    <li><a href="#">3</a></li> 
+	    <li><a href="#">4</a></li> 
+	    <li><a href="#">5</a></li> 
+	    <li><a href="#">下一页</a></li> 
+	</ul>
+</body>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	var arr = ["img/me1.jpg","img/me2.jpg","img/me3.jpg","img/me7.jpg","img/me8.jpg"];
+			$('.pagination').find("li").on("click",function () {
+				$('.pagination').find("li").removeClass('active');
+				$(this).addClass('active');
+				var i=$(this).index();
+				$('.row').find("img").attr('src',arr[i]);
+			})
+		$('.nav').find("li").on("click",function () {
+			$('.nav').find("li").removeClass('active');
+			$(this).addClass('active');
+			var i=$(this).index();
+			$('.row').find("img").attr('src',arr[i]);
+		})
+	
+</script>
+</html>
