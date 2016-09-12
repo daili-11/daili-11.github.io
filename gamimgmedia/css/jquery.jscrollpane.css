@@ -1,0 +1,137 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 20px;
+	height: 100%;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 20px;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	background: #666666;
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #FFF;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspHorizontalBar .jspDrag {margin:5px 0; height:10px}
+.jspHorizontalBar .jspDrag .jspDragLeft, .jspHorizontalBar .jspDrag .jspDragRight {background:url(../images/jspDragX.png); width:4px; height:10px; overflow:hidden}
+.jspHorizontalBar .jspDrag .jspDragLeft {position:absolute; top:0; left:0}
+.jspHorizontalBar .jspDrag .jspDragRight {position:absolute; top:0; right:0; background-position:-4px 0}
+
+.jspVerticalBar .jspDrag {margin:0 5px; width:10px}
+.jspVerticalBar .jspDrag .jspDragTop, .jspVerticalBar .jspDrag .jspDragBottom {background:url(../images/jspDragY.png); width:10px; height:4px; overflow:hidden}
+.jspVerticalBar .jspDrag .jspDragTop {position:absolute; top:0; left:0}
+.jspVerticalBar .jspDrag .jspDragBottom {position:absolute; bottom:0; left:0; background-position:0 -4px}
+
+.jspArrow
+{
+	background: #666666;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrowLeft, .jspArrowRight {overflow:hidden; background-repeat:no-repeat; background-position:50% 50%}
+.jspArrowLeft {background-image:url(../images/scrollbar/jspArrowLeft.png)}
+.jspArrowRight {background-image:url(../images/scrollbar/jspArrowRight.png)}
+
+
+.jspArrowUp, .jspArrowDown {overflow:hidden; background-repeat:no-repeat; background-position:50% 50%}
+.jspArrowUp {background-image:url(../images/scrollbar/jspArrowUp.png)}
+.jspArrowDown {background-image:url(../images/scrollbar/jspArrowDown.png)}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	/*background: #80808d;*/
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 24px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 31px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}

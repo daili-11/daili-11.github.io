@@ -1,0 +1,42 @@
+#sb-title-inner,#sb-info-inner,#sb-loading-inner,div.sb-message{font-family:"HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:200;color:#000}
+#sb-container{position:fixed;margin:0;padding:0;top:0;left:0;z-index:999;text-align:left;visibility:hidden;display:none;}
+#sb-overlay{position:relative;height:100%;width:100%;}
+#sb-wrapper{position:absolute;visibility:hidden;width:100px;}
+#sb-wrapper-inner{position:relative;overflow:hidden;height:100px;}
+#sb-body{position:relative;height:100%;}
+#sb-body-inner{position:absolute;height:100%;width:100%;}
+#sb-player.html{height:100%;overflow:auto;}
+#sb-body img{border:none;}
+#sb-loading{position:relative;height:100%;}
+#sb-loading-inner{position:absolute;font-size:14px;line-height:24px;height:24px;top:50%;margin-top:-12px;width:100%;text-align:center;}
+#sb-loading-inner span{background:url(loading.gif) no-repeat;padding-left:34px;display:inline-block;}
+#sb-body,#sb-loading{background-color:#FFF;}
+#sb-title,#sb-info{position:relative;margin:0;padding:0;overflow:hidden;}
+#sb-title,#sb-title-inner{height:26px;line-height:26px;}
+#sb-title-inner{font-size:16px;}
+#sb-info,#sb-info-inner{height:20px;line-height:20px;}
+#sb-info-inner{font-size:12px;}
+#sb-nav{float:right;height:16px;padding:2px 0;width:45%;}
+/*#sb-nav a{display:block;float:right;height:16px;width:16px;margin-left:3px;cursor:pointer;background-repeat:no-repeat; color:#000}*/
+#sb-nav-close{position:fixed; top:30px; right:30px; background:url(../images/gallery_close.png); width:22px; height:21px; z-index:1}
+#sb-nav-previous, #sb-nav-next {
+	width: 50%;
+	height: 100%;
+	zoom: 1;
+	display: block;
+	position:fixed;
+	top:0;
+}
+#sb-nav-previous span, #sb-nav-next span {display:block; position:absolute; top:50%; width:25px; height:21px; margin-top:-11px}
+#sb-nav-previous {left:0}
+
+#sb-nav-previous span {background-image:url('../images/gallery_prev.png'); left:27px}
+
+#sb-nav-next {right:0}
+
+#sb-nav-next span {background-image:url('../images/gallery_next.png'); right:27px}
+
+#sb-counter_container {position:fixed; text-align:center; height:30px; overflow:hidden; bottom:0; left:0; right:0; z-index:101; zoom:1}
+#sb-counter {background-color:#666; overflow:hidden; padding:0 20px; display:inline-block; //display:inline; zoom:1}
+#sb-counter a {float:left; outline:none; text-indent:-9999px; overflow:hidden; width:20px; height:30px; background:url(../images/page_dot.png) no-repeat 50% 50%; cursor:pointer}
+#sb-counter a.sb-counter-current {background:url(../images/page_dot_active.png) no-repeat 50% 50%; cursor:default}

@@ -1,0 +1,118 @@
+html, body {margin:0; padding:0; width:100%; overflow:hidden}
+body {font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000; background:url(../images/body_bg.gif) 0 0 #cfcfcf}
+img {border:0}
+a {text-decoration:underline; border:0; color:#000; outline:none; cursor:pointer}
+a:hover {text-decoration:none; color:#000}
+
+form {display:inline}
+table {border-collapse:collapse}
+td {padding:0; vertical-align:top}
+ul, li {margin:0; padding:0; list-style:none}
+
+#wrapper {width:100%; position:relative}
+
+#main_menu {position:fixed; top:40px; left:0; z-index:2; width:234px; background:url(../images/tr.png); font-family:'ElektraTextPro'}
+#main_menu img {display:block}
+#main_menu ul {visibility:hidden}
+#main_menu li {margin:1px 0 0 0; background:url(../images/main_menu_bg.png)}
+#main_menu li:hover {background:url(../images/main_menu_hover_bg.png)}
+#main_menu li a {display:block; height:49px; line-height:49px; padding:0 0 0 25px; color:#FFF; text-decoration:none; text-transform:uppercase}
+#main_menu li.current a {background:url(../images/main_menu_current.png) no-repeat 182px 50%}
+
+#lang {position:fixed; top:0; right:163px; font-size:10px; text-transform:uppercase; z-index:255; font-family:'ElektraTextPro', 'Myriad Pro'; line-height:20px}
+#lang li {display:inline}
+#lang a {float:left; width:28px; padding:6px 0 0 0; text-align:center; text-decoration:none}
+#lang a:hover {text-decoration:underline}
+#lang li.current a {background:url(../images/lang_current.png) no-repeat 50% 0}
+
+#content {position:fixed; top:0; left:0; bottom:30px; width:100%; overflow-x:scroll}
+#scrollable {width:5000px; position:relative; overflow:hidden}
+
+#back_figs {background:url(../images/back_figs.png) 25px 0; width:100%; height:558px; position:absolute; top:50%; left:0; margin:-247px 0 0 0}
+#tube {background:url(../images/tube.png); width:100%; height:454px; position:absolute; top:50%; left:0; margin:-223px 0 0 0}
+#upper_figs{background:url(../images/upper_figs.png); width:100%; height:297px; position:absolute; top:50%; left:0; margin:-52px 0 0 0}
+
+#games {position:relative; height:99%}
+#games div.block_container {position:relative; height:100%; overflow:hidden; float:left}
+#games div.block {display:block; width:1000px; height:325px; margin:0 auto; position:absolute; top:50%; left:50%; margin:-150px 0 0 -500px; cursor:pointer}
+#games .date {display:block; width:90px; height:20px; background-color:#000; position:absolute; top:25px; left:560px; color:#FFF; text-align:center; font-family:'ElektraTextPro'; line-height:20px; text-decoration:none}
+#games div.block div.pic {display:block; position:absolute; top:0; left:185px}
+#games div.text {display:block; width:210px; height:165px; background:url(../images/dot_white_tr.png); position:absolute; top:55px; left:420px; font-family:'ElektraTextPro'; text-transform:uppercase; padding:35px 40px 0 150px; line-height:25px; text-decoration:none}
+#games div.text span.name {text-decoration:underline}
+#games div.text span.expand {background:url(../images/icon_expand.png); width:8px; height:8px; position:absolute; bottom:11px; right:11px}
+#games span.close {background:url(../images/close.png); width:20px; height:20px; overflow:hidden; position:absolute; cursor:pointer; z-index:1; top:-40px; left:50%; margin:0 0 0 416px; display:none}
+#games div.scroll {position:absolute; z-index:1; top:-10px; left:50%; margin:0 0 0 416px; height:340px; width:20px; visibility:hidden}
+#games div.double {overflow:hidden}
+#games div.double div.double_left {float:left; width:370px; overflow:hidden}
+#games div.double div.double_left div.info {overflow:hidden; color:#666; line-height:20px; padding:25px 0 0 0}
+#games div.double div.double_left div.info div.type {float:left; width:140px; padding:0 20px 0 0}
+#games div.double div.double_left div.info div.release {float:left; width:140px}
+#games div.double div.double_right {float:left; width:140px; overflow:hidden; margin-left:55px}
+#games div.double div.double_right a.arrow {background:url(../images/arrow_right_black.png) no-repeat; padding:25px 0 0 0; display:inline-block; line-height:20px; text-decoration:underline; cursor:pointer}
+#games div.double div.double_right a.arrow:hover {text-decoration:none}
+#games div.double_content {}
+#games div.double_content div.double_left, #games div.double_content div.double_right {background:url(../images/double_content_line.png) no-repeat; padding:30px 0 0 0; text-transform:none; font-size:14px}
+#games div.double div.double_right a.video {display:block; margin:15px 0 40px 0; position:relative}
+#games div.double div.double_right a.video img {display:block}
+#games div.double div.double_right a.video span.play {background:url(../images/game_video_play.png); width:42px; height:55px; position:absolute; top:50%; left:50%; margin:-27px 0 0 -21px}
+#games div.double div.double_right ul.gallery {width:160px; position:relative}
+#games div.double div.double_right ul.gallery li {float:left; margin:0 20px 20px 0; position:relative}
+#games div.double div.double_right ul.gallery a {cursor:pointer}
+#games div.double div.double_right ul.gallery span.plus {background:url(../images/game_gallery_plus.png); width:29px; height:29px; position:absolute; top:50%; left:50%; margin:-15px 0 0 -15px; display:none}
+#games div.double div.double_right ul.gallery a:hover span.plus {display:block}
+#games div.double div.double_right ul.gallery img {display:block}
+#games div.main_text {font-family:Arial, Helvetica, sans-serif}
+#games div.project {width:595px}
+
+#games div.info_block_container {position:fixed; height:100%; top:0; left:0; display:none}
+#games div.info_block {display:block; width:1000px; height:325px; margin:0 auto; position:absolute; top:50%; left:50%; margin:-150px 0 0 -500px}
+#games div.info_block span.close {display:block}
+#games div.info_block div.scroll {}
+#games div.info_block_content {width:595px; min-height:320px; background:url(../images/dot_white_tr.png); position:absolute; top:-110px; left:176px; font-family:'ElektraTextPro'; text-transform:uppercase; padding:45px 25px 45px 100px; line-height:25px; text-decoration:none}
+#games div.info_block_content h1 {margin-top:0; position:relative; z-index:2}
+#games div.info_block div.contacts {background:url(../images/double_content_line.png) no-repeat; padding:30px 0 0 0; text-transform:uppercase; line-height:18px; position:relative; z-index:2}
+#games div.info_block div.contacts a.map {font-family:Arial, Helvetica, sans-serif; text-transform:none}
+#games div.info_block div.contacts p.phone {background:url(../images/icon_phone.png) no-repeat 0 5px; padding:0 0 0 40px; margin-left:-40px}
+#games div.info_block div.contacts p.email {background:url(../images/icon_email.png) no-repeat 0 5px; padding:0 0 0 40px; margin-left:-40px}
+#games div.info_block div.contacts p.address {background:url(../images/icon_address.png) no-repeat 0 5px; padding:0 0 0 40px; margin-left:-40px}
+#games div.info_block ul.logos {overflow:hidden; text-align:left; background:url(../images/double_content_line.png) no-repeat; padding:30px 0 0 0}
+#games div.info_block ul.logos li {float:left; margin:12.5px 25px 12.5px 0; overflow:hidden; width:90px; height:90px}
+#company .double {position:relative; z-index:2}
+
+
+/*#games .mask {display:block;width:470px;height:468px;overflow:hidden;position:absolute;top:50%;left:50%;margin:-245px 0 0 -317px}*/
+#games .mask {display:block;width:470px;height:468px;overflow:hidden;position:absolute;top:50%;left:50%;margin:-245px 0 0 -317px; cursor:pointer}
+#games .mask .inner {-moz-transform:rotate(-30deg);-webkit-transform:rotate(-30deg);-o-transform:rotate(-30deg);width:150px;height:640px;margin-top:-86px;margin-right:150px;overflow:hidden;float:right}
+#games .mask .inner .content {-moz-transform:rotate(30deg);-webkit-transform:rotate(30deg);-o-transform:rotate(30deg);width:750px;height:545px;margin-top:63px;margin-left:-339px;overflow:hidden}
+
+#navigation {background:url(../images/main_nav.png); width:69px; height:39px; overflow:hidden; position:fixed; bottom:70px; right:25px}
+
+#footer {position:fixed; bottom:0; left:0; right:0; height:30px; line-height:30px; background-color:#999; z-index:1}
+#footer ul.menu {float:left; margin:0 0 0 15px; font-family:'ElektraTextPro'; text-transform:uppercase; font-size:10px}
+#footer ul.menu li {display:inline}
+#footer ul.menu a {color:#000; float:left; margin:0 10px; position:relative}
+#footer ul.menu li.current a {color:#FFF; text-decoration:none}
+#footer ul.menu li.current span {display:block; position:absolute; top:-10px; left:50%; top:-8px; margin:0 0 0 -8px; background:url(../images/footer_current.png); width:16px; height:8px; overflow:hidden}
+#footer div.copy {float:right; margin:0 20px 0 0}
+#footer div.copy a {margin:0 0 0 20px; text-decoration:none}
+#footer div.copy a:hover {text-decoration:underline}
+
+@font-face {
+    font-family: 'ElektraTextPro';
+	src: url('../fonts/elektratext.eot');
+	src: local('вє'), url('../fonts/elektratext.woff') format('woff'), url('../fonts/elektratext.ttf') format('truetype'), url('../fonts/elektratext.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.hidden {display:none}
+
+h1 {margin:46px 0 30px 0; padding:0; font-size:25px; font-weight:normal; line-height:35px}
+
+#info_back {position:fixed; background:url(../images/back_info.png); width:1280px; height:800px; top:50%; left:50%; margin:500px 0 0 -640px}
+#info_center {position:fixed; background:url(../images/center_info.png); width:1280px; height:800px; top:50%; left:50%; margin:500px 0 0 -640px}
+#info_upper {position:fixed; background:url(../images/upper_info.png); width:1280px; height:800px; bottom:50%; left:50%; margin:0 0 500px -640px; z-index:1}
+
+#video_block {position:relative; width:640px; height:440px; overflow:hidden}
+
+#sb-wrapper {margin-top:-30px}
