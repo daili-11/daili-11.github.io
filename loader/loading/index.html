@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loaders.css"/>
+    <style type="text/css">
+    	body{
+    		background: pink;
+    	}
+    </style>
+</head>
+<body>
+	<div id="loading"></div>
+</body>
+<script type="text/javascript">
+	var aImg = ["img/img1.jpg","img/img2.jpg","img/img3.jpg","img/img4.jpg","img/img5.jpg"];
+	var div = document.getElementById('loading');
+	loading(div,{
+		img:aImg,
+		background:"darkcyan",
+		type:'pacman'
+	},function() {
+		/*setTimeout(function() {
+			div.style.display = 'none';
+		},500)*/
+		
+	})
+	function loading(obj,opstions,cb) {
+		var json = {pacman: '<div class="loader"><div class="loader-inner pacman"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			lineScale :'<div class="loader"><div class="loader-inner line-scale"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballPulse :'<div class="loader"><div class="loader-inner ball-pulse"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballGridPulse :'<div class="loader"><div class="loader-inner ball-grid-pulse"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballClipRotate :'<div class="loader"><div class="loader-inner ball-clip-rotate"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballClipRotatePulse :'<div class="loader"><div class="loader-inner ball-clip-rotate-pulse"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			squareSpin :'<div class="loader"><div class="loader-inner square-spin"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballClipRotateMultiple :'<div class="loader"><div class="loader-inner ball-clip-rotate-multiple"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballPulseRise :'<div class="loader"><div class="loader-inner ball-pulse-rise"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballRotate :'<div class="loader"><div class="loader-inner ball-rotate"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			cubeTransition :'<div class="loader"><div class="loader-inner cube-transition"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballZigZag :'<div class="loader"><div class="loader-inner ball-zig-zag"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballZigZagDeflect :'<div class="loader"><div class="loader-inner ball-zig-zag-deflect"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballTrianglePath :'<div class="loader"><div class="loader-inner ball-triangle-path"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballScale :'<div class="loader"><div class="loader-inner ball-scale"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			lineScale :'<div class="loader"><div class="loader-inner line-scale"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			lineScaleParty :'<div class="loader"><div class="loader-inner line-scale-party"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballScaleMultiple :'<div class="loader"><div class="loader-inner ball-scale-multiple"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballPulseSync :'<div class="loader"><div class="loader-inner  ball-pulse-sync"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballBeat :'<div class="loader"><div class="loader-inner ball-beat"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			lineScalePulseOut :'<div class="loader"><div class="loader-inner line-scale-pulse-out"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			lineScalePulseOutRapid :'<div class="loader"><div class="loader-inner line-scale-pulse-out-rapid"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballScaleRipple :'<div class="loader"><div class="loader-inner ball-scale-ripple"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballScaleRippleMultiple :'<div class="loader"><div class="loader-inner ball-scale-ripple-multiple"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballSpinFadeLoader :'<div class="loader"><div class="loader-inner ball-spin-fade-loader"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			lineSpinFadeLoader :'<div class="loader"><div class="loader-inner line-spin-fade-loader"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			triangleSkewSpin :'<div class="loader"><div class="loader-inner triangle-skew-spin"><div></div><div></div><div></div><div></div><div></div></div></div>',
+			ballGridBeat :'<div class="loader"><div class="loader-inner ball-grid-beat"><div></div><div></div><div></div><div></div><div></div></div></div>'}
+		var ops = {
+			img:[],
+			background:'darkcyan',
+			type:'lineScale'
+		}
+		for (var key in opstions) {
+			ops[key] = opstions[key]
+		}
+		obj.innerHTML = json[ops.type]
+		loader = obj.children[0];
+		loader.style.position ='absolute'
+		loader.style.left ="50%";
+		loader.style.top="50%";
+		loader.style.marginLeft ="-25px";
+		loader.style.marginTop ="-25px";
+
+		obj.style.position ='absolute';
+		obj.style.left = 0;
+		obj.style.top =0;
+		obj.style.width = '100%';
+		obj.style.height = '100%';
+
+		obj.style.backgroundColor = ops.background;
+		var aImg = ops.img;
+		if (aImg.length>0) {
+			var index = 0;
+			for (var i = 0; i < aImg.length; i++) {
+				var img = new Image();
+				img.src = aImg[i];
+				img.onload = function() {
+					index++;
+					if (index==aImg.length) {
+						cb && cb()
+					}
+				}
+			}
+		}else {
+			cb && cb()
+		}
+	}
+</script>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+		body{
+			background: pink;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="loading"></div>
+
+</body>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+	// alert($('img').height());
+	$.fn.extend({
+		loading:function(options,cb) {
+			var ops = {
+				img:[],
+				backgroundColor :'pink',
+				color:''
+			}
+			ops = $.extend(ops,options);
+			var $html = $('<div class="progress"><span class="'+ops.color+'" style="width: 0%"><span>0%</span></span></div>')
+			$(this).append($html);
+			$html.css({
+				position:'absolute',
+				width:'80%',
+				top:'45%',
+				left:0,
+				right:0,
+				margin:'auto'
+			})
+			$(this).css({
+				position:'absolute',
+				width:'100%',
+				height:'100%',
+				top:0,
+				left:0,
+				background:'pink'
+			})
+			$(this).backgroundColor = ops.background;
+			var aImg = ops.img;
+			if (aImg.length>0) {
+			var index = 0;
+			for (var i = 0; i < aImg.length; i++) {
+					var img = new Image();
+					img.src = aImg[i];
+					img.onload = function() {
+						index++;
+						var scale = parseInt(index/aImg.length*100);
+						$('span').eq(0).css('width',scale+"%");
+						$('span').eq(1).html(scale+"%");
+						if (index==aImg.length) {
+							cb && cb()
+						}
+					}
+				}
+			}else {
+				cb && cb()
+			}
+		},
+	})
+	var aImg = ["img/img1.jpg","img/img2.jpg","img/img3.jpg","img/img4.jpg","img/img5.jpg"];
+
+	$div = $('#loading');
+	$div.loading({
+		img:aImg,
+		backgroundColor:'red',
+		color:'green'
+	},function() {
+		$div.fadeOut()
+	})
+	
+</script>
+</html>
