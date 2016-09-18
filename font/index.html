@@ -1,0 +1,205 @@
+ 
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>font</title>
+<style type="text/css">
+    *{
+                margin:0;
+                padding: 0;
+                font-family: "微软雅黑";
+        }
+        body,html{
+                height: 100%;
+                font-size: 15px;
+        }
+        #wrap{
+                width: 400px;
+                margin: 0 auto;
+                position: relative;
+                height: 100%;
+                min-height: 500px;
+                max-height: 600px;
+                border: 1px solid #ccc;
+        }
+        #dao{
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                font-size: 2em;
+        }
+        #wan{
+                position: absolute;
+                top: 20px;
+                font-size: 2em;
+                right: 20px;
+        }
+        #show{
+                font-size: 10em;
+                top: 90px;
+                left: 120px;
+                position: absolute;
+        }
+        #menu{
+                padding: 40px;
+                font-size: 2em;
+                top: 250px;
+                position: absolute;
+        }
+        #ul1{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                list-style: none;
+        }
+        #ul1 li{
+                float: left;
+                font-size: 5em;
+ 
+        }
+        body{
+                text-align: center;
+        }
+        #start{
+                width: 100px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 45px;
+                border: none;
+        }       
+</style>
+</head>
+<body>
+<div id="wrap">
+        <div id="dao">剩余时间：20</div>
+        <div id="wan">完成：0</div>
+        <div id="show">红</div>
+        <div id="menu">根据上面的字的颜色从下面选择正确的字，选择正确计一分,否则扣一分</div>
+        <ul id="ul1">
+                <li>绿</li>
+                <li>蓝</li>
+                <li>黑</li>
+                <li>黄</li>
+                <li>红</li>
+        </ul>
+</div>
+        <input type="button" id="start" value="开始" />
+        <!-- 实现思路
+        获取元素
+        开始倒计时
+        点击五个颜色按钮
+        题目文字随机改变文字与颜色
+        五个颜色按钮随机改变文字的顺序和颜色
+        如果点击的内容文字与题目文字的颜色相等就加分，否则减分
+        时间为0时，停止游戏 -->
+</body>
+<script type="text/javascript">
+        //1.获取元素
+//获取显示倒计时的标签
+var time = document.getElementById('dao');
+//获取分数标签
+var fs = document.getElementById('wan');
+//获取题目文字标签
+var show = document.getElementById('show');
+//获取五个颜色按钮标签
+var li = document.getElementsByTagName('li');
+//获取开始按钮标签
+var start = document.getElementById('start');
+        
+//定义变量
+var arrFont = ['绿','蓝','黑','黄','红'];//字数组
+var arrColor = ['green','blue','black','yellow','red'];//颜色数组
+var score = 0;//分数
+var start_bol = false;//判断是否开始游戏
+//开始按钮点击事件
+start.onclick = function(){
+        if(start_bol){return}//如果游戏开始后不可以再执行开始游戏函数，反之执行
+        start_bol = true ;//设定为游戏开始
+        startFn();
+}
+//开始游戏函数
+function startFn(){
+        //初始化
+        score = 0;//分数初始为0
+        fs.innerHTML = "完成："+score;//页面显示也为0
+        timeFn(20);//2.倒计时
+        btnFn();//3.按钮点击
+        //初始化
+        changeShow();//改变题目
+        changeBnts();//改变按钮
+}
+//五个颜色按钮的点击事件
+function btnFn(){
+        for (var i=0; i<li.length; i++) {
+                li[i].onclick = function(){
+                        if(!start_bol){return;}//如果游戏开始后执行点击，反之不执行
+                        //判断点击是否正确
+                        checkFn(this.innerHTML);
+                        //改变题目
+                        changeShow();
+                        //改变按钮
+                        changeBnts();
+                }
+        }
+}
+//游戏剩余时间函数
+function timeFn(n){
+        var timer = setInterval(function(){
+                n-=0.02;//每20毫秒减0.02
+                if(n<=0){
+            //如果小于0
+                        clearInterval(timer);//清除定时器
+                        n=0;//n会有偏差所以需要强制设为0
+                        start_bol = false;//设定游戏结束
+                }
+                time.innerHTML = "剩余时间："+n.toFixed(2);//每20毫秒修改剩余时间标签内容
+        },20)
+}
+//随机函数
+function rndFn(min,max){
+        return Math.round(Math.random()*(max-min)+min);//返回max到min的随机数
+}
+//随机打乱数组内容
+function sortFn(arr){
+        arr.sort(function(){return Math.random()-0.5});
+        return arr;
+}
+//题目文字随机改变文字与颜色
+function changeShow(){
+        show.innerHTML = arrFont[rndFn(0,4)];//随机获取文字
+        show.style.color = arrColor[rndFn(0,4)];//随机获取颜色
+}
+//五个颜色按钮随机改变文字的顺序和颜色
+function changeBnts(){
+        arrFont = sortFn(arrFont);//打乱文字数组
+        arrColor = sortFn(arrColor);//打乱颜色数组
+        for (var i=0; i<li.length; i++) {
+        //分配值
+                li[i].innerHTML = arrFont[i];
+                li[i].style.color = arrColor[i];
+        }
+}
+//判断统计
+function checkFn(btnFont){
+        var color = show.style.color;//获取题目字体颜色
+        var str ='';//定义存放题目字体颜色的中文值
+        //判断颜色并赋值给str
+        switch (color){
+                case 'green':str = '绿';break;
+                case 'black':str = '黑';break;
+                case 'blue':str = '蓝';break;
+                case 'yellow':str = '黄';break;
+                case 'red':str = '红';break;
+        }
+        //判断点击的内容文字与题目文字的颜色并统计分数
+        if(btnFont == str){
+                score++
+        }else{
+                score--
+        }
+        fs.innerHTML = "完成："+score;//显示分数在页面
+}
+</script>
+</html>

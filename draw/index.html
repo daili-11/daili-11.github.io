@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>draw</title>
+	<style type="text/css">
+		.mirro{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<canvas width="330" height="220" class="Img"></canvas>
+	<canvas class="mirro"></canvas>
+</body>
+<script type="text/javascript">
+	var canvas = document.querySelectorAll('canvas')
+	var ctxOne = canvas[0].getContext('2d');
+	var ctxTwo = canvas[1].getContext('2d');
+	var img = new Image()
+	img.src='drawimg.jpg'
+	drawImg()	
+	function draw() {
+		ctxOne.drawImage(img,0,0)
+	}
+	function drawImg() {
+		if (img.complete) {
+			draw()
+		}else {
+			img.onload=function () {
+				draw()
+			}
+		}
+	}
+	var disX=0;
+	var disY=0;
+	var x1=0;
+	var y1=0;
+	var bol = false
+	canvas[0].onmousedown=function (e) {
+		bol=true
+		disX = this.offsetLeft;
+		disY = this.offsetTop;
+		x1 = e.clientX-this.offsetLeft;
+		y1 = e.clientY-this.offsetTop;
+		canvas[1].style.display='none'
+		ctxOne.clearRect(0,0,canvas[0].width,canvas[0].height)
+		drawImg()
+		document.onmousemove=function (e) {
+			var x2 = e.clientX-disX
+			var y2 = e.clientY-disY
+			ctxOne.clearRect(0,0,canvas[0].width,canvas[0].height)
+			ctxOne.beginPath();
+			drawImg()
+			ctxOne.moveTo(x1,y1);
+			ctxOne.lineTo(x2,y1);
+			ctxOne.lineTo(x2,y2);
+			ctxOne.lineTo(x1,y2);
+			ctxOne.lineTo(x1,y1);
+			ctxOne.stroke()
+		}
+	}
+	document.onmouseup=function (e) {
+		if (!bol) {return}
+		bol=false
+		document.onmousemove=''
+		ctxOne.closePath();
+		var x = e.clientX;
+		var y = e.clientY;
+		var w = Math.abs(x-disX-x1);
+		var h = Math.abs(y-disY-y1)
+		canvas[1].width=w*2;
+		canvas[1].height=h*2;
+		canvas[1].style.display='block'
+		ctxTwo.clearRect(0,0,canvas[1].width,canvas[1].height)
+		if (img.complete) {
+			ctxTwo.drawImage(img,x1,y1,w,h,0,0,2*w,2*h)
+		}else {
+			img.onload=function () {
+				ctxTwo.drawImage(img,x1,y1,w,h,0,0,2*w,2*h)	
+			}
+		}
+	}
+</script>
+</html>
