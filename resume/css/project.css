@@ -230,13 +230,6 @@
 	width: 260px;
 
 }
-#showJingying>.fifth{
-	position: absolute;
-	top: 160px;
-	right: -20px;
-	width: 260px;
-
-}
 
 
 
@@ -314,6 +307,19 @@
 	width: 100%;
 }
 #showCanvas .forth{
+	position: absolute;
+	top: 750px;
+	left: 0px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 10px;
+	font-size: 25px;
+	text-align: center;
+	color: #428bca;
+
+}
+#showCanvas .fifth{
 	position: absolute;
 	top: 750px;
 	left: 0px;
