@@ -382,4 +382,36 @@ body.impress-on-contact{
 	width: 100%;
 	border-radius: 20px;
 }
+#one{
+	width: 360px;
+	position: absolute;
+	top: 150px;
+	right: 0;
+}
+#two{
+	width: 360px;
+	position: absolute;
+	top: 400px;
+	right: 0;
+}
+#three{
+	width: 360px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#four{
+	width: 360px;
+	position: absolute;
+	top: 400px;
+	right: 0;
+}
+li{
+	font-size: 16px;
+	color: darkcyan;
+	margin-top: 10px;
+}
+em{
+	font-size: 24px;
+}
 /*http://hcy2367.github.io/resume/assets/images/noise.png*/
