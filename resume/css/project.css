@@ -41,11 +41,12 @@
 }	
 .project-wrap.project1>.skill>.img3{
 	position: absolute;
-	top: 90px;
-	right: 120px;
+	top: 100px;
+	right: 455px;
 	font-size: 50px;
 	color: #48a85e;
 	font-weight: 900;
+	transform: rotate(15deg);
 }
 
 .project-wrap>p{
