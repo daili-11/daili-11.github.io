@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>canvas</title>
+		<style type="text/css">
+			
+			.button{
+				width: 520px;
+				margin-top: 25px;
+				text-indent: 3em;
+				margin-bottom: 20px;
+			}
+			.button input{
+				margin-left: 50px;
+				height: 25px;
+				border: 0;
+				background: red;
+				color: white;
+				font-size: 13px;
+			}
+			#add{
+				background-color: darkorange;
+				margin-left: 0;
+			}
+			#btn{
+				background-color: seagreen;
+			}
+			#getimg{
+				width: 320px;
+				height: 30px;
+				font-size: 13px;
+				margin-left: 25px;
+				background-color: darkorchid;
+				color: white;
+				border: 0;
+				margin-bottom: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="520" height="520"></canvas>
+		<form class="tobe" action="###">
+			<div class="list">
+				<p>名称:<input type="text" class="names" />百分比:<input type="text" class="per"  /></p>
+				<p>名称:<input type="text" class="names" />百分比:<input type="text" class="per" /></p>
+				<p>名称:<input type="text" class="names" />百分比:<input type="text" class="per" /></p>
+				<p>名称:<input type="text" class="names" />百分比:<input type="text" class="per" /></p>
+			</div>
+			<p class="button"><input type="button" id="add" value="添加饼块" /><input type="button" id="btn" value="制作饼图" /><input type="reset" value="reset" /></p>
+			<!--<input type="button" id="getimg" value="生产图片" />-->
+		</form>
+	</body>
+	<script type="text/javascript">
+		var canvas = document.getElementById('canvas');
+		var btn = document.querySelector('#btn')
+		var add = document.querySelector('#add')
+		var list = document.querySelector('.list')
+//		var get = document.querySelector('#getimg')
+		var ctx = canvas.getContext('2d')
+//		get.onclick = function(){
+//			var src = canvas.toDataURL('image/png')
+//			var img = new Image()
+//			img.src = src
+//			document.body.appendChild(img)
+//		}
+		add.onclick = function(){
+			var p = document.createElement('p');
+			p.innerHTML = '名称:<input type="text" class="names" />百分比:<input type="text" class="per" />'
+			list.appendChild(p);
+		}
+		btn.onclick = function(){
+			var names = document.querySelectorAll('.names');
+			var per = document.querySelectorAll('.per')
+			ctx.clearRect(-canvas.width,-canvas.height,canvas.width*2,canvas.height*2)
+			var caseNum = {}
+			for (var i = 0; i < names.length; i++) {
+				caseNum[names[i].value] = per[i].value
+			}
+			getCase(caseNum);
+		}
+		getCase();
+		function getCase(caseNum){
+			ctx.save()
+			ctx.translate(200,280)
+			var cnum = caseNum || {
+				'第一季度':10,
+				'第二季度':10,
+				'第三季度':10,
+				'第四季度':70
+			}
+			var caseNumber =[];
+			var str = [];
+			for(var key in cnum){
+				caseNumber.push(parseFloat(cnum[key]))
+				str.push(key.toString())
+			}
+			var color = ['red','orange','darkcyan','skyblue','tan','aquamarine','blueviolet','chartreuse','darkorange','darkgreen','salmon','crimson']
+			var deg = 0;
+			for (var i = 0; i < caseNumber.length; i++) {
+				deg += caseNumber[i]/100*360
+				ctx.globalCompositeOperation = 'destination-over'
+				caseTo(deg,color[i])
+			}
+			ctx.restore()
+			ctx.globalCompositeOperation = 'source-over'
+			signFn(color,str);
+		}
+		function signFn(color,str){
+			for (var i = 0; i < str.length; i++) {
+				ctx.beginPath();
+				ctx.fillStyle = color[i]
+				ctx.fillRect(420,20+i*30,20,20)
+				ctx.fill()
+				ctx.closePath()
+				ctx.beginPath();
+				ctx.font = '13px 黑体'
+				ctx.textBaseline = 'middle'
+				ctx.fillStyle = 'black'
+				ctx.fillText(str[i],450,30+i*30)
+				ctx.fill()
+				ctx.closePath()
+			}
+			
+		}
+		function caseTo (deg,color) {
+			ctx.beginPath();
+			ctx.arc(0,0,200,0,Math.PI/180*deg)
+			ctx.moveTo(0,0)
+			ctx.lineTo(200,0)
+			var x2 = Math.sin(Math.PI/2+Math.PI/180*deg)*200
+			var y2 = -Math.cos(Math.PI/2+Math.PI/180*deg)*200
+			ctx.lineTo(x2,y2)
+			ctx.fillStyle = color
+			ctx.fill()
+			ctx.closePath()
+		}
+	</script>
+</html>
