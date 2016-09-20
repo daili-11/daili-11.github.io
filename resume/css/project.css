@@ -122,7 +122,6 @@
 	width: 300px;
 	z-index: -1;
 }
-
 .project1 .task{
 	position: relative;
 
@@ -225,6 +224,13 @@
 	left: -140px;
 }
 #showJingying>.third{
+	position: absolute;
+	top: 160px;
+	right: -20px;
+	width: 260px;
+
+}
+#showJingying>.fifth{
 	position: absolute;
 	top: 160px;
 	right: -20px;
